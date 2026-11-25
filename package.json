@@ -1,0 +1,9 @@
+{
+  "name": "dutch-practice",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-lessons.mjs",
+    "audio": "node scripts/make-audio.mjs"
+  }
+}

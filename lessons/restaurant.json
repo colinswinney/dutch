@@ -1,0 +1,47 @@
+{
+  "id": "restaurant",
+  "title": "Eating out",
+  "titleNl": "In het restaurant",
+  "level": "A1",
+  "intro": "From getting a table to paying the bill. Many of these lines also work at a café, a snack bar or the canteen at the sports club.",
+  "notes": [
+    {
+      "title": "graag: the easy way to be polite",
+      "body": [
+        "Put graag after what you want, or use “Ik wil graag …”. It works like “please” and “I'd like” at the same time."
+      ],
+      "examples": [
+        { "nl": "Een cappuccino, [graag].", "en": "A cappuccino, please." },
+        { "nl": "Ik wil [graag] de soep.", "en": "I'd like the soup." }
+      ]
+    },
+    {
+      "title": "Spa rood and spa blauw",
+      "body": [
+        "Spa is a brand of mineral water, but people use it for any bottled water. Spa rood is sparkling and spa blauw is still. Tap water is kraanwater."
+      ],
+      "examples": [
+        { "nl": "Een [spa rood], graag.", "en": "A sparkling water, please." },
+        { "nl": "Mag ik een glas [kraanwater]?", "en": "Can I have a glass of tap water?" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "tafel", "nl": "Een tafel voor drie, graag.", "en": "A table for three, please.", "who": "You" },
+    { "id": "gereserveerd", "nl": "Heeft u gereserveerd?", "en": "Do you have a reservation?", "who": "Waiter", "reply": { "nl": "Nee, we hebben niet gereserveerd.", "en": "No, we didn't book." } },
+    { "id": "drinken", "nl": "Wat wilt u drinken?", "en": "What would you like to drink?", "who": "Waiter", "reply": { "nl": "Een spa rood en een appelsap, graag.", "en": "A sparkling water and an apple juice, please." } },
+    { "id": "kaart", "nl": "Mag ik de kaart?", "en": "Can I have the menu?", "who": "You" },
+    { "id": "weten", "nl": "Weten jullie het al?", "en": "Have you decided?", "who": "Waiter", "reply": { "nl": "Nog niet, momentje.", "en": "Not yet, one moment." } },
+    { "id": "sate", "nl": "Ik wil graag de kipsaté.", "en": "I'd like the chicken satay.", "who": "You" },
+    { "id": "kindermenu", "nl": "Heeft u een kindermenu?", "en": "Do you have a kids' menu?", "who": "You", "reply": { "nl": "Ja, achter op de kaart.", "en": "Yes, on the back of the menu." } },
+    { "id": "patat", "nl": "Ze wil graag patat met appelmoes.", "en": "She'd like fries with apple sauce.", "who": "You" },
+    { "id": "noten", "nl": "Zitten hier noten in?", "en": "Are there nuts in this?", "who": "You" },
+    { "id": "smakelijk", "nl": "Eet smakelijk!", "en": "Enjoy your meal!", "who": "Waiter", "reply": { "nl": "Dank u wel!", "en": "Thank you!" } },
+    { "id": "naar-wens", "nl": "Is alles naar wens?", "en": "Is everything to your liking?", "who": "Waiter", "reply": { "nl": "Ja, heerlijk, dank u.", "en": "Yes, delicious, thank you." } },
+    { "id": "water", "nl": "Mag ik nog een glas water?", "en": "Could I have another glass of water?", "who": "You" },
+    { "id": "nog-iets", "nl": "Wilt u nog iets drinken?", "en": "Would you like anything else to drink?", "who": "Waiter", "reply": { "nl": "Nee, dank u wel.", "en": "No, thank you." } },
+    { "id": "afrekenen", "nl": "Mag ik afrekenen?", "en": "Can I pay, please?", "who": "You" },
+    { "id": "apart", "nl": "Kunnen we apart betalen?", "en": "Can we pay separately?", "who": "You" },
+    { "id": "meenemen", "nl": "Voor hier of om mee te nemen?", "en": "For here or to take away?", "who": "Staff", "reply": { "nl": "Om mee te nemen, graag.", "en": "To take away, please." } }
+  ]
+}

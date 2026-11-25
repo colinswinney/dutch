@@ -1,0 +1,47 @@
+{
+  "id": "supermarket",
+  "title": "At the supermarket",
+  "titleNl": "In de supermarkt",
+  "level": "A1",
+  "intro": "The questions at the till come fast and in almost the same order every time. Learn to recognise them and you can answer without switching to English.",
+  "notes": [
+    {
+      "title": "u or je?",
+      "body": [
+        "Shop staff usually say u, the polite “you”, to adults. Younger staff often say je. You can answer either way and nobody will mind."
+      ],
+      "examples": [
+        { "nl": "[Wilt u] een tasje?", "en": "Would you like a bag? (polite)" },
+        { "nl": "[Wil je] een tasje?", "en": "Would you like a bag? (informal)" }
+      ]
+    },
+    {
+      "title": "Weights at the counter: ons and pond",
+      "body": [
+        "At the cheese or meat counter, people still use old units. One ons is 100 grams. One pond is 500 grams."
+      ],
+      "examples": [
+        { "nl": "[Twee ons] jonge kaas, graag.", "en": "200 grams of young cheese, please." },
+        { "nl": "[Een pond] gehakt, graag.", "en": "500 grams of mince, please." }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "bonuskaart", "nl": "Heeft u een bonuskaart?", "en": "Do you have a loyalty card?", "who": "Cashier", "reply": { "nl": "Nee, die heb ik niet.", "en": "No, I don't have one." } },
+    { "id": "zegels", "nl": "Spaart u zegels?", "en": "Are you collecting stamps?", "who": "Cashier", "reply": { "nl": "Nee, dank u.", "en": "No, thank you." } },
+    { "id": "tasje", "nl": "Wilt u een tasje?", "en": "Would you like a bag?", "who": "Cashier", "reply": { "nl": "Nee, dank u. Ik heb een tas.", "en": "No, thank you. I have a bag." } },
+    { "id": "pinnen-contant", "nl": "Pinnen of contant?", "en": "Card or cash?", "who": "Cashier", "reply": { "nl": "Pinnen, graag.", "en": "Card, please." } },
+    { "id": "u-kunt-pinnen", "nl": "U kunt pinnen.", "en": "You can pay by card now.", "who": "Cashier" },
+    { "id": "bon", "nl": "Wilt u de bon?", "en": "Would you like the receipt?", "who": "Cashier", "reply": { "nl": "Nee, hoeft niet.", "en": "No, no need." } },
+    { "id": "alles", "nl": "Was dat alles?", "en": "Was that everything?", "who": "Staff", "reply": { "nl": "Ja, dat was het.", "en": "Yes, that's it." } },
+    { "id": "ietsje-meer", "nl": "Mag het ietsje meer zijn?", "en": "Is it OK if it's a little more?", "who": "Counter staff", "reply": { "nl": "Ja hoor, prima.", "en": "Yes, that's fine." } },
+    { "id": "melk", "nl": "Waar kan ik de melk vinden?", "en": "Where can I find the milk?", "who": "You", "reply": { "nl": "Achterin, bij de kaas.", "en": "At the back, near the cheese." } },
+    { "id": "eieren", "nl": "Ik zoek de eieren.", "en": "I'm looking for the eggs.", "who": "You" },
+    { "id": "langs", "nl": "Mag ik even langs?", "en": "Can I just get past?", "who": "You" },
+    { "id": "aanbieding", "nl": "Is dit in de aanbieding?", "en": "Is this on offer?", "who": "You" },
+    { "id": "kosten", "nl": "Hoeveel kost dit?", "en": "How much does this cost?", "who": "You" },
+    { "id": "brood", "nl": "Een half brood, gesneden graag.", "en": "Half a loaf, sliced, please.", "who": "You" },
+    { "id": "kaas", "nl": "Twee ons jonge kaas, graag.", "en": "200 grams of young cheese, please.", "who": "You" },
+    { "id": "op", "nl": "Sorry, het is op.", "en": "Sorry, it's sold out.", "who": "Staff" }
+  ]
+}

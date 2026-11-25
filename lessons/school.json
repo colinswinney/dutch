@@ -1,0 +1,117 @@
+{
+  "id": "school",
+  "title": "School: drop-off, pick-up and messages",
+  "titleNl": "Op school",
+  "level": "A1",
+  "intro": "Short lines for the school gate, the teacher and other parents. The reading practice uses messages like the ones that come through the school app and the class group chat.",
+  "notes": [
+    {
+      "title": "juf and meester",
+      "body": [
+        "Children call a female teacher juf and a male teacher meester, often with the first name: juf Sanne, meester Tim. Parents use the same words."
+      ],
+      "examples": [
+        { "nl": "Goedemorgen, [juf] Sanne!", "en": "Good morning, Miss Sanne!" },
+        { "nl": "Is [meester] Tim er vandaag?", "en": "Is Mr Tim here today?" }
+      ]
+    },
+    {
+      "title": "brengen and ophalen",
+      "body": [
+        "Brengen is dropping off. Ophalen is picking up. Ophalen is a split verb, so “op” jumps to the end in a simple sentence."
+      ],
+      "examples": [
+        { "nl": "Ik [breng] haar morgen.", "en": "I'll drop her off tomorrow." },
+        { "nl": "Wie [haalt] haar vandaag [op]?", "en": "Who is picking her up today?" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "goedemorgen", "nl": "Goedemorgen, juf!", "en": "Good morning, Miss!", "who": "You", "reply": { "nl": "Goedemorgen! Hoe gaat het?", "en": "Good morning! How are you?" } },
+    { "id": "ziek", "nl": "Ze is vandaag ziek.", "en": "She is sick today.", "who": "You", "reply": { "nl": "Oh, beterschap!", "en": "Oh, get well soon!" } },
+    { "id": "komt-niet", "nl": "Ze komt vandaag niet.", "en": "She isn't coming today.", "who": "You" },
+    { "id": "ophalen", "nl": "Ik haal haar om drie uur op.", "en": "I'll pick her up at three.", "who": "You" },
+    { "id": "wie-haalt", "nl": "Wie haalt haar vandaag op?", "en": "Who is picking her up today?", "who": "Teacher", "reply": { "nl": "Ik haal haar op.", "en": "I'm picking her up." } },
+    { "id": "gym", "nl": "Ze heeft vandaag gym.", "en": "She has PE today.", "who": "Teacher" },
+    { "id": "gymtas", "nl": "Waar is haar gymtas?", "en": "Where is her gym bag?", "who": "You" },
+    { "id": "jas", "nl": "Ze heeft haar jas vergeten.", "en": "She forgot her coat.", "who": "Teacher", "reply": { "nl": "Oeps! Ik haal hem straks op.", "en": "Oops! I'll pick it up later." } },
+    { "id": "studiedag", "nl": "Morgen is er een studiedag.", "en": "Tomorrow is a teacher training day, so no school.", "who": "Teacher" },
+    { "id": "hoe-gaat-het", "nl": "Hoe gaat het met haar in de klas?", "en": "How is she doing in class?", "who": "You", "reply": { "nl": "Het gaat goed. Ze speelt veel met Noor.", "en": "She's doing well. She plays with Noor a lot." } },
+    { "id": "even-spreken", "nl": "Kan ik u na school even spreken?", "en": "Could I talk to you for a moment after school?", "who": "Teacher", "reply": { "nl": "Ja, natuurlijk.", "en": "Yes, of course." } },
+    { "id": "komen-spelen", "nl": "Wil ze een keer bij ons komen spelen?", "en": "Would she like to come and play at our house some time?", "who": "Parent", "reply": { "nl": "Ja, leuk! Welke dag?", "en": "Yes, fun! Which day?" } },
+    { "id": "mag-noor", "nl": "Mag Noor bij ons komen spelen?", "en": "Can Noor come and play at our house?", "who": "You" },
+    { "id": "jarig", "nl": "Ze is vrijdag jarig.", "en": "It's her birthday on Friday.", "who": "You", "reply": { "nl": "Gefeliciteerd! Gaat ze trakteren?", "en": "Congratulations! Is she bringing treats?" } },
+    { "id": "trakteren", "nl": "Ze trakteert vrijdag in de klas.", "en": "She's handing out treats in class on Friday.", "who": "You" },
+    { "id": "tot-straks", "nl": "Tot straks! Veel plezier!", "en": "See you later! Have fun!", "who": "You" },
+    { "id": "hoe-was-het", "nl": "Hoe was het op school?", "en": "How was school?", "who": "You", "reply": { "nl": "Leuk! We hebben buiten gespeeld.", "en": "Fun! We played outside." } }
+  ],
+  "readings": [
+    {
+      "id": "trip",
+      "kind": "Message from the teacher",
+      "title": "Uitje naar de kinderboerderij",
+      "text": [
+        "Beste ouders,",
+        "Volgende week woensdag gaan we met de klas naar de kinderboerderij. We vertrekken om half negen en we zijn om twaalf uur terug.",
+        "Geef uw kind een tussendoortje en een fles water mee. Doe uw kind laarzen aan, want het kan modderig zijn.",
+        "We zoeken nog twee ouders die kunnen rijden. Kunt u helpen? Stuur mij dan een berichtje.",
+        "Groetjes, juf Sanne"
+      ],
+      "translation": [
+        "Dear parents,",
+        "Next Wednesday the class is going to the petting farm. We leave at half past eight and we'll be back at twelve.",
+        "Give your child a snack and a bottle of water to take along. Put boots on your child, because it may be muddy.",
+        "We're still looking for two parents who can drive. Can you help? Then send me a message.",
+        "Best wishes, Miss Sanne"
+      ],
+      "glossary": [
+        { "nl": "het uitje", "en": "outing, trip" },
+        { "nl": "de kinderboerderij", "en": "petting farm" },
+        { "nl": "vertrekken", "en": "to leave, depart" },
+        { "nl": "meegeven", "en": "to give someone something to take along" },
+        { "nl": "het tussendoortje", "en": "snack between meals" },
+        { "nl": "de laarzen", "en": "boots" },
+        { "nl": "modderig", "en": "muddy" },
+        { "nl": "rijden", "en": "to drive" },
+        { "nl": "het berichtje", "en": "short message" }
+      ],
+      "questions": [
+        { "q": "Where is the class going?", "options": ["To the swimming pool", "To a petting farm", "To the library", "To the park"], "answer": 1 },
+        { "q": "What time do they leave?", "options": ["8:30", "9:30", "8:00", "9:00"], "answer": 0 },
+        { "q": "What should your child wear?", "options": ["A raincoat", "Boots", "Gym shoes", "A hat"], "answer": 1 },
+        { "q": "What is the teacher asking for?", "options": ["Money for the trip", "Two parents who can drive", "Help with lunch", "A signed form"], "answer": 1 },
+        { "q": "When will the class be back?", "options": ["11:00", "12:00", "12:30", "At the end of the school day"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "lost-sweater",
+      "kind": "Class group chat",
+      "title": "Wie heeft de blauwe trui gezien?",
+      "text": [
+        "Hoi allemaal!",
+        "Daan is gisteren na de gym zijn blauwe trui kwijtgeraakt. Heeft iemand hem misschien per ongeluk mee naar huis genomen? Er staat een D op het etiket.",
+        "Alvast bedankt!",
+        "Groetjes, Mila (moeder van Daan)"
+      ],
+      "translation": [
+        "Hi everyone!",
+        "Yesterday after PE, Daan lost his blue sweater. Did someone maybe take it home by mistake? There's a D on the label.",
+        "Thanks in advance!",
+        "Best wishes, Mila (Daan's mum)"
+      ],
+      "glossary": [
+        { "nl": "kwijtraken", "en": "to lose" },
+        { "nl": "de trui", "en": "sweater, jumper" },
+        { "nl": "per ongeluk", "en": "by accident" },
+        { "nl": "het etiket", "en": "label" },
+        { "nl": "alvast bedankt", "en": "thanks in advance" }
+      ],
+      "questions": [
+        { "q": "What is missing?", "options": ["A gym bag", "A blue sweater", "A water bottle", "A coat"], "answer": 1 },
+        { "q": "When did Daan lose it?", "options": ["This morning", "Yesterday after PE", "Last week at swimming", "On the school trip"], "answer": 1 },
+        { "q": "How can you recognise it?", "options": ["It has a D on the label", "It has his full name on it", "It is very small", "It has a hole in it"], "answer": 0 },
+        { "q": "Who wrote the message?", "options": ["The teacher", "Daan", "Daan's mother", "The school office"], "answer": 2 }
+      ]
+    }
+  ]
+}

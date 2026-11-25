@@ -1,0 +1,37 @@
+{
+  "id": "swimming",
+  "title": "Swimming lessons",
+  "titleNl": "Zwemles",
+  "level": "A1",
+  "intro": "Lines for the pool: talking to the swimming teacher, the diploma test, and getting a six-year-old dressed and out the door on time.",
+  "notes": [
+    {
+      "title": "Diploma A, B and C",
+      "body": [
+        "Most Dutch children work towards swimming diplomas A, B and C. The test day is called afzwemmen. Parents usually watch it from the stands, the tribune."
+      ],
+      "examples": [
+        { "nl": "Ze mag volgende maand [afzwemmen].", "en": "She can take her swimming test next month." },
+        { "nl": "Ze heeft [diploma A] gehaald!", "en": "She passed diploma A!" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "zit-op-zwemles", "nl": "Ze zit op zwemles.", "en": "She takes swimming lessons.", "who": "You" },
+    { "id": "hoe-laat", "nl": "Hoe laat begint de zwemles?", "en": "What time does the swimming lesson start?", "who": "You", "reply": { "nl": "Om kwart over vier.", "en": "At a quarter past four." } },
+    { "id": "spullen", "nl": "Heb je je zwemspullen?", "en": "Do you have your swimming things?", "who": "You", "reply": { "nl": "Ja, in mijn tas!", "en": "Yes, in my bag!" } },
+    { "id": "badmuts", "nl": "Waar is je badmuts?", "en": "Where is your swim cap?", "who": "You" },
+    { "id": "handdoek", "nl": "Vergeet je handdoek niet!", "en": "Don't forget your towel!", "who": "You" },
+    { "id": "kijken", "nl": "Mogen ouders kijken?", "en": "Are parents allowed to watch?", "who": "You", "reply": { "nl": "Ja, op de tribune.", "en": "Yes, from the stands." } },
+    { "id": "eng", "nl": "Ze vindt het water nog een beetje eng.", "en": "She still finds the water a bit scary.", "who": "You" },
+    { "id": "watertrappelen", "nl": "Ze moet nog oefenen met watertrappelen.", "en": "She still needs to practise treading water.", "who": "Teacher" },
+    { "id": "gat", "nl": "Ze moet onder water door het gat zwemmen.", "en": "She has to swim underwater through the hole.", "who": "Teacher" },
+    { "id": "afzwemmen", "nl": "Wanneer mag ze afzwemmen?", "en": "When can she take her swimming test?", "who": "You", "reply": { "nl": "Over ongeveer twee maanden.", "en": "In about two months." } },
+    { "id": "diploma-b", "nl": "Is ze klaar voor diploma B?", "en": "Is she ready for diploma B?", "who": "You", "reply": { "nl": "Bijna! Nog een paar lessen.", "en": "Almost! A few more lessons." } },
+    { "id": "gehaald", "nl": "Ze heeft diploma A gehaald!", "en": "She passed diploma A!", "who": "You", "reply": { "nl": "Gefeliciteerd! Wat knap!", "en": "Congratulations! How clever!" } },
+    { "id": "geen-les", "nl": "Volgende week is er geen les.", "en": "There's no lesson next week.", "who": "Teacher" },
+    { "id": "afdrogen", "nl": "Afdrogen en aankleden!", "en": "Dry off and get dressed!", "who": "You" },
+    { "id": "schiet-op", "nl": "Schiet op, we zijn laat!", "en": "Hurry up, we're late!", "who": "You" },
+    { "id": "goed-gedaan", "nl": "Goed gedaan! Ik ben trots op je.", "en": "Well done! I'm proud of you.", "who": "You" }
+  ]
+}

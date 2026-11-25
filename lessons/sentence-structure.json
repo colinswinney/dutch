@@ -1,0 +1,513 @@
+{
+  "id": "sentence-structure",
+  "title": "Building sentences: from A1 to almost A2",
+  "titleNl": "Zinnen bouwen",
+  "level": "A1 → A2",
+  "intro": "Dutch word order follows a few firm rules. Learn them in order. Each rule has examples from your week, and the practice is mostly building sentences from word tiles.",
+  "preferredMode": "build",
+  "modes": [
+    "listen",
+    "build",
+    "speak",
+    "dictation"
+  ],
+  "notes": [
+    {
+      "id": "basic",
+      "title": "1. The basic order: who, verb, the rest",
+      "body": [
+        "A simple Dutch sentence starts like English. First comes the person or thing that does the action, then the verb, then everything else."
+      ],
+      "examples": [
+        {
+          "nl": "Ik [koop] brood.",
+          "en": "I buy bread."
+        },
+        {
+          "nl": "Ze [zwemt] op woensdag.",
+          "en": "She swims on Wednesdays."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 11: Word order",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_11#Word_order"
+        }
+      ]
+    },
+    {
+      "id": "verb-second",
+      "title": "2. The verb always comes second",
+      "body": [
+        "In a normal statement the verb is the second part of the sentence. If you start with something else, like a time or a place, the subject moves to just after the verb.",
+        "English says “Today she goes to school”. Dutch says “Today goes she to school”.",
+        "“Second part” is not always the second word. “Om drie uur” is one part, so the verb comes straight after it."
+      ],
+      "examples": [
+        {
+          "nl": "Ze [gaat] vandaag naar school.",
+          "en": "She is going to school today."
+        },
+        {
+          "nl": "Vandaag [gaat] ze naar school.",
+          "en": "Today she is going to school."
+        },
+        {
+          "nl": "Om drie uur [haal] ik haar op.",
+          "en": "At three o'clock I pick her up."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 3: Word order and inversion",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_3#Syntax_3-1_~_Some_more_word_order:_inversion"
+        },
+        {
+          "label": "Wikibooks Dutch, lesson 11: Inversion",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_11#Inversion"
+        },
+        {
+          "label": "Wikipedia: V2 word order",
+          "url": "https://en.wikipedia.org/wiki/V2_word_order",
+          "note": "advanced, compares languages"
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "3. Questions: the verb comes first",
+      "body": [
+        "For a yes-or-no question, start with the verb. With a question word such as wie, wat, waar, wanneer or hoe laat, the question word comes first and the verb second.",
+        "When je comes straight after the verb, the verb drops its -t. Je drinkt becomes drink je?"
+      ],
+      "examples": [
+        {
+          "nl": "[Heeft] u een bonuskaart?",
+          "en": "Do you have a loyalty card?"
+        },
+        {
+          "nl": "[Drink] je koffie?",
+          "en": "Do you drink coffee?"
+        },
+        {
+          "nl": "Waar [is] haar jas?",
+          "en": "Where is her coat?"
+        },
+        {
+          "nl": "Hoe laat [begint] de les?",
+          "en": "What time does the lesson start?"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 2: Questions",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_2#Questions"
+        }
+      ]
+    },
+    {
+      "id": "two-verbs",
+      "title": "4. Two verbs: the second goes to the end",
+      "body": [
+        "With willen, kunnen, moeten, mogen and gaan, the first verb stays in second place. The main verb goes to the very end of the sentence, in its full form."
+      ],
+      "examples": [
+        {
+          "nl": "Ik [wil] graag [afrekenen].",
+          "en": "I'd like to pay."
+        },
+        {
+          "nl": "Ze [moet] morgen vroeg [opstaan].",
+          "en": "She has to get up early tomorrow."
+        },
+        {
+          "nl": "We [gaan] zaterdag boodschappen [doen].",
+          "en": "We're going grocery shopping on Saturday."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 9: Modal verbs",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_9#Infinitives_instead_of_participles._Modal_verbs"
+        },
+        {
+          "label": "Wikibooks Dutch, lesson 11: Verbs in final position",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_11#Verbs_in_final_position"
+        }
+      ]
+    },
+    {
+      "id": "split-verbs",
+      "title": "5. Split verbs: ophalen, meenemen, aandoen",
+      "body": [
+        "Some verbs have a small front part, like op, mee or aan. In a simple sentence that front part moves to the end.",
+        "When the verb itself is already at the end, for example after wil or ga, the two parts stay together."
+      ],
+      "examples": [
+        {
+          "nl": "Ik [haal] haar om drie uur [op].",
+          "en": "I pick her up at three. (ophalen)"
+        },
+        {
+          "nl": "Ik [neem] een fles water [mee].",
+          "en": "I'm bringing a bottle of water. (meenemen)"
+        },
+        {
+          "nl": "Ik ga haar om drie uur [ophalen].",
+          "en": "I'm going to pick her up at three."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 10: Separable verbs",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Grammatica_10-1_~_Separable_verbs"
+        }
+      ]
+    },
+    {
+      "id": "past",
+      "title": "6. The past: heb or ben, plus the past form at the end",
+      "body": [
+        "To talk about something finished, put heb, hebt, heeft, ben or is in second place. The past form of the main verb goes to the end. It usually starts with ge-.",
+        "Use zijn (ben, is) for movement to a place and for a change of state. Use hebben for almost everything else."
+      ],
+      "examples": [
+        {
+          "nl": "Ik [heb] brood [gekocht].",
+          "en": "I bought bread."
+        },
+        {
+          "nl": "Ze [is] naar de dansles [gegaan].",
+          "en": "She went to dance class."
+        },
+        {
+          "nl": "Ze [heeft] diploma A [gehaald].",
+          "en": "She passed swimming diploma A."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 6: Perfect tense",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_6#Perfect_tense"
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "title": "7. Saying no: geen or niet",
+      "body": [
+        "Use geen in front of a noun that would otherwise have een or no article. Use niet for everything else.",
+        "Niet usually goes near the end: before a place, before a describing word, or before the second verb."
+      ],
+      "examples": [
+        {
+          "nl": "Ik heb [geen] tas.",
+          "en": "I don't have a bag."
+        },
+        {
+          "nl": "Ze komt vandaag [niet].",
+          "en": "She isn't coming today."
+        },
+        {
+          "nl": "Ze is [niet] ziek.",
+          "en": "She isn't sick."
+        },
+        {
+          "nl": "Ik kan morgen [niet] komen.",
+          "en": "I can't come tomorrow."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 4: geen",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_4#Negation"
+        },
+        {
+          "label": "Wikibooks Dutch, lesson 4: geen and niet",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_4#Relation_to_niet"
+        }
+      ]
+    },
+    {
+      "id": "want-omdat",
+      "title": "8. Towards A2: want and omdat both mean “because”",
+      "body": [
+        "After want, keep the normal order: subject, then verb.",
+        "After omdat, the verb moves to the end of that part of the sentence. This is your first “side sentence”."
+      ],
+      "examples": [
+        {
+          "nl": "Ze blijft thuis, want ze [is] ziek.",
+          "en": "She's staying home, because she's sick."
+        },
+        {
+          "nl": "Ze blijft thuis, omdat ze ziek [is].",
+          "en": "She's staying home, because she's sick."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 11: want and omdat",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_11#Onderschikkend_and_nevenschikkend",
+          "note": "has a table of both kinds of linking words"
+        }
+      ]
+    },
+    {
+      "id": "side-sentences",
+      "title": "9. Towards A2: dat, als, wanneer send the verb to the end",
+      "body": [
+        "Words like dat (that), als (if or when), omdat and wanneer start a side sentence. In a side sentence the verb goes to the end.",
+        "If the side sentence comes first, the main sentence then starts with its verb. You get verb, comma, verb."
+      ],
+      "examples": [
+        {
+          "nl": "Ik denk dat ze moe [is].",
+          "en": "I think she's tired."
+        },
+        {
+          "nl": "Weet u wanneer de les [begint]?",
+          "en": "Do you know when the lesson starts?"
+        },
+        {
+          "nl": "Als het [regent], [gaan] we met de auto.",
+          "en": "If it rains, we'll go by car."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikibooks Dutch, lesson 11: Side sentences",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_11#Indirect_clauses_and_conjunctions"
+        },
+        {
+          "label": "Wikibooks Dutch, lesson 10: Subclauses",
+          "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Subclauses"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "basic-bread",
+      "nl": "Ik koop brood.",
+      "en": "I buy bread.",
+      "rule": "Basic order: who, verb, the rest.",
+      "note": "basic"
+    },
+    {
+      "id": "basic-swim",
+      "nl": "Ze zwemt op woensdag.",
+      "en": "She swims on Wednesdays.",
+      "alts": [
+        "Op woensdag zwemt ze."
+      ],
+      "rule": "Basic order, or start with the time and keep the verb second.",
+      "note": "basic"
+    },
+    {
+      "id": "v2-school",
+      "nl": "Vandaag gaat ze naar school.",
+      "en": "Today she is going to school.",
+      "alts": [
+        "Ze gaat vandaag naar school."
+      ],
+      "rule": "Verb second: after “vandaag”, the verb comes before “ze”.",
+      "note": "verb-second"
+    },
+    {
+      "id": "v2-pickup",
+      "nl": "Om drie uur haal ik haar op.",
+      "en": "At three o'clock I pick her up.",
+      "alts": [
+        "Ik haal haar om drie uur op."
+      ],
+      "rule": "Verb second, and “op” from ophalen goes to the end.",
+      "note": "verb-second"
+    },
+    {
+      "id": "v2-taekwondo",
+      "nl": "Op zaterdag heeft ze taekwondo.",
+      "en": "On Saturday she has taekwondo.",
+      "alts": [
+        "Ze heeft op zaterdag taekwondo."
+      ],
+      "rule": "Verb second: “op zaterdag” is one part.",
+      "note": "verb-second"
+    },
+    {
+      "id": "q-bonus",
+      "nl": "Heeft u een bonuskaart?",
+      "en": "Do you have a loyalty card?",
+      "rule": "Yes-or-no question: verb first.",
+      "note": "questions"
+    },
+    {
+      "id": "q-coffee",
+      "nl": "Drink je koffie?",
+      "en": "Do you drink coffee?",
+      "rule": "Verb first, and the -t drops before je.",
+      "note": "questions"
+    },
+    {
+      "id": "q-coat",
+      "nl": "Waar is haar jas?",
+      "en": "Where is her coat?",
+      "rule": "Question word first, verb second.",
+      "note": "questions"
+    },
+    {
+      "id": "q-dance",
+      "nl": "Hoe laat begint de dansles?",
+      "en": "What time does dance class start?",
+      "rule": "Question word first, verb second.",
+      "note": "questions"
+    },
+    {
+      "id": "m-pay",
+      "nl": "Ik wil graag afrekenen.",
+      "en": "I'd like to pay, please.",
+      "rule": "Two verbs: the second one goes to the end.",
+      "note": "two-verbs"
+    },
+    {
+      "id": "m-early",
+      "nl": "Ze moet morgen vroeg opstaan.",
+      "en": "She has to get up early tomorrow.",
+      "alts": [
+        "Morgen moet ze vroeg opstaan."
+      ],
+      "rule": "Two verbs: opstaan goes to the end, in one piece.",
+      "note": "two-verbs"
+    },
+    {
+      "id": "m-shopping",
+      "nl": "We gaan zaterdag boodschappen doen.",
+      "en": "We're going grocery shopping on Saturday.",
+      "alts": [
+        "Zaterdag gaan we boodschappen doen."
+      ],
+      "rule": "gaan + verb at the end, for plans.",
+      "note": "two-verbs"
+    },
+    {
+      "id": "m-shoes",
+      "nl": "Kun je je schoenen aandoen?",
+      "en": "Can you put your shoes on?",
+      "rule": "Question with two verbs: kun first, aandoen at the end.",
+      "note": "two-verbs"
+    },
+    {
+      "id": "s-water",
+      "nl": "Ik neem een fles water mee.",
+      "en": "I'm bringing a bottle of water.",
+      "rule": "Split verb: “mee” from meenemen goes to the end.",
+      "note": "split-verbs"
+    },
+    {
+      "id": "s-tidy",
+      "nl": "Ze ruimt haar speelgoed op.",
+      "en": "She's tidying up her toys.",
+      "rule": "Split verb: “op” from opruimen goes to the end.",
+      "note": "split-verbs"
+    },
+    {
+      "id": "p-bread",
+      "nl": "Ik heb brood gekocht.",
+      "en": "I bought bread.",
+      "rule": "Past: heb second, gekocht at the end.",
+      "note": "past"
+    },
+    {
+      "id": "p-dance",
+      "nl": "Ze is naar de dansles gegaan.",
+      "en": "She went to dance class.",
+      "rule": "Past with zijn, because it is movement to a place.",
+      "note": "past"
+    },
+    {
+      "id": "p-belt",
+      "nl": "Gisteren heeft ze een gele band gehaald.",
+      "en": "Yesterday she got her yellow belt.",
+      "alts": [
+        "Ze heeft gisteren een gele band gehaald."
+      ],
+      "rule": "Past, plus verb second after “gisteren”.",
+      "note": "past"
+    },
+    {
+      "id": "n-bag",
+      "nl": "Ik heb geen tas.",
+      "en": "I don't have a bag.",
+      "rule": "geen before a noun with een or no article.",
+      "note": "negation"
+    },
+    {
+      "id": "n-today",
+      "nl": "Ze komt vandaag niet.",
+      "en": "She isn't coming today.",
+      "alts": [
+        "Vandaag komt ze niet."
+      ],
+      "rule": "niet near the end.",
+      "note": "negation"
+    },
+    {
+      "id": "n-tomorrow",
+      "nl": "Ik kan morgen niet komen.",
+      "en": "I can't come tomorrow.",
+      "alts": [
+        "Morgen kan ik niet komen."
+      ],
+      "rule": "niet before the second verb.",
+      "note": "negation"
+    },
+    {
+      "id": "a2-want",
+      "nl": "Ze blijft thuis, want ze is ziek.",
+      "en": "She's staying home, because she's sick. (use want)",
+      "rule": "want keeps the normal order.",
+      "note": "want-omdat"
+    },
+    {
+      "id": "a2-omdat",
+      "nl": "We gaan met de fiets, omdat het mooi weer is.",
+      "en": "We're going by bike because the weather is nice. (use omdat)",
+      "alts": [
+        "Omdat het mooi weer is, gaan we met de fiets."
+      ],
+      "rule": "omdat sends the verb to the end.",
+      "note": "want-omdat"
+    },
+    {
+      "id": "a2-dat",
+      "nl": "Ik denk dat ze moe is.",
+      "en": "I think she's tired.",
+      "rule": "dat sends the verb to the end.",
+      "note": "side-sentences"
+    },
+    {
+      "id": "a2-wanneer",
+      "nl": "Weet u wanneer de les begint?",
+      "en": "Do you know when the lesson starts?",
+      "rule": "wanneer in the middle sends the verb to the end.",
+      "note": "side-sentences"
+    },
+    {
+      "id": "a2-als",
+      "nl": "Als het regent, gaan we met de auto.",
+      "en": "If it rains, we'll go by car.",
+      "alts": [
+        "We gaan met de auto als het regent."
+      ],
+      "rule": "Side sentence first, then verb, comma, verb.",
+      "note": "side-sentences"
+    },
+    {
+      "id": "a2-hungry",
+      "nl": "Ze zegt dat ze honger heeft.",
+      "en": "She says she's hungry.",
+      "rule": "dat sends the verb to the end.",
+      "note": "side-sentences"
+    }
+  ]
+}
