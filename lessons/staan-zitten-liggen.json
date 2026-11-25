@@ -101,6 +101,19 @@
         { "nl": "[Ga] even [liggen].", "en": "Go and lie down for a bit." },
         { "nl": "Iedereen [gaat staan]!", "en": "Everyone stand up!" }
       ]
+    },
+    {
+      "id": "leggen",
+      "title": "8. liggen or leggen? staan or zetten?",
+      "body": [
+        "liggen says where something lies: ik lig, ze ligt. leggen is the action of putting something down flat: ik leg, ze legt. So it is ik lig te slapen, never ik leg te slapen.",
+        "For upright things, and things that go inside something, the action is zetten: ik zet de melk in de koelkast. For things that hang, it is hangen for both."
+      ],
+      "examples": [
+        { "nl": "Ik [lig] te slapen.", "en": "I'm sleeping." },
+        { "nl": "Ik [leg] je telefoon op tafel.", "en": "I'm putting your phone on the table." },
+        { "nl": "Ik [zet] de melk in de koelkast.", "en": "I'm putting the milk in the fridge." }
+      ]
     }
   ],
   "cards": [
@@ -125,6 +138,10 @@
     { "id": "rennen", "nl": "Rennen, de bus komt eraan!", "en": "Run, the bus is coming!", "rule": "rennen means to run fast.", "note": "lopen" },
     { "id": "hoe-loopt", "nl": "Hoe loopt het?", "en": "How's it going?", "reply": { "nl": "Het loopt goed, dank je.", "en": "It's going well, thanks." }, "rule": "lopen can mean that something is going.", "note": "lopen" },
     { "id": "ga-zitten", "nl": "Ga maar zitten.", "en": "Have a seat.", "rule": "Sit down: ga … zitten.", "note": "gaan" },
+    { "id": "lig-slapen", "nl": "Ik lig te slapen.", "en": "I'm sleeping.", "rule": "liggen: ik lig. Ik leg means I put something down.", "note": "leggen" },
+    { "id": "leg-telefoon", "nl": "Ik leg je telefoon op tafel.", "en": "I'm putting your phone on the table.", "rule": "Putting something down flat: leggen.", "note": "leggen" },
+    { "id": "zet-melk", "nl": "Ik zet de melk in de koelkast.", "en": "I'm putting the milk in the fridge.", "rule": "Putting something upright: zetten.", "note": "leggen" },
+    { "id": "jas-stoel", "nl": "Leg je jas maar op de stoel.", "en": "Just put your coat on the chair.", "rule": "A coat lies flat on a chair: leggen.", "note": "leggen" },
     { "id": "ga-liggen", "nl": "Ga even liggen, je bent moe.", "en": "Go and lie down for a bit, you're tired.", "rule": "Lie down: ga … liggen.", "note": "gaan" }
   ]
 }

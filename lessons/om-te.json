@@ -1,0 +1,98 @@
+{
+  "id": "om-te",
+  "group": "Grammar",
+  "title": "In order to: om … te, and te after verbs",
+  "titleNl": "Om … te",
+  "level": "A1 → A2",
+  "intro": "Om … te says why you do something. Te also comes after verbs like proberen and vergeten. This lesson shows where te goes, and which verbs never take it.",
+  "preferredMode": "build",
+  "notes": [
+    {
+      "id": "om-te",
+      "title": "1. om … te: in order to",
+      "body": [
+        "To say why you do something, use om … te with the verb at the very end. English “I play guitar to make music” becomes ik speel gitaar om muziek te maken.",
+        "Everything that belongs to that verb goes between om and te: om Nederlands te leren, om gezond te blijven."
+      ],
+      "examples": [
+        { "nl": "Ik speel gitaar [om] muziek [te maken].", "en": "I play guitar to make music." },
+        { "nl": "Ik eet groente [om] gezond [te blijven].", "en": "I eat vegetables to stay healthy." },
+        { "nl": "Ik kijk filmpjes [om] Nederlands [te leren].", "en": "I watch videos to learn Dutch." }
+      ]
+    },
+    {
+      "id": "split",
+      "title": "2. Split verbs: te goes in the middle",
+      "body": [
+        "With a split verb, te goes between the two parts: op te halen, mee te doen, af te zeggen. You write three separate words."
+      ],
+      "examples": [
+        { "nl": "Ik ga naar school om haar [op te halen].", "en": "I'm going to the school to pick her up." },
+        { "nl": "Ze belt om [af te zeggen].", "en": "She's calling to cancel." }
+      ]
+    },
+    {
+      "id": "verbs-te",
+      "title": "3. Verbs followed by te: proberen, vergeten, besluiten, beginnen, hoeven",
+      "body": [
+        "Some verbs take te + verb at the end: proberen, vergeten, besluiten, beginnen. You can often add om too, but you don't need it.",
+        "Hoeven means “need to”. It comes with niet or geen: je hoeft niet te komen means “you don't have to come”."
+      ],
+      "examples": [
+        { "nl": "Ik probeer altijd op tijd [te zijn].", "en": "I try to always be on time." },
+        { "nl": "Ik vergeet steeds de post [op te halen].", "en": "I keep forgetting to get the post." },
+        { "nl": "Je hoeft niet [te komen].", "en": "You don't have to come." }
+      ],
+      "links": [
+        { "label": "Wikipedia: Dutch grammar, infinitives with te", "url": "https://en.wikipedia.org/wiki/Dutch_grammar#With_te" }
+      ]
+    },
+    {
+      "id": "no-te",
+      "title": "4. No te after kunnen, moeten, willen, mogen, zullen and gaan",
+      "body": [
+        "The helping verbs never take te: ik wil zwemmen, not ik wil te zwemmen. The same goes for gaan, komen and blijven when another verb follows."
+      ],
+      "examples": [
+        { "nl": "Ik [wil] graag [zwemmen].", "en": "I'd like to swim." },
+        { "nl": "Je [moet] je tanden [poetsen].", "en": "You have to brush your teeth." },
+        { "nl": "We [blijven] vanavond thuis [eten].", "en": "We're eating at home tonight." }
+      ]
+    },
+    {
+      "id": "describing",
+      "title": "5. It's hard to…: het is moeilijk om … te …",
+      "body": [
+        "After describing words like moeilijk, makkelijk, leuk, belangrijk or fijn, use om … te: het is leuk om samen te koken.",
+        "Ik vind het moeilijk om … te … says what you find hard."
+      ],
+      "examples": [
+        { "nl": "Het is belangrijk [om] genoeg [te slapen].", "en": "It's important to get enough sleep." },
+        { "nl": "Ik vind het moeilijk [om] Nederlandse films [te begrijpen].", "en": "I find it hard to understand Dutch films." }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "gitaar", "nl": "Ik speel gitaar om muziek te maken.", "en": "I play guitar to make music.", "rule": "om … te maken: why you do it.", "note": "om-te" },
+    { "id": "fit", "nl": "Ik loop elke avond hard om fit te blijven.", "en": "I run every evening to stay fit.", "alts": ["Elke avond loop ik hard om fit te blijven."], "rule": "om fit te blijven: the reason, with the verb at the end.", "note": "om-te" },
+    { "id": "gezin", "nl": "Ik werk om mijn gezin te onderhouden.", "en": "I work to support my family.", "rule": "Everything that belongs to the verb goes between om and te.", "note": "om-te" },
+    { "id": "groente", "nl": "Ik eet groente om gezond te blijven.", "en": "I eat vegetables to stay healthy.", "rule": "om gezond te blijven.", "note": "om-te" },
+    { "id": "lijstje", "nl": "Ik schrijf een boodschappenlijstje om niets te vergeten.", "en": "I write a shopping list so I don't forget anything.", "rule": "om niets te vergeten.", "note": "om-te" },
+    { "id": "filmpjes", "nl": "Ik kijk filmpjes om Nederlands te leren.", "en": "I watch videos to learn Dutch.", "rule": "om Nederlands te leren.", "note": "om-te" },
+    { "id": "boodschappen", "nl": "We gaan naar de supermarkt om boodschappen te doen.", "en": "We're going to the supermarket to do the shopping.", "rule": "om boodschappen te doen.", "note": "om-te" },
+    { "id": "tijd", "nl": "Heb je tijd om me te helpen?", "en": "Do you have time to help me?", "reply": { "nl": "Ja, natuurlijk.", "en": "Yes, of course." }, "rule": "tijd om … te helpen.", "note": "om-te" },
+    { "id": "ophalen", "nl": "Ik ga naar school om haar op te halen.", "en": "I'm going to the school to pick her up.", "rule": "ophalen with te: op te halen.", "note": "split" },
+    { "id": "afzeggen", "nl": "Ze belt om af te zeggen.", "en": "She's calling to cancel.", "rule": "afzeggen with te: af te zeggen.", "note": "split" },
+    { "id": "op-tijd", "nl": "Ik probeer altijd op tijd te zijn.", "en": "I try to always be on time.", "rule": "proberen + te zijn.", "note": "verbs-te" },
+    { "id": "post", "nl": "Ik vergeet steeds de post op te halen.", "en": "I keep forgetting to get the post.", "rule": "vergeten + te, and ophalen splits: op te halen.", "note": "verbs-te" },
+    { "id": "verhuizen", "nl": "We hebben besloten om naar Nederland te verhuizen.", "en": "We decided to move to the Netherlands.", "rule": "besluiten + om … te. Om is optional here.", "note": "verbs-te" },
+    { "id": "huilen", "nl": "Ze begint te huilen.", "en": "She's starting to cry.", "rule": "beginnen + te huilen.", "note": "verbs-te" },
+    { "id": "schoenen", "nl": "Je hoeft je schoenen niet uit te doen.", "en": "You don't have to take your shoes off.", "rule": "hoeven niet + te, and uitdoen splits: uit te doen.", "note": "verbs-te" },
+    { "id": "zwemmen", "nl": "Ik wil graag zwemmen.", "en": "I'd like to swim.", "rule": "After wil: no te.", "note": "no-te" },
+    { "id": "tanden", "nl": "Je moet je tanden poetsen.", "en": "You have to brush your teeth.", "rule": "After moet: no te.", "note": "no-te" },
+    { "id": "thuis-eten", "nl": "We blijven vanavond thuis eten.", "en": "We're eating at home tonight.", "rule": "After blijven: no te.", "note": "no-te" },
+    { "id": "slapen", "nl": "Het is belangrijk om genoeg te slapen.", "en": "It's important to get enough sleep.", "rule": "belangrijk om … te slapen.", "note": "describing" },
+    { "id": "films", "nl": "Ik vind het moeilijk om Nederlandse films te begrijpen.", "en": "I find it hard to understand Dutch films.", "rule": "moeilijk om … te begrijpen.", "note": "describing" },
+    { "id": "koken", "nl": "Het is leuk om samen te koken.", "en": "It's fun to cook together.", "rule": "leuk om … te koken.", "note": "describing" }
+  ]
+}

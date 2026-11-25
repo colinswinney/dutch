@@ -1,0 +1,113 @@
+{
+  "id": "zou",
+  "group": "Grammar",
+  "title": "Would, could, should: zou",
+  "titleNl": "Zou je…?",
+  "level": "A2",
+  "intro": "One small word does the work of would, could and should. Zou also makes requests polite, which is useful with teachers, shop staff and the doctor's office.",
+  "preferredMode": "build",
+  "notes": [
+    {
+      "id": "would",
+      "title": "1. zou + a verb at the end: would",
+      "body": [
+        "Zou is the past form of zullen. With a verb at the end, it means “would”.",
+        "Forms: ik zou, jij zou, u zou, hij and zij zou. Wij, jullie and zij (they) zouden."
+      ],
+      "examples": [
+        { "nl": "Ik [zou] dat nooit [doen].", "en": "I would never do that." },
+        { "nl": "Wat [zou] jij [doen]?", "en": "What would you do?" },
+        { "nl": "Zij [zouden] hetzelfde [doen].", "en": "They would do the same." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 9: zou", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_9#Conditional_or_Future-in-past" }
+      ]
+    },
+    {
+      "id": "polite",
+      "title": "2. Polite requests: Zou je … willen? Zou ik … mogen?",
+      "body": [
+        "Zou makes a request softer. Zou je … willen? or Zou u … kunnen? asks someone to do something. Zou ik … mogen? asks for permission.",
+        "Add even to make it friendlier still: Zou je me even willen helpen?"
+      ],
+      "examples": [
+        { "nl": "[Zou] u dat nog een keer [kunnen] zeggen?", "en": "Could you say that again?" },
+        { "nl": "[Zou] ik hier [mogen] zitten?", "en": "Could I sit here?" },
+        { "nl": "[Zou] je me even [willen] helpen?", "en": "Would you help me for a moment?" }
+      ]
+    },
+    {
+      "id": "could",
+      "title": "3. zou kunnen: could, might",
+      "body": [
+        "Zou kunnen means “could” or “might”. It says something is possible, or offers an option.",
+        "Het zou kunnen on its own means “Could be” or “Maybe”."
+      ],
+      "examples": [
+        { "nl": "Ik [zou] haar [kunnen] ophalen.", "en": "I could pick her up." },
+        { "nl": "Het [zou] vandaag [kunnen] regenen.", "en": "It might rain today." },
+        { "nl": "We [zouden] naar het strand [kunnen] gaan.", "en": "We could go to the beach." }
+      ]
+    },
+    {
+      "id": "should",
+      "title": "4. zou moeten: should",
+      "body": [
+        "Zou moeten means “should”. Use it for advice, or for something that ought to be true."
+      ],
+      "examples": [
+        { "nl": "Je [zou] meer water [moeten] drinken.", "en": "You should drink more water." },
+        { "nl": "Ik [zou] eigenlijk [moeten] werken.", "en": "I really should be working." },
+        { "nl": "De bus [zou] er al [moeten] zijn.", "en": "The bus should be here by now." }
+      ]
+    },
+    {
+      "id": "graag",
+      "title": "5. Wishes: ik zou graag … willen",
+      "body": [
+        "Ik zou graag … willen is a polite way to say what you would like. In a shop or café, ik wil graag also works and is not rude."
+      ],
+      "examples": [
+        { "nl": "Ik [zou] graag een afspraak [willen] maken.", "en": "I would like to make an appointment." },
+        { "nl": "Ik [zou] graag beter Nederlands [willen] spreken.", "en": "I would like to speak better Dutch." }
+      ]
+    },
+    {
+      "id": "als",
+      "title": "6. Towards B1: als ik … had, zou ik …",
+      "body": [
+        "For something that is not real, use the past form after als, then zou in the other part of the sentence: als ik tijd had, zou ik meer gitaar spelen.",
+        "If the als part comes first, the main part starts with zou. You get verb, comma, verb."
+      ],
+      "examples": [
+        { "nl": "Als ik tijd [had], [zou] ik meer gitaar spelen.", "en": "If I had time, I would play more guitar." },
+        { "nl": "Als het mooi weer [was], [zouden] we naar het strand gaan.", "en": "If the weather were nice, we'd go to the beach." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 9: zou", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_9#Conditional_or_Future-in-past" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "nooit", "nl": "Ik zou dat nooit doen.", "en": "I would never do that.", "rule": "zou second, doen at the end.", "note": "would" },
+    { "id": "wat-jij", "nl": "Wat zou jij doen?", "en": "What would you do?", "reply": { "nl": "Ik zou het gewoon vragen.", "en": "I'd just ask." }, "rule": "Question word, zou, then doen at the end.", "note": "would" },
+    { "id": "hetzelfde", "nl": "Zij zouden hetzelfde doen.", "en": "They would do the same.", "rule": "More than one person: zouden.", "note": "would" },
+    { "id": "tijd-maken", "nl": "Ik zou er tijd voor maken.", "en": "I would make time for it.", "rule": "zou second, maken at the end.", "note": "would" },
+    { "id": "herhalen", "nl": "Zou u dat nog een keer kunnen zeggen?", "en": "Could you say that again?", "rule": "Polite request: Zou u … kunnen?", "note": "polite" },
+    { "id": "langzamer", "nl": "Zou u wat langzamer kunnen praten?", "en": "Could you speak a bit more slowly?", "reply": { "nl": "Natuurlijk, sorry!", "en": "Of course, sorry!" }, "rule": "Polite request: Zou u … kunnen?", "note": "polite" },
+    { "id": "hier-zitten", "nl": "Zou ik hier mogen zitten?", "en": "Could I sit here?", "reply": { "nl": "Ja, natuurlijk.", "en": "Yes, of course." }, "rule": "Asking permission: Zou ik … mogen?", "note": "polite" },
+    { "id": "helpen", "nl": "Zou je me even willen helpen?", "en": "Would you help me for a moment?", "reply": { "nl": "Ja hoor, wat moet ik doen?", "en": "Sure, what do I need to do?" }, "rule": "Polite request: Zou je … willen?", "note": "polite" },
+    { "id": "ophalen", "nl": "Ik zou haar kunnen ophalen.", "en": "I could pick her up.", "rule": "Offering an option: zou … kunnen.", "note": "could" },
+    { "id": "regenen", "nl": "Het zou vandaag kunnen regenen.", "en": "It might rain today.", "rule": "Something possible: zou … kunnen.", "note": "could" },
+    { "id": "zou-kunnen", "nl": "Het zou kunnen.", "en": "Could be.", "rule": "Het zou kunnen: maybe.", "note": "could" },
+    { "id": "strand", "nl": "We zouden naar het strand kunnen gaan.", "en": "We could go to the beach.", "rule": "wij: zouden, with kunnen gaan at the end.", "note": "could" },
+    { "id": "water", "nl": "Je zou meer water moeten drinken.", "en": "You should drink more water.", "rule": "Advice: zou … moeten.", "note": "should" },
+    { "id": "eigenlijk", "nl": "Ik zou eigenlijk moeten werken.", "en": "I really should be working.", "rule": "zou … moeten: should.", "note": "should" },
+    { "id": "bus", "nl": "De bus zou er al moeten zijn.", "en": "The bus should be here by now.", "rule": "Something that ought to be true: zou … moeten.", "note": "should" },
+    { "id": "juf", "nl": "Je zou eens met de juf moeten praten.", "en": "You should talk to the teacher sometime.", "rule": "Advice: zou … moeten.", "note": "should" },
+    { "id": "afspraak", "nl": "Ik zou graag een afspraak willen maken.", "en": "I would like to make an appointment.", "rule": "Polite wish: zou graag … willen.", "note": "graag" },
+    { "id": "beter-nederlands", "nl": "Ik zou graag beter Nederlands willen spreken.", "en": "I would like to speak better Dutch.", "rule": "Polite wish: zou graag … willen.", "note": "graag" },
+    { "id": "als-tijd", "nl": "Als ik tijd had, zou ik meer gitaar spelen.", "en": "If I had time, I would play more guitar.", "alts": ["Ik zou meer gitaar spelen als ik tijd had."], "rule": "Not real: als + past form, then zou.", "note": "als" },
+    { "id": "als-weer", "nl": "Als het mooi weer was, zouden we naar het strand gaan.", "en": "If the weather were nice, we'd go to the beach.", "alts": ["We zouden naar het strand gaan als het mooi weer was."], "rule": "Not real: als + past form, then zouden.", "note": "als" }
+  ]
+}

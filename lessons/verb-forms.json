@@ -1,0 +1,130 @@
+{
+  "id": "verb-forms",
+  "group": "Grammar",
+  "title": "Verb forms: ik werk, hij werkt, wij werken",
+  "titleNl": "Ik ben, jij bent, hij is",
+  "level": "A1",
+  "intro": "Every Dutch sentence needs the right form of the verb. There are only three forms to learn for most verbs, plus a few common verbs that do their own thing. Getting these right makes everything else you say sound better straight away.",
+  "preferredMode": "build",
+  "notes": [
+    {
+      "id": "regular",
+      "title": "1. Regular verbs: three forms",
+      "body": [
+        "Take the full verb and remove -en to get the stem: werken gives werk.",
+        "With ik, use the stem: ik werk. With jij, u, hij, zij (she) and het, add -t: jij werkt, ze werkt. With wij, jullie and zij (they), use the full verb: wij werken.",
+        "So it is always hij werkt, never hij werk. And it is wij werken, never wij werk."
+      ],
+      "examples": [
+        { "nl": "Ik [werk] elke dag.", "en": "I work every day." },
+        { "nl": "Mijn vrouw [werkt] in de stad.", "en": "My wife works in the city." },
+        { "nl": "Wij [werken] allebei thuis.", "en": "We both work from home." }
+      ],
+      "links": [
+        { "label": "Wikipedia: Dutch conjugation, present tense", "url": "https://en.wikipedia.org/wiki/Dutch_conjugation#Present_tense", "note": "tables for every person" }
+      ]
+    },
+    {
+      "id": "spelling",
+      "title": "2. Spelling: the stem keeps the sound",
+      "body": [
+        "The stem must sound the same as in the full verb. A long vowel gets written twice when the word ends after it: lezen gives ik lees, lopen gives ik loop, maken gives ik maak.",
+        "A double consonant becomes single: zitten gives ik zit, kennen gives ik ken. A v or z at the end becomes f or s: schrijven gives ik schrijf, lezen gives ik lees.",
+        "If the stem already ends in t, don't add another one: ik zit, hij zit."
+      ],
+      "examples": [
+        { "nl": "Ik [lees] een boek.", "en": "I'm reading a book." },
+        { "nl": "Ze [schrijft] met krijt.", "en": "She's writing with chalk." },
+        { "nl": "Hij [zit] op de bank.", "en": "He's sitting on the sofa." }
+      ]
+    },
+    {
+      "id": "zijn-hebben",
+      "title": "3. zijn and hebben: learn them by heart",
+      "body": [
+        "zijn: ik ben, jij bent, u bent, hij, zij and het is, wij, jullie and zij zijn.",
+        "hebben: ik heb, jij hebt, u heeft or hebt, hij, zij and het heeft, wij, jullie and zij hebben.",
+        "So heb is only for ik. One person who is not you or me gets heeft: ze heeft, mijn dochter heeft."
+      ],
+      "examples": [
+        { "nl": "Ik [ben] moe.", "en": "I'm tired." },
+        { "nl": "Ze [heeft] vandaag geen school.", "en": "She doesn't have school today." },
+        { "nl": "Wij [hebben] geen plannen.", "en": "We don't have any plans." }
+      ],
+      "links": [
+        { "label": "Wikipedia: Dutch conjugation, zijn", "url": "https://en.wikipedia.org/wiki/Dutch_conjugation#zijn" },
+        { "label": "Wikipedia: Dutch conjugation, hebben", "url": "https://en.wikipedia.org/wiki/Dutch_conjugation#hebben" }
+      ]
+    },
+    {
+      "id": "short",
+      "title": "4. Short verbs: gaan, doen, staan, zien",
+      "body": [
+        "Verbs with one syllable, like gaan, doen, staan and zien, follow the same three forms: ik ga, jij gaat, wij gaan. Ik doe, hij doet. Ik sta, ze staat. Ik zie, ze ziet."
+      ],
+      "examples": [
+        { "nl": "Ik [ga] naar de winkel.", "en": "I'm going to the shop." },
+        { "nl": "Ze [staat] bij de deur.", "en": "She's standing by the door." },
+        { "nl": "Wat [doe] je vandaag?", "en": "What are you doing today?" }
+      ]
+    },
+    {
+      "id": "modals",
+      "title": "5. kunnen, willen, mogen, zullen: no -t after hij",
+      "body": [
+        "These helping verbs get no -t after hij or zij: ik kan, hij kan. Ik wil, ze wil. Ik mag, ze mag. Ik zal, hij zal.",
+        "With jij you hear two forms, and both are fine: jij kan or jij kunt, jij wil or jij wilt."
+      ],
+      "examples": [
+        { "nl": "Ze [kan] al goed fietsen.", "en": "She can already ride a bike well." },
+        { "nl": "Hij [wil] niet naar school.", "en": "He doesn't want to go to school." },
+        { "nl": "[Mag] ik iets vragen?", "en": "May I ask something?" }
+      ],
+      "links": [
+        { "label": "Wikipedia: Dutch conjugation, kunnen", "url": "https://en.wikipedia.org/wiki/Dutch_conjugation#kunnen" }
+      ]
+    },
+    {
+      "id": "je-first",
+      "title": "6. Questions: the -t drops only before je and jij",
+      "body": [
+        "When jij or je comes straight after the verb, the -t drops: jij woont, but waar woon je?",
+        "This only happens with jij and je. With hij, the -t stays: werkt hij vandaag?"
+      ],
+      "examples": [
+        { "nl": "Waar [woon] je?", "en": "Where do you live?" },
+        { "nl": "[Werkt] hij vandaag?", "en": "Is he working today?" }
+      ],
+      "links": [
+        { "label": "Wikipedia: Dutch conjugation, forms and endings", "url": "https://en.wikipedia.org/wiki/Dutch_conjugation#Forms_and_endings", "note": "the notes explain when -t drops" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "werk-elke-dag", "nl": "Ik werk elke dag.", "en": "I work every day.", "rule": "ik + the stem: werk.", "note": "regular" },
+    { "id": "vrouw-werkt", "nl": "Mijn vrouw werkt in de stad.", "en": "My wife works in the city.", "rule": "One person who isn't you or me: stem + t.", "note": "regular" },
+    { "id": "allebei", "nl": "Wij werken allebei thuis.", "en": "We both work from home.", "rule": "wij + the full verb: werken.", "note": "regular" },
+    { "id": "speelt-buiten", "nl": "Ze speelt buiten met een vriendje.", "en": "She's playing outside with a friend.", "rule": "ze + stem + t: speelt.", "note": "regular" },
+    { "id": "weten", "nl": "Wij weten niet waarom.", "en": "We don't know why.", "rule": "wij + the full verb: weten. Ik weet, wij weten.", "note": "regular" },
+    { "id": "lees", "nl": "Ik lees een boek.", "en": "I'm reading a book.", "rule": "lezen: ik lees, with a double e and an s.", "note": "spelling" },
+    { "id": "schrijft", "nl": "Ze schrijft met krijt.", "en": "She's writing with chalk.", "rule": "schrijven: ik schrijf, ze schrijft.", "note": "spelling" },
+    { "id": "loopt", "nl": "Hij loopt naar school.", "en": "He walks to school.", "rule": "lopen: ik loop, hij loopt.", "note": "spelling" },
+    { "id": "maak", "nl": "Ik maak het avondeten.", "en": "I'm making dinner.", "rule": "maken: ik maak, with a double a.", "note": "spelling" },
+    { "id": "zit", "nl": "Hij zit op de bank.", "en": "He's sitting on the sofa.", "rule": "zitten: zit already ends in t, so hij zit.", "note": "spelling" },
+    { "id": "hoe-oud", "nl": "Hoe oud is ze?", "en": "How old is she?", "reply": { "nl": "Ze is zes.", "en": "She's six." }, "rule": "zijn: ze is.", "note": "zijn-hebben" },
+    { "id": "trots", "nl": "Wij zijn heel trots op je.", "en": "We're very proud of you.", "rule": "zijn: wij zijn.", "note": "zijn-hebben" },
+    { "id": "ben-jij-moe", "nl": "Ben jij ook moe?", "en": "Are you tired too?", "reply": { "nl": "Ja, heel erg.", "en": "Yes, very." }, "rule": "jij bent, but the -t drops before jij: ben jij?", "note": "zijn-hebben" },
+    { "id": "geen-school", "nl": "Ze heeft vandaag geen school.", "en": "She doesn't have school today.", "alts": ["Vandaag heeft ze geen school."], "rule": "hebben: ze heeft, not ze heb or ze hebt.", "note": "zijn-hebben" },
+    { "id": "pijn", "nl": "Ze heeft pijn in haar benen.", "en": "Her legs hurt.", "rule": "hebben: ze heeft.", "note": "zijn-hebben" },
+    { "id": "plannen", "nl": "Wij hebben geen plannen.", "en": "We don't have any plans.", "rule": "hebben: wij hebben, not wij heb.", "note": "zijn-hebben" },
+    { "id": "afspraak", "nl": "Ik heb een afspraak om zeven uur.", "en": "I have an appointment at seven.", "rule": "hebben: ik heb.", "note": "zijn-hebben" },
+    { "id": "ga-winkel", "nl": "Ik ga even naar de winkel.", "en": "I'm just popping to the shop.", "rule": "gaan: ik ga.", "note": "short" },
+    { "id": "staat-deur", "nl": "Ze staat bij de deur.", "en": "She's standing by the door.", "rule": "staan: ik sta, ze staat.", "note": "short" },
+    { "id": "doe-vandaag", "nl": "Wat doe je vandaag?", "en": "What are you doing today?", "reply": { "nl": "Ik werk thuis.", "en": "I'm working from home." }, "rule": "doen: jij doet, but doe je?", "note": "short" },
+    { "id": "kan-fietsen", "nl": "Ze kan al goed fietsen.", "en": "She can already ride a bike well.", "rule": "kunnen: ze kan, with no -t.", "note": "modals" },
+    { "id": "wil-niet", "nl": "Hij wil niet naar school.", "en": "He doesn't want to go to school.", "rule": "willen: hij wil, with no -t.", "note": "modals" },
+    { "id": "koken", "nl": "Kun je vanavond koken?", "en": "Can you cook tonight?", "reply": { "nl": "Ja, dat is goed.", "en": "Yes, that's fine." }, "rule": "kunnen: jij kunt, but kun je?", "note": "modals" },
+    { "id": "woon", "nl": "Waar woon je?", "en": "Where do you live?", "reply": { "nl": "In het centrum.", "en": "In the centre." }, "rule": "jij woont, but woon je?", "note": "je-first" },
+    { "id": "werkt-hij", "nl": "Werkt hij vandaag?", "en": "Is he working today?", "rule": "Only jij and je drop the -t. With hij it stays: werkt hij?", "note": "je-first" }
+  ]
+}

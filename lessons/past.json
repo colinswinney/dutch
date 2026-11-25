@@ -96,7 +96,7 @@
       "title": "6. Towards A2: was, had and other one-word past forms",
       "body": [
         "For zijn and hebben, Dutch speakers use a one-word past all the time: was and waren, had and hadden.",
-        "Other verbs mostly use heb or ben when people talk. In stories and messages you also see one-word past forms. Regular verbs add -de or -te to the stem, with the same ’t kofschip rule: ik speelde, ik werkte. Irregular ones change: ging, kwam, zag."
+        "Other verbs mostly use heb or ben when people talk. In stories and messages you also see one-word past forms. Regular verbs add -de or -te to the stem, with the same ’t kofschip rule: ik speelde, ik werkte. Irregular ones change: ging, kwam, zag, deed, las, keek, at, sliep."
       ],
       "examples": [
         { "nl": "Het [was] heel gezellig.", "en": "It was really nice." },
@@ -130,6 +130,10 @@
     { "id": "geen-tijd", "nl": "We hadden geen tijd.", "en": "We didn't have time.", "rule": "hadden: the one-word past of hebben.", "note": "was-had" },
     { "id": "vakantie", "nl": "Waren jullie op vakantie?", "en": "Were you on holiday?", "reply": { "nl": "Ja, we waren in Frankrijk.", "en": "Yes, we were in France." }, "rule": "waren: the one-word past of zijn, for more than one person.", "note": "was-had" },
     { "id": "dag", "nl": "Hoe was je dag?", "en": "How was your day?", "reply": { "nl": "Goed! We hebben buiten gespeeld.", "en": "Good! We played outside." }, "rule": "Question word, was, then the rest.", "note": "was-had" },
+    { "id": "ging-trein", "nl": "Ik ging met de trein naar Schiphol.", "en": "I went to Schiphol by train.", "rule": "One-word past of gaan: ging.", "note": "was-had" },
+    { "id": "keken", "nl": "We keken gisteren een film.", "en": "We watched a film yesterday.", "alts": ["Gisteren keken we een film."], "rule": "One-word past of kijken: keek, keken.", "note": "was-had" },
+    { "id": "las", "nl": "Ik las een boek over Nederland.", "en": "I read a book about the Netherlands.", "rule": "One-word past of lezen: las.", "note": "was-had" },
+    { "id": "sliep", "nl": "Ze sliep de hele middag.", "en": "She slept all afternoon.", "rule": "One-word past of slapen: sliep.", "note": "was-had" },
     { "id": "band", "nl": "Vroeger speelde ik in een band.", "en": "I used to play in a band.", "alts": ["Ik speelde vroeger in een band."], "rule": "One-word past: speel + de.", "note": "was-had" }
   ]
 }

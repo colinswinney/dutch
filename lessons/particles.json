@@ -1,0 +1,117 @@
+{
+  "id": "particles",
+  "group": "Grammar",
+  "title": "Small words that make Dutch sound natural",
+  "titleNl": "Even, maar, toch, nou",
+  "level": "A1 → A2",
+  "intro": "Dutch speakers add small words like even, maar, eens, toch, nou and gewoon to almost every request. They hardly change the meaning, but they set the tone: friendly, polite, impatient or encouraging. You hear them all day at the school gate and at home.",
+  "notes": [
+    {
+      "id": "even",
+      "title": "even: just for a moment",
+      "body": [
+        "Even makes a request small and quick, like “just for a second”. It makes almost any request sound friendlier.",
+        "Ik ga even … means you're popping out to do something."
+      ],
+      "examples": [
+        { "nl": "Mag ik [even] iets vragen?", "en": "Can I ask something quickly?" },
+        { "nl": "Ik ga [even] douchen.", "en": "I'm just going to take a quick shower." },
+        { "nl": "Wacht [even]!", "en": "Wait a second!" }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 15: Modal particles", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_15#Grammatica_15_Modal_particles", "note": "covers wel, even, eens and maar" }
+      ]
+    },
+    {
+      "id": "maar",
+      "title": "maar: go ahead",
+      "body": [
+        "In a command, maar means “go ahead” or “just”. It gives permission or encouragement.",
+        "It can also sound like giving up: doe maar wat je wilt means “do whatever you want, then”."
+      ],
+      "examples": [
+        { "nl": "Kom [maar] binnen.", "en": "Come on in." },
+        { "nl": "Probeer het [maar].", "en": "Go on, try it." },
+        { "nl": "Laat [maar], ik doe het zelf.", "en": "Never mind, I'll do it myself." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 15: Modal particles", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_15#Grammatica_15_Modal_particles" }
+      ]
+    },
+    {
+      "id": "eens",
+      "title": "eens: have a go, take a look",
+      "body": [
+        "Eens makes a command lighter, like “have a go” or “take a look”. Kijk eens! means “Look!”. People often say it as ’s.",
+        "Eens even together means do it now, it won't take long."
+      ],
+      "examples": [
+        { "nl": "Kijk [eens] naar die auto!", "en": "Look at that car!" },
+        { "nl": "Proef [eens], het is lekker.", "en": "Have a taste, it's good." },
+        { "nl": "Lees de tekst [eens even] voor.", "en": "Read the text out loud for a moment." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 15: Modal particles", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_15#Grammatica_15_Modal_particles" }
+      ]
+    },
+    {
+      "id": "toch-nou",
+      "title": "nou and toch: impatience",
+      "body": [
+        "In a command, nou and toch show impatience, like “come on” or “already”. Use them with your own child, not with the teacher. This use of nou works in commands and questions, not in statements.",
+        "At the end of a question, toch asks for agreement: je komt toch ook? means “you're coming too, right?”"
+      ],
+      "examples": [
+        { "nl": "Kom [nou], we zijn laat!", "en": "Come on, we're late!" },
+        { "nl": "Stop [nou toch eens] met zeuren!", "en": "Stop whining already!" },
+        { "nl": "Je komt [toch] ook?", "en": "You're coming too, right?" }
+      ]
+    },
+    {
+      "id": "gewoon",
+      "title": "gewoon: just, simply",
+      "body": [
+        "Gewoon means normal. In a sentence it often means “just” or “simply”: the easy, obvious choice."
+      ],
+      "examples": [
+        { "nl": "Je kunt [gewoon] naar de ingang lopen.", "en": "You can just walk to the entrance." },
+        { "nl": "Waarom maken we niet [gewoon] broodjes?", "en": "Why don't we just make sandwiches?" }
+      ]
+    },
+    {
+      "id": "misschien-soms",
+      "title": "misschien and soms in questions",
+      "body": [
+        "Misschien in a request makes it extra polite, like “could you maybe”.",
+        "Soms in a question means “by any chance”: weet je soms waar mijn sleutels zijn?"
+      ],
+      "examples": [
+        { "nl": "Kun je [misschien] even wachten?", "en": "Could you maybe wait a moment?" },
+        { "nl": "Weet je [soms] wie er gewonnen heeft?", "en": "Do you happen to know who won?" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "doos", "nl": "Kun je me even helpen met deze doos?", "en": "Can you help me with this box for a sec?", "reply": { "nl": "Ja hoor, waar moet hij heen?", "en": "Sure, where does it go?" }, "rule": "even: a small, quick request.", "note": "even" },
+    { "id": "vragen", "nl": "Mag ik even iets vragen?", "en": "Can I ask something quickly?", "reply": { "nl": "Ja, natuurlijk.", "en": "Yes, of course." }, "rule": "even makes it polite and quick.", "note": "even" },
+    { "id": "hardlopen", "nl": "Ik ga even hardlopen.", "en": "I'm just going for a quick run.", "rule": "Ik ga even …: popping out to do something.", "note": "even" },
+    { "id": "douchen", "nl": "Ik ga even douchen.", "en": "I'm just going to take a quick shower.", "rule": "Ik ga even …: popping out to do something.", "note": "even" },
+    { "id": "wacht", "nl": "Wacht even!", "en": "Wait a second!", "rule": "even: just for a moment.", "note": "even" },
+    { "id": "binnen", "nl": "Kom maar binnen.", "en": "Come on in.", "rule": "maar: go ahead.", "note": "maar" },
+    { "id": "probeer", "nl": "Probeer het maar, het is niet eng.", "en": "Go on, try it, it's not scary.", "rule": "maar: encouragement.", "note": "maar" },
+    { "id": "naast-me", "nl": "Kom maar naast me zitten.", "en": "Come and sit next to me.", "rule": "maar: a friendly invitation.", "note": "maar" },
+    { "id": "wat-je-wilt", "nl": "Doe maar wat je wilt.", "en": "Do whatever you want, then.", "rule": "maar: giving up.", "note": "maar" },
+    { "id": "laat-maar", "nl": "Laat maar, ik doe het zelf.", "en": "Never mind, I'll do it myself.", "rule": "Laat maar: never mind.", "note": "maar" },
+    { "id": "kijk", "nl": "Kijk eens naar die auto!", "en": "Look at that car!", "rule": "eens: take a look.", "note": "eens" },
+    { "id": "proef", "nl": "Proef eens, het is lekker.", "en": "Have a taste, it's good.", "rule": "eens: have a go.", "note": "eens" },
+    { "id": "schoenen", "nl": "Doe nou je schoenen aan!", "en": "Put your shoes on already!", "rule": "nou: impatience.", "note": "toch-nou" },
+    { "id": "laat", "nl": "Kom nou, we zijn laat!", "en": "Come on, we're late!", "rule": "nou: impatience.", "note": "toch-nou" },
+    { "id": "zeuren", "nl": "Stop nou toch eens met zeuren!", "en": "Stop whining already!", "rule": "nou toch eens: you've really had enough.", "note": "toch-nou" },
+    { "id": "kom-je", "nl": "Je komt toch ook?", "en": "You're coming too, right?", "reply": { "nl": "Ja, natuurlijk!", "en": "Yes, of course!" }, "rule": "toch at the end: asking for agreement.", "note": "toch-nou" },
+    { "id": "bed", "nl": "Ga toch maar gewoon naar bed, je bent moe.", "en": "Just go to bed, you're tired.", "rule": "toch maar gewoon: friendly but firm advice.", "note": "toch-nou" },
+    { "id": "ingang", "nl": "Je kunt gewoon naar de ingang lopen.", "en": "You can just walk to the entrance.", "rule": "gewoon: the simple option.", "note": "gewoon" },
+    { "id": "broodjes", "nl": "Waarom maken we niet gewoon broodjes?", "en": "Why don't we just make sandwiches?", "rule": "gewoon: the simple option.", "note": "gewoon" },
+    { "id": "wachten", "nl": "Kun je misschien even wachten?", "en": "Could you maybe wait a moment?", "rule": "misschien even: extra polite and short.", "note": "misschien-soms" },
+    { "id": "gewonnen", "nl": "Weet je soms wie er gewonnen heeft?", "en": "Do you happen to know who won?", "rule": "soms in a question: by any chance.", "note": "misschien-soms" }
+  ]
+}

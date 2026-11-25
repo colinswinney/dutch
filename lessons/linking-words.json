@@ -1,0 +1,114 @@
+{
+  "id": "linking-words",
+  "group": "Grammar",
+  "title": "Linking words: because, while, unless, although",
+  "titleNl": "Omdat, terwijl, tenzij",
+  "level": "A2",
+  "intro": "Linking words join two ideas into one sentence. A few keep the normal word order. Most send the verb to the end. Learn which is which, and your sentences can get longer without getting harder.",
+  "preferredMode": "build",
+  "notes": [
+    {
+      "id": "normal-order",
+      "title": "1. en, maar, want, of, dus: normal order",
+      "body": [
+        "After en, maar, want and of, the second part keeps its normal order: subject, then verb.",
+        "After dus you can keep the normal order, or put the verb first: dus we blijven thuis, or dus blijven we thuis."
+      ],
+      "examples": [
+        { "nl": "Ik wil mee, maar ik [heb] geen tijd.", "en": "I want to come, but I don't have time." },
+        { "nl": "Het regent, dus we [blijven] thuis.", "en": "It's raining, so we're staying home." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 11: both kinds of linking words", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_11#Onderschikkend_and_nevenschikkend" }
+      ]
+    },
+    {
+      "id": "verb-end",
+      "title": "2. Most other linking words send the verb to the end",
+      "body": [
+        "omdat, doordat, terwijl, totdat, voordat, zodra, als, tenzij, zolang, hoewel, zodat, alsof and dat all start a side sentence. In a side sentence the verb goes to the very end.",
+        "If the side sentence comes first, the main sentence starts with its verb. You get verb, comma, verb."
+      ],
+      "examples": [
+        { "nl": "Ik bel je, omdat ik een vraag [heb].", "en": "I'm calling you because I have a question." },
+        { "nl": "Terwijl jij [kookt], [dek] ik de tafel.", "en": "While you cook, I'll set the table." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 10: Subclauses", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Subclauses" }
+      ]
+    },
+    {
+      "id": "omdat-doordat",
+      "title": "3. omdat or doordat?",
+      "body": [
+        "Both mean “because”. Omdat gives a reason that someone has: I'm calling because I have a question.",
+        "Doordat gives a cause that just happened, with nobody choosing it: the train was late because of a breakdown. In everyday speech, many people use omdat for both."
+      ],
+      "examples": [
+        { "nl": "Ik bel je [omdat] ik een vraag heb.", "en": "I'm calling you because I have a question." },
+        { "nl": "De trein was laat [doordat] er een storing was.", "en": "The train was late because there was a breakdown." }
+      ]
+    },
+    {
+      "id": "time",
+      "title": "4. Time: terwijl, totdat, voordat, zodra",
+      "body": [
+        "terwijl: while. totdat: until. voordat: before. zodra: as soon as. All of them send the verb to the end."
+      ],
+      "examples": [
+        { "nl": "We wachten [totdat] de bel gaat.", "en": "We wait until the bell rings." },
+        { "nl": "Poets je tanden [voordat] je naar bed gaat.", "en": "Brush your teeth before you go to bed." },
+        { "nl": "Ik bel je [zodra] ik thuis ben.", "en": "I'll call you as soon as I'm home." }
+      ]
+    },
+    {
+      "id": "conditions",
+      "title": "5. Conditions: als, tenzij, zolang",
+      "body": [
+        "als: if. tenzij: unless. zolang: as long as. Parents use these all day."
+      ],
+      "examples": [
+        { "nl": "Je krijgt een ijsje [als] je je bord leeg eet.", "en": "You get an ice cream if you finish your plate." },
+        { "nl": "Er is geen toetje, [tenzij] je je groente opeet.", "en": "There's no dessert unless you eat your vegetables." },
+        { "nl": "Je mag buiten spelen, [zolang] je in de tuin blijft.", "en": "You can play outside as long as you stay in the garden." }
+      ]
+    },
+    {
+      "id": "contrast",
+      "title": "6. hoewel, zodat, alsof",
+      "body": [
+        "hoewel: although. zodat: so that. alsof: as if."
+      ],
+      "examples": [
+        { "nl": "[Hoewel] het regent, gaan we toch fietsen.", "en": "Although it's raining, we're cycling anyway." },
+        { "nl": "Ik doe de gordijnen dicht, [zodat] het donker is.", "en": "I'm closing the curtains so that it's dark." },
+        { "nl": "Hij doet [alsof] hij slaapt.", "en": "He's pretending to be asleep." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 11: both kinds of linking words", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_11#Onderschikkend_and_nevenschikkend" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "regent-dus", "nl": "Het regent, dus we blijven thuis.", "en": "It's raining, so we're staying home.", "rule": "dus: normal order after it.", "note": "normal-order" },
+    { "id": "geen-tijd", "nl": "Ik wil mee, maar ik heb geen tijd.", "en": "I want to come, but I don't have time.", "rule": "maar: normal order after it.", "note": "normal-order" },
+    { "id": "koekjes", "nl": "Laten we koekjes bakken, want oma komt op bezoek.", "en": "Let's bake cookies, because Grandma is coming to visit.", "rule": "want: normal order after it.", "note": "normal-order" },
+    { "id": "vraag", "nl": "Ik bel je omdat ik een vraag heb.", "en": "I'm calling you because I have a question.", "rule": "omdat: a reason, with heb at the end.", "note": "omdat-doordat" },
+    { "id": "voetbal", "nl": "Ik begrijp voetbal niet, omdat ik het als kind nooit gespeeld heb.", "en": "I don't understand football, because I never played it as a kid.", "rule": "omdat sends both verbs to the end: gespeeld heb.", "note": "verb-end" },
+    { "id": "druk", "nl": "Het was zo druk dat we de hele reis moesten staan.", "en": "It was so busy that we had to stand the whole trip.", "rule": "zo … dat: the verbs go to the end.", "note": "verb-end" },
+    { "id": "storing", "nl": "De trein was laat doordat er een storing was.", "en": "The train was late because there was a breakdown.", "rule": "doordat: a cause nobody chose.", "note": "omdat-doordat" },
+    { "id": "stekker", "nl": "De muziek stopte doordat de stekker eruit viel.", "en": "The music stopped because the plug fell out.", "rule": "doordat: a cause nobody chose.", "note": "omdat-doordat" },
+    { "id": "terwijl-kookt", "nl": "Terwijl jij kookt, dek ik de tafel.", "en": "While you cook, I'll set the table.", "alts": ["Ik dek de tafel terwijl jij kookt."], "rule": "Side sentence first, then verb, comma, verb.", "note": "verb-end" },
+    { "id": "dozen", "nl": "Ik pak de dozen in terwijl jij de inhoud opschrijft.", "en": "I'll pack the boxes while you write down what's in them.", "rule": "terwijl: while. The split verb opschrijven stays together at the end.", "note": "time" },
+    { "id": "bel", "nl": "We wachten totdat de bel gaat.", "en": "We wait until the bell rings.", "rule": "totdat: until.", "note": "time" },
+    { "id": "tanden", "nl": "Poets je tanden voordat je naar bed gaat.", "en": "Brush your teeth before you go to bed.", "rule": "voordat: before.", "note": "time" },
+    { "id": "zodra", "nl": "Ik bel je zodra ik thuis ben.", "en": "I'll call you as soon as I'm home.", "rule": "zodra: as soon as.", "note": "time" },
+    { "id": "speeltje", "nl": "Je mag een speeltje kiezen als je je kamer opruimt.", "en": "You can pick a toy if you tidy your room.", "rule": "als: if. opruimen stays together at the end.", "note": "conditions" },
+    { "id": "toetje", "nl": "Er is geen toetje, tenzij je je groente opeet.", "en": "There's no dessert unless you eat your vegetables.", "rule": "tenzij: unless.", "note": "conditions" },
+    { "id": "kibbeling", "nl": "Ik eet nooit vis, tenzij ik kibbeling op de markt koop.", "en": "I never eat fish, unless I buy kibbeling at the market.", "rule": "tenzij: unless.", "note": "conditions" },
+    { "id": "tuin", "nl": "Je mag buiten spelen zolang je in de tuin blijft.", "en": "You can play outside as long as you stay in the garden.", "rule": "zolang: as long as.", "note": "conditions" },
+    { "id": "hoewel", "nl": "Hoewel het regent, gaan we toch fietsen.", "en": "Although it's raining, we're cycling anyway.", "alts": ["We gaan toch fietsen, hoewel het regent."], "rule": "hoewel first, then verb, comma, verb.", "note": "contrast" },
+    { "id": "gordijnen", "nl": "Ik doe de gordijnen dicht zodat het donker is.", "en": "I'm closing the curtains so that it's dark.", "rule": "zodat: so that.", "note": "contrast" },
+    { "id": "alsof", "nl": "Hij doet alsof hij slaapt.", "en": "He's pretending to be asleep.", "rule": "alsof: as if. Doen alsof means to pretend.", "note": "contrast" }
+  ]
+}
