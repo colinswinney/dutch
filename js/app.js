@@ -13,8 +13,8 @@ let allCards = [];
 let firstRender = true;
 
 async function loadLessons() {
-  const index = await fetch('lessons/index.json').then((r) => r.json());
-  const loaded = await Promise.all(index.lessons.map((id) => fetch(`lessons/${id}.json`).then((r) => r.json())));
+  const index = await fetch('lessons/index.json', { cache: 'no-cache' }).then((r) => r.json());
+  const loaded = await Promise.all(index.lessons.map((id) => fetch(`lessons/${id}.json`, { cache: 'no-cache' }).then((r) => r.json())));
   for (const lesson of loaded) {
     for (const card of lesson.cards) {
       card.id ??= slug(card.nl);
@@ -34,8 +34,10 @@ function render(title, nodes, focusSelector = null) {
   stopSpeaking();
   const update = () => {
     main.replaceChildren(...nodes.flat(Infinity).filter((n) => n != null && n !== false));
+    main.dataset.view = title;
     document.title = title ? `${title} · Dutch practice` : 'Dutch practice';
     updateHeader();
+    updateNav();
     const target = focusSelector && main.querySelector(focusSelector);
     if (target) {
       target.scrollIntoView({ block: 'start' });
@@ -202,9 +204,40 @@ function lessonGroups() {
   return [...groups];
 }
 
+const groupSlug = (group) => slug(group);
+
+function groupCard([group, list]) {
+  const s = store.current ? store.stats(list.flatMap((l) => l.cards)) : null;
+  return h(
+    'li',
+    {},
+    h(
+      'a',
+      { class: 'lesson-link', href: `#/lessons/${groupSlug(group)}` },
+      h('span', { class: 't-nl' }, group),
+      h('span', { class: 't-en', lang: 'nl' }, list.map((l) => l.titleNl).join(' · ')),
+      h(
+        'span',
+        { class: 'meta' },
+        h('span', {}, `${list.length} ${list.length === 1 ? 'lesson' : 'lessons'}`),
+        s?.due ? h('span', { class: 'pill' }, `${s.due} to review`) : null,
+      ),
+    ),
+  );
+}
+
 function showHome() {
   const warning = h('div');
   const stats = store.current ? store.stats(allCards) : null;
+  // The lessons with the most reviews waiting, so the home page points somewhere useful.
+  const waiting = store.current
+    ? lessons
+        .map((l) => ({ l, due: store.stats(l.cards).due }))
+        .filter((x) => x.due)
+        .sort((a, b) => b.due - a.due)
+        .slice(0, 3)
+        .map((x) => x.l)
+    : [];
   render('', [
     h('span', { class: 'eyebrow' }, 'Nederlands · A1 → A2'),
     pageTitle('Dutch for everyday life'),
@@ -212,26 +245,62 @@ function showHome() {
     warning,
     profileSection(),
     store.current
-      ? [
+      ? h(
+          'div',
+          { class: 'stack', style: 'margin-top:1.25rem' },
           h(
-            'div',
-            { class: 'stack', style: 'margin-top:1.25rem' },
-            h(
-              'a',
-              { class: 'btn btn-big btn-block', href: '#/practice/all' },
-              stats.due ? `Daily practice · ${stats.due} to review` : 'Daily practice',
-              icon('arrow'),
-            ),
-            dailyPhrase(),
+            'a',
+            { class: 'btn btn-big btn-block', href: '#/practice/all' },
+            stats.due ? `Daily practice · ${stats.due} to review` : 'Daily practice',
+            icon('arrow'),
           ),
-        ]
+          dailyPhrase(),
+        )
       : null,
-    lessonGroups().map(([group, list]) => [
-      h('h2', {}, group),
-      h('ul', { class: 'lesson-list' }, list.map(lessonTile), group === 'Reading and writing' ? diaryTile() : null),
-    ]),
-    h('h2', {}, 'Listening drills'),
-    h('p', { class: 'note' }, 'Numbers, prices and times come fast. These drills make up new ones every time.'),
+    waiting.length ? [h('h2', {}, 'Keep going'), h('ul', { class: 'lesson-list' }, waiting.map(lessonTile))] : null,
+    h('h2', {}, 'Lessons'),
+    h('ul', { class: 'lesson-list' }, lessonGroups().map(groupCard)),
+  ]);
+  voiceWarning(warning);
+}
+
+function showLessons(groupId) {
+  // A jump button on the Lessons page only scrolls, so the page doesn't fade and redraw under the header.
+  const target = groupId && main.dataset.view === 'Lessons' ? main.querySelector(`#group-${CSS.escape(groupId)}`) : null;
+  if (target) {
+    target.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    target.focus({ preventScroll: true });
+    return;
+  }
+  const groups = lessonGroups();
+  render(
+    'Lessons',
+    [
+      h('span', { class: 'eyebrow' }, `${lessons.length} lessons`),
+      pageTitle('Lessons'),
+      h(
+        'nav',
+        { 'aria-label': 'Lesson groups', class: 'jump' },
+        h(
+          'ul',
+          {},
+          groups.map(([group]) => h('li', {}, h('a', { href: `#/lessons/${groupSlug(group)}` }, group))),
+        ),
+      ),
+      groups.map(([group, list]) => [
+        h('h2', { id: `group-${groupSlug(group)}`, tabindex: '-1' }, group),
+        h('ul', { class: 'lesson-list' }, list.map(lessonTile), group === 'Reading and writing' ? diaryTile() : null),
+      ]),
+    ],
+    groupId ? `#group-${CSS.escape(groupId)}` : null,
+  );
+}
+
+function showDrills() {
+  render('Listening drills', [
+    h('span', { class: 'eyebrow' }, 'Listening'),
+    pageTitle('Listening drills'),
+    h('p', { class: 'lede' }, 'Numbers, prices and times come fast. These drills make up new ones every time.'),
     h(
       'ul',
       { class: 'lesson-list' },
@@ -249,7 +318,30 @@ function showHome() {
       ),
     ),
   ]);
-  voiceWarning(warning);
+}
+
+/* ---------- Main navigation ---------- */
+const TABS = [
+  ['home', '#/', 'Home', 'home'],
+  ['lessons', '#/lessons', 'Lessons', 'book'],
+  ['drills', '#/drills', 'Drills', 'headphones'],
+  ['write', '#/write', 'Dagboek', 'pencil'],
+  ['settings', '#/settings', 'Settings', 'gear'],
+];
+const tabbar = document.getElementById('tabbar');
+tabbar.replaceChildren(...TABS.map(([id, href, label, glyph]) => h('a', { href, 'data-tab': id }, icon(glyph), h('span', {}, label))));
+
+// Practice rounds, drills and readings have their own bottom bar and a back link, so the tab bar steps aside there.
+function updateNav() {
+  const name = location.hash.replace(/^#\/?/, '').split('/')[0];
+  const focused = ['practice', 'drill', 'read'].includes(name);
+  tabbar.hidden = focused;
+  document.body.classList.toggle('has-tabbar', !focused);
+  const current = { '': 'home', lesson: 'lessons', lessons: 'lessons', drills: 'drills', write: 'write', settings: 'settings' }[name];
+  for (const link of tabbar.querySelectorAll('a')) {
+    if (link.dataset.tab === current) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  }
 }
 
 /* ---------- Lesson ---------- */
@@ -260,7 +352,7 @@ function showLesson(id, noteId) {
   render(
     lesson.titleNl,
     [
-      backLink('#/', 'All lessons'),
+      backLink(`#/lessons/${groupSlug(lesson.group ?? 'Lessons')}`, 'All lessons'),
       h('span', { class: 'eyebrow' }, `${lesson.level} · ${lesson.cards.length} phrases`),
       pageTitle(lesson.titleNl, true),
       h('p', { class: 'lede' }, lesson.title),
@@ -480,7 +572,7 @@ function showDrill(id) {
     title: drill.titleNl,
     extra: h('details', { class: 'drill-reading' }, h('summary', {}, 'How this works'), h('p', {}, drill.intro), furtherReading(drill.links)),
     nl: true,
-    back: { href: '#/', text: 'Home' },
+    back: { href: '#/drills', text: 'All drills' },
     items,
     renderItem: (item, finish) => {
       // Without a Dutch voice, the drill shows the Dutch words so it still works as reading practice.
@@ -801,7 +893,6 @@ function showWrite() {
   tools.push(copy);
 
   render('Dagboek', [
-    backLink('#/', 'Home'),
     h('span', { class: 'eyebrow' }, 'Writing practice'),
     pageTitle('Dagboek', true),
     h(
@@ -901,7 +992,6 @@ function showSettings() {
   });
 
   render('Settings', [
-    backLink('#/', 'Home'),
     pageTitle('Settings'),
     h(
       'section',
@@ -981,6 +1071,10 @@ function route() {
       return showPractice(a);
     case 'drill':
       return showDrill(a);
+    case 'lessons':
+      return showLessons(a);
+    case 'drills':
+      return showDrills();
     case 'read':
       return showReading(a, b);
     case 'settings':

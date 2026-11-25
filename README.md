@@ -41,6 +41,8 @@ node scripts/make-audio.mjs      # records only new or changed lines
 node scripts/check-lessons.mjs   # checks the files and warns about lines without audio
 ```
 
+After changing anything in `js/` or `css/`, run `node scripts/stamp.mjs`. It adds a version tag to each script and the stylesheet in `index.html`. Without it, a phone can keep an old cached script next to a new one and break. `npm run check` fails when the tags are out of date.
+
 ## Recorded audio
 
 `scripts/make-audio.mjs` sends each Dutch line to Google Cloud Text-to-Speech once and saves an MP3 in `audio/`, plus `audio/manifest.json`, which maps each line to its file. The script needs an API key in `GOOGLE_TTS_KEY` or in `~/.config/dutch-practice/google-tts-key`. Never commit the key.

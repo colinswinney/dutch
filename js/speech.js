@@ -36,7 +36,7 @@ player.preload = 'auto';
 
 export async function loadRecordings() {
   try {
-    const res = await fetch('audio/manifest.json');
+    const res = await fetch('audio/manifest.json', { cache: 'no-cache' });
     if (!res.ok) return;
     const data = await res.json();
     recordings = data.files ?? {};

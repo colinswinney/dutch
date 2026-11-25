@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node scripts/check-lessons.mjs",
-    "audio": "node scripts/make-audio.mjs"
+    "check": "node scripts/check-lessons.mjs && node scripts/stamp.mjs --check",
+    "audio": "node scripts/make-audio.mjs",
+    "stamp": "node scripts/stamp.mjs"
   }
 }

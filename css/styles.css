@@ -73,6 +73,8 @@ html {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   overscroll-behavior-y: none;
+  /* Short pages drop the scrollbar, which would shift the centred layout and the sidebar sideways. */
+  scrollbar-gutter: stable;
   scroll-padding-top: 5rem;
   scroll-padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
 }
@@ -172,6 +174,7 @@ input, select, textarea { font: inherit; font-size: max(16px, 1rem); }
 
 /* ---------- Layout ---------- */
 .site-header {
+  view-transition-name: site-header;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -512,6 +515,70 @@ audio { inline-size: 100%; margin-top: 0.5rem; }
 }
 .actions .btn { flex: 1 1 10rem; min-block-size: 3.25rem; font-size: 1.05rem; box-shadow: var(--shadow); pointer-events: auto; }
 
+/* Main navigation: a tab bar along the bottom on phones, a sidebar on wide screens. */
+.tabbar {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0.3rem max(6px, env(safe-area-inset-right, 0px)) calc(0.3rem + env(safe-area-inset-bottom, 0px)) max(6px, env(safe-area-inset-left, 0px));
+  background: color-mix(in oklab, var(--bg) 80%, transparent);
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  border-top: 1px solid var(--border);
+  view-transition-name: tabbar;
+}
+.tabbar[hidden] { display: none; }
+.tabbar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  min-block-size: 3.25rem;
+  border-radius: 0.75rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.tabbar .icon { inline-size: 1.4rem; block-size: 1.4rem; padding: 0.15rem 0.95rem; border-radius: 99px; box-sizing: content-box; fill: currentColor; }
+.tabbar a[aria-current="page"] { color: var(--accent); }
+.tabbar a[aria-current="page"] .icon { background: var(--accent-soft); }
+body.has-tabbar .wrap { padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px)); }
+@media (min-width: 72rem) {
+  .tabbar {
+    inset: 6rem auto auto max(1rem, calc(50% - 23rem - 12.5rem));
+    inline-size: 11rem;
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 0;
+  }
+  .tabbar a { flex-direction: row; justify-content: flex-start; gap: 0.65rem; min-block-size: var(--target); padding-inline: 0.85rem; font-size: 1rem; color: var(--text); }
+  .tabbar .icon { padding: 0; }
+  .tabbar a[aria-current="page"] { background: var(--accent-soft); color: var(--accent); }
+  .tabbar a[aria-current="page"] .icon { background: none; }
+  body.has-tabbar .wrap { padding-bottom: calc(4rem + env(safe-area-inset-bottom, 0px)); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .tabbar a:hover { color: var(--accent); }
+}
+
+/* Jump links between lesson groups */
+.jump ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0.5rem 0 0.5rem; }
+.jump a { display: inline-flex; align-items: center; min-block-size: var(--target); padding: 0 1rem; border-radius: 99px; background: var(--surface-strong); border: 1px solid var(--border); color: var(--text); font-weight: 700; text-decoration: none; }
+@media (hover: hover) and (pointer: fine) {
+  .jump a:hover { border-color: var(--accent); }
+}
+
 /* Diary */
 .prompt-nl { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; margin: 0; }
 .diary-input { min-block-size: 10rem; resize: vertical; line-height: 1.5; }
@@ -541,8 +608,10 @@ summary { display: flex; align-items: center; min-block-size: var(--target); fon
 .glossary { display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 1rem; margin: 0.5rem 0 0; }
 .glossary dt { font-weight: 700; }
 .glossary dd { margin: 0; color: var(--muted); }
-fieldset { border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 0 0 1rem; background: var(--surface); }
-legend { font-weight: 700; padding-inline: 0.35rem; }
+fieldset { border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 0 0 1rem; background: var(--surface); min-inline-size: 0; }
+/* A floated legend sits inside the box instead of on its border, and wraps like normal text. */
+legend { float: left; inline-size: 100%; padding: 0; margin: 0 0 0.5rem; font-weight: 700; }
+legend + * { clear: left; }
 .choice { display: flex; align-items: center; gap: 0.75rem; min-block-size: var(--target); padding-block: 0.2rem; cursor: pointer; }
 .choice input { inline-size: 1.35rem; block-size: 1.35rem; accent-color: var(--accent); flex: none; margin: 0; }
 .choice.is-right { color: var(--ok); font-weight: 700; }
@@ -550,11 +619,15 @@ legend { font-weight: 700; padding-inline: 0.35rem; }
 .q-result { font-weight: 700; margin: 0.35rem 0 0; }
 
 /* ---------- View transitions ---------- */
-::view-transition-old(main) { animation: vt-out 140ms var(--ease-out) both; }
+/* The old page leaves at once and the main group doesn't animate. Otherwise the new page slides in from the old scroll position. */
+::view-transition-old(main) { animation: none; opacity: 0; }
+::view-transition-group(main) { animation: none; }
 ::view-transition-new(main) { animation: vt-in 260ms var(--ease-out) both; }
 ::view-transition-old(stage) { animation: vt-out 120ms var(--ease-out) both; }
 ::view-transition-new(stage) { animation: vt-in 240ms var(--ease-out) both; }
 ::view-transition-group(root) { animation-duration: 200ms; }
+/* Page snapshots are drawn above the page itself, so the header and tab bar need their own layer on top. */
+::view-transition-group(site-header), ::view-transition-group(tabbar) { z-index: 2; }
 @keyframes vt-out { to { opacity: 0; } }
 @keyframes vt-in { from { opacity: 0; transform: translateY(10px); } }
 
