@@ -25,6 +25,7 @@ Claude writes the file, adds it to `lessons/index.json`, records the audio, and 
 ```jsonc
 {
   "id": "dance",                    // must match the file name
+  "group": "Hobbies and sport",     // optional: the heading it sits under on the home page
   "title": "Dance class",           // English title
   "titleNl": "Dansles",             // Dutch title, shown big
   "level": "A1",
@@ -51,7 +52,8 @@ Claude writes the file, adds it to `lessons/index.json`, records the audio, and 
       "reply": { "nl": "In juni.", "en": "In June." },  // optional: enables the "pick a reply" exercise
       "alts": [],                               // optional: other correct word orders, same words only
       "rule": "Question word first, verb second.",  // optional: shown after the answer
-      "note": "questions"                        // optional: the note id behind the rule, shown as "Explain this rule"
+      "note": "questions"                        // optional: the note behind the rule, shown as "Explain this rule".
+                                                 // Use "lesson-id/note-id" for a rule taught in another lesson, such as "past/zijn".
     }
   ],
   "readings": [                     // optional: texts with comprehension questions
@@ -75,5 +77,7 @@ Claude writes the file, adds it to `lessons/index.json`, records the audio, and 
 - In `notes`, put `[square brackets]` around words you want highlighted. The brackets are removed for audio and checking.
 - Keep each card to one sentence. Short cards are better for listening and word tiles.
 - Only link pages you have opened and checked. The free Wikibooks Dutch course (https://en.wikibooks.org/wiki/Dutch) has stable section links.
+- Hobby lessons can point their cards at the grammar lessons: `"note": "split-verbs/present"`. Then the grammar explanation opens right after the exercise.
+- Groups on the home page follow the order in `lessons/index.json`. A group appears where its first lesson is listed.
 - Give a card an `id` once people have practised it. Without one, editing the Dutch text resets its progress.
 - Exercise types: `listen` (hear Dutch, pick the meaning), `respond` (hear a line, pick a reply; needs `reply`), `build` (word tiles), `speak` (say it, record yourself), `dictation` (type what you hear).

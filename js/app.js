@@ -1,7 +1,7 @@
 import { h, marked, stripMarks, slug, localDayNumber } from './util.js';
 import { store } from './store.js';
 import { hasTts, hasRecordings, recordingVoiceName, loadRecordings, dutchVoices, voicesReady, onVoicesChanged, speak, stopSpeaking, lastSpeechReport } from './speech.js';
-import { buildSession, renderExercise } from './exercises.js';
+import { buildSession, renderExercise, setLessons } from './exercises.js';
 import { DRILLS } from './drills.js';
 import { icon, playRow, miniPlay, dutchLine, withTransition, announce, furtherReading } from './ui.js';
 
@@ -24,6 +24,7 @@ async function loadLessons() {
     lessonsById.set(lesson.id, lesson);
   }
   allCards = lessons.flatMap((l) => l.cards);
+  setLessons(lessonsById);
 }
 
 /* ---------- Rendering helpers ---------- */
@@ -189,6 +190,17 @@ async function voiceWarning(slot) {
   );
 }
 
+// Groups keep the order of lessons/index.json: a group appears where its first lesson is listed.
+function lessonGroups() {
+  const groups = new Map();
+  for (const lesson of lessons) {
+    const group = lesson.group ?? 'Lessons';
+    if (!groups.has(group)) groups.set(group, []);
+    groups.get(group).push(lesson);
+  }
+  return [...groups];
+}
+
 function showHome() {
   const warning = h('div');
   const stats = store.current ? store.stats(allCards) : null;
@@ -213,8 +225,7 @@ function showHome() {
           ),
         ]
       : null,
-    h('h2', {}, 'Lessons'),
-    h('ul', { class: 'lesson-list' }, lessons.map(lessonTile)),
+    lessonGroups().map(([group, list]) => [h('h2', {}, group), h('ul', { class: 'lesson-list' }, list.map(lessonTile))]),
     h('h2', {}, 'Listening drills'),
     h('p', { class: 'note' }, 'Numbers, prices and times come fast. These drills make up new ones every time.'),
     h(

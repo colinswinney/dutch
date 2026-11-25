@@ -1,0 +1,97 @@
+{
+  "id": "spinning",
+  "group": "Hobbies and sport",
+  "title": "Spin class",
+  "titleNl": "Spinningles",
+  "level": "A1 → A2",
+  "intro": "Booking a class at the gym, setting up the bike, and understanding the instructor over loud music. The instructor's lines are short and fast, so they make good listening practice.",
+  "notes": [
+    {
+      "id": "instructor",
+      "title": "What the instructor calls out",
+      "body": [
+        "Instructors use very short commands, often without a full sentence. Ga staan means stand up, and weer zitten means sit back down. Uit het zadel means out of the saddle.",
+        "Weerstand erbij means add resistance. Tempo omhoog means pedal faster. Volhouden means keep going."
+      ],
+      "examples": [
+        { "nl": "[Ga staan]!", "en": "Stand up!" },
+        { "nl": "[Weerstand erbij]!", "en": "Add resistance!" },
+        { "nl": "Nog dertig seconden, [volhouden]!", "en": "Thirty more seconds, keep going!" }
+      ]
+    },
+    {
+      "id": "bike",
+      "title": "Setting up the bike",
+      "body": [
+        "het zadel: the saddle. het stuur: the handlebars. de weerstand: the resistance. de knop: the knob.",
+        "Use hoger and lager, or omhoog and omlaag, for higher and lower. Instellen means to adjust, and it splits: ik stel het zadel in."
+      ],
+      "examples": [
+        { "nl": "Hoe [stel] ik het zadel [in]?", "en": "How do I adjust the saddle?" },
+        { "nl": "Het zadel moet iets [hoger].", "en": "The saddle needs to go a bit higher." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 10: Separable verbs", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Grammatica_10-1_~_Separable_verbs" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "geboekt", "nl": "Ik heb een spinningles geboekt.", "en": "I booked a spin class.", "rule": "boek ends in k, so add -t: geboekt.", "note": "past/d-or-t" },
+    { "id": "plek", "nl": "Is er nog plek in de les van zeven uur?", "en": "Is there still a spot in the seven o'clock class?", "reply": { "nl": "Ja, er zijn nog twee plekken.", "en": "Yes, there are two spots left." } },
+    { "id": "wachtlijst", "nl": "Ik sta op de wachtlijst.", "en": "I'm on the waiting list.", "rule": "On a list: staan.", "note": "staan-zitten-liggen/staan" },
+    { "id": "lid", "nl": "Ik ben lid van de sportschool.", "en": "I'm a member of the gym." },
+    { "id": "al-een-jaar", "nl": "Ik doe al een jaar aan spinning.", "en": "I've been doing spin classes for a year.", "rule": "How long: al + the present tense.", "note": "music/al" },
+    { "id": "zadel-instellen", "nl": "Hoe stel ik het zadel in?", "en": "How do I adjust the saddle?", "who": "You", "rule": "instellen: in goes to the end.", "note": "bike" },
+    { "id": "zadel-hoger", "nl": "Het zadel moet iets hoger.", "en": "The saddle needs to go a bit higher.", "note": "bike" },
+    { "id": "fiets-vrij", "nl": "Mag ik deze fiets gebruiken?", "en": "May I use this bike?", "who": "You", "reply": { "nl": "Ja hoor, die is vrij.", "en": "Sure, it's free." } },
+    { "id": "ga-staan", "nl": "Ga staan!", "en": "Stand up!", "who": "Instructor", "rule": "Change of position: ga staan.", "note": "staan-zitten-liggen/gaan" },
+    { "id": "zadel-uit", "nl": "Uit het zadel!", "en": "Out of the saddle!", "who": "Instructor", "note": "instructor" },
+    { "id": "weer-zitten", "nl": "En weer zitten.", "en": "And sit back down.", "who": "Instructor", "note": "instructor" },
+    { "id": "weerstand", "nl": "Weerstand erbij!", "en": "Add resistance!", "who": "Instructor", "note": "instructor" },
+    { "id": "kwartslag", "nl": "Draai de knop een kwartslag naar rechts.", "en": "Turn the knob a quarter turn to the right.", "who": "Instructor", "note": "bike" },
+    { "id": "tempo", "nl": "Tempo omhoog!", "en": "Pedal faster!", "who": "Instructor", "note": "instructor" },
+    { "id": "volhouden", "nl": "Nog dertig seconden, volhouden!", "en": "Thirty more seconds, keep going!", "who": "Instructor", "note": "instructor" },
+    { "id": "uitfietsen", "nl": "Nu rustig uitfietsen.", "en": "Now pedal easy to cool down.", "who": "Instructor", "note": "instructor" },
+    { "id": "drinken", "nl": "Vergeet niet te drinken.", "en": "Don't forget to drink.", "who": "Instructor" },
+    { "id": "handdoek", "nl": "Ik ben mijn handdoek vergeten.", "en": "I forgot my towel.", "rule": "vergeten starts with ver-, so it stays vergeten.", "note": "past/irregular" },
+    { "id": "zwaar", "nl": "Wat een zware les!", "en": "What a tough class!" },
+    { "id": "zweten", "nl": "Ik zweet me kapot.", "en": "I'm sweating buckets." },
+    { "id": "afzeggen", "nl": "Ik zeg de les van morgen af.", "en": "I'm cancelling tomorrow's class.", "rule": "afzeggen: af goes to the end.", "note": "split-verbs/present" },
+    { "id": "volgende-week", "nl": "Volgende week ga ik weer.", "en": "I'm going again next week.", "alts": ["Ik ga volgende week weer."], "rule": "Future: present tense plus a time word, with the verb second.", "note": "future/present" }
+  ],
+  "readings": [
+    {
+      "id": "rooster",
+      "kind": "Email from the gym",
+      "title": "Nieuw rooster voor spinning",
+      "text": [
+        "Beste leden,",
+        "Vanaf volgende week verandert het rooster van de spinninglessen.",
+        "De les op dinsdag begint voortaan om half acht, in plaats van om zeven uur. Op vrijdag is er een nieuwe les om negen uur ’s ochtends.",
+        "Reserveren kan via de app, vanaf zeven dagen van tevoren. Kun je niet komen? Zeg je les dan op tijd af, want er staan vaak mensen op de wachtlijst.",
+        "Sportieve groet, het team van de sportschool"
+      ],
+      "translation": [
+        "Dear members,",
+        "From next week, the spin class timetable is changing.",
+        "From now on, the Tuesday class starts at half past seven instead of seven o'clock. On Friday there is a new class at nine in the morning.",
+        "You can book in the app, from seven days ahead. Can't come? Then cancel your class in time, because there are often people on the waiting list.",
+        "Sporty regards, the gym team"
+      ],
+      "glossary": [
+        { "nl": "het rooster", "en": "the timetable" },
+        { "nl": "voortaan", "en": "from now on" },
+        { "nl": "in plaats van", "en": "instead of" },
+        { "nl": "reserveren", "en": "to book" },
+        { "nl": "van tevoren", "en": "in advance" },
+        { "nl": "afzeggen", "en": "to cancel" }
+      ],
+      "questions": [
+        { "q": "What time does the Tuesday class start from now on?", "options": ["7:00", "7:30", "8:30"], "answer": 1 },
+        { "q": "What is new on Friday?", "options": ["A class at 9 a.m.", "An evening class", "No more classes"], "answer": 0 },
+        { "q": "How far ahead can you book?", "options": ["One day", "Three days", "Seven days"], "answer": 2 },
+        { "q": "Why should you cancel in time?", "options": ["You pay a fine", "People are on the waiting list", "The instructor has to know"], "answer": 1 }
+      ]
+    }
+  ]
+}

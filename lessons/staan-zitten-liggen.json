@@ -1,0 +1,130 @@
+{
+  "id": "staan-zitten-liggen",
+  "group": "Grammar",
+  "title": "Where things are: staan, zitten, liggen, hangen, lopen",
+  "titleNl": "Staan, zitten, liggen",
+  "level": "A1 → A2",
+  "intro": "Dutch rarely says that something “is” somewhere. It says the thing stands, sits, lies or hangs there. The same verbs also make the Dutch way to say “I'm busy doing something”.",
+  "notes": [
+    {
+      "id": "staan",
+      "title": "1. staan: things that stand upright",
+      "body": [
+        "Things that stand upright, or on legs or wheels, staan: a bottle, a cup, a bike, a car, a house.",
+        "Words on paper or a screen also staan. Het staat in de app means “It's in the app.” Ik sta op de lijst means “I'm on the list.”"
+      ],
+      "examples": [
+        { "nl": "De fiets [staat] voor de deur.", "en": "The bike is in front of the door." },
+        { "nl": "De melk [staat] in de koelkast.", "en": "The milk is in the fridge." },
+        { "nl": "Het [staat] in de app van school.", "en": "It's in the school app." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 9: staan, zitten, liggen, lopen", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_9#Stative_verbs:_staan,_zitten,_liggen,_lopen" }
+      ]
+    },
+    {
+      "id": "liggen",
+      "title": "2. liggen: flat things, and places on a map",
+      "body": [
+        "Things that lie flat liggen: a phone, keys, a book, a towel.",
+        "Towns and buildings also liggen. De sportschool ligt naast de supermarkt means “The gym is next to the supermarket.”"
+      ],
+      "examples": [
+        { "nl": "Je telefoon [ligt] op tafel.", "en": "Your phone is on the table." },
+        { "nl": "Waar [liggen] mijn sleutels?", "en": "Where are my keys?" },
+        { "nl": "De sportschool [ligt] naast de supermarkt.", "en": "The gym is next to the supermarket." }
+      ]
+    },
+    {
+      "id": "zitten",
+      "title": "3. zitten: inside something, and clubs and classes",
+      "body": [
+        "Things inside something that holds them, like a bag, a pocket or a box, zitten. People zitten when they sit.",
+        "Zitten op means taking part in a club or class: ze zit op zwemles. Zitten in tells you the school year: ze zit in groep drie."
+      ],
+      "examples": [
+        { "nl": "Je drinkfles [zit] in je tas.", "en": "Your water bottle is in your bag." },
+        { "nl": "Ze [zit] op taekwondo.", "en": "She does taekwondo." },
+        { "nl": "Ze [zit] in groep drie.", "en": "She's in group 3 at school." }
+      ]
+    },
+    {
+      "id": "hangen",
+      "title": "4. hangen: things that hang",
+      "body": [
+        "Coats, pictures and lamps hangen. So does a guitar on a hook on the wall."
+      ],
+      "examples": [
+        { "nl": "Je jas [hangt] aan de kapstok.", "en": "Your coat is on the coat rack." },
+        { "nl": "Mijn gitaar [hangt] aan de muur.", "en": "My guitar is on the wall." }
+      ]
+    },
+    {
+      "id": "doing",
+      "title": "5. Busy doing something: zit te, staat te, ligt te, loopt te",
+      "body": [
+        "To say what someone is doing right now, Dutch often uses zit, staat, ligt or loopt, then te and a verb at the end. Pick the one that matches the body position.",
+        "Ik zit te eten means “I'm eating” while sitting. Ze staat te wachten means “She's waiting” while standing.",
+        "If the position doesn't matter, use aan het: ik ben aan het koken."
+      ],
+      "examples": [
+        { "nl": "Ik [zit te] werken.", "en": "I'm working." },
+        { "nl": "Ze [staat] bij het hek [te wachten].", "en": "She's waiting by the gate." },
+        { "nl": "Ik [ben aan het] koken.", "en": "I'm cooking." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 9: staan, zitten, liggen, lopen + te", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_9#Stative_verbs:_staan,_zitten,_liggen,_lopen" },
+        { "label": "Wikibooks Dutch, lesson 14: aan het and other ways to say “-ing”", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_14#Continuous_tenses" }
+      ]
+    },
+    {
+      "id": "lopen",
+      "title": "6. lopen, rennen, hardlopen",
+      "body": [
+        "Lopen means to walk. Rennen means to run fast, for example to catch the bus. Hardlopen is running as a sport, and it splits: ik loop hard.",
+        "Lopen also means that something is going or working. Hoe loopt het? means “How is it going?”"
+      ],
+      "examples": [
+        { "nl": "We [lopen] naar school.", "en": "We walk to school." },
+        { "nl": "[Rennen], de bus komt eraan!", "en": "Run, the bus is coming!" },
+        { "nl": "Ik [loop] drie keer per week [hard].", "en": "I go running three times a week." }
+      ]
+    },
+    {
+      "id": "gaan",
+      "title": "7. Changing position: ga zitten, ga staan, ga liggen",
+      "body": [
+        "To sit down, stand up or lie down, use gaan with the position verb at the end. You hear these in every spin class."
+      ],
+      "examples": [
+        { "nl": "[Ga] maar [zitten].", "en": "Have a seat." },
+        { "nl": "[Ga] even [liggen].", "en": "Go and lie down for a bit." },
+        { "nl": "Iedereen [gaat staan]!", "en": "Everyone stand up!" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "fiets-deur", "nl": "De fiets staat voor de deur.", "en": "The bike is in front of the door.", "rule": "A bike stands: staat.", "note": "staan" },
+    { "id": "melk", "nl": "De melk staat in de koelkast.", "en": "The milk is in the fridge.", "rule": "A carton stands upright: staat.", "note": "staan" },
+    { "id": "app", "nl": "Het staat in de app van school.", "en": "It's in the school app.", "rule": "Written words: staat.", "note": "staan" },
+    { "id": "auto", "nl": "Waar staat de auto?", "en": "Where is the car parked?", "reply": { "nl": "Om de hoek.", "en": "Around the corner." }, "rule": "A car stands: staat.", "note": "staan" },
+    { "id": "telefoon", "nl": "Je telefoon ligt op tafel.", "en": "Your phone is on the table.", "rule": "A phone lies flat: ligt.", "note": "liggen" },
+    { "id": "sleutels", "nl": "Waar liggen mijn sleutels?", "en": "Where are my keys?", "reply": { "nl": "Ze liggen op de kast.", "en": "They're on the cupboard." }, "rule": "Keys lie flat: liggen.", "note": "liggen" },
+    { "id": "sportschool", "nl": "De sportschool ligt naast de supermarkt.", "en": "The gym is next to the supermarket.", "rule": "Buildings and places: ligt.", "note": "liggen" },
+    { "id": "drinkfles", "nl": "Je drinkfles zit in je tas.", "en": "Your water bottle is in your bag.", "rule": "Inside a bag: zit.", "note": "zitten" },
+    { "id": "taekwondo", "nl": "Ze zit op taekwondo.", "en": "She does taekwondo.", "rule": "A club or class: zitten op.", "note": "zitten" },
+    { "id": "groep-drie", "nl": "Ze zit in groep drie.", "en": "She's in group 3 at school.", "rule": "School year: zitten in.", "note": "zitten" },
+    { "id": "jas", "nl": "Je jas hangt aan de kapstok.", "en": "Your coat is on the coat rack.", "rule": "A coat hangs: hangt.", "note": "hangen" },
+    { "id": "gitaar", "nl": "Mijn gitaar hangt aan de muur.", "en": "My guitar is on the wall.", "rule": "On a hook: hangt.", "note": "hangen" },
+    { "id": "zit-werken", "nl": "Ik zit te werken.", "en": "I'm working.", "rule": "Sitting and doing something: zit te + verb.", "note": "doing" },
+    { "id": "hek", "nl": "Ze staat bij het hek te wachten.", "en": "She's waiting by the gate.", "rule": "Standing and doing something: staat … te wachten.", "note": "doing" },
+    { "id": "slapen", "nl": "Ze ligt al te slapen.", "en": "She's already asleep.", "rule": "Lying down and doing something: ligt te + verb.", "note": "doing" },
+    { "id": "koken", "nl": "Ik ben aan het koken.", "en": "I'm cooking.", "rule": "Position doesn't matter: ben aan het + verb.", "note": "doing" },
+    { "id": "wat-doen", "nl": "Wat zit je te doen?", "en": "What are you doing?", "reply": { "nl": "Ik zit te lezen.", "en": "I'm reading." }, "rule": "zit … te doen: what are you doing, sitting there?", "note": "doing" },
+    { "id": "naar-school", "nl": "We lopen elke dag naar school.", "en": "We walk to school every day.", "alts": ["Elke dag lopen we naar school."], "rule": "lopen means to walk.", "note": "lopen" },
+    { "id": "rennen", "nl": "Rennen, de bus komt eraan!", "en": "Run, the bus is coming!", "rule": "rennen means to run fast.", "note": "lopen" },
+    { "id": "hoe-loopt", "nl": "Hoe loopt het?", "en": "How's it going?", "reply": { "nl": "Het loopt goed, dank je.", "en": "It's going well, thanks." }, "rule": "lopen can mean that something is going.", "note": "lopen" },
+    { "id": "ga-zitten", "nl": "Ga maar zitten.", "en": "Have a seat.", "rule": "Sit down: ga … zitten.", "note": "gaan" },
+    { "id": "ga-liggen", "nl": "Ga even liggen, je bent moe.", "en": "Go and lie down for a bit, you're tired.", "rule": "Lie down: ga … liggen.", "note": "gaan" }
+  ]
+}

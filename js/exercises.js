@@ -67,8 +67,23 @@ function distractors(card, pool, get, count) {
 }
 
 // The rule behind a card, with its full grammar note folded away so the round keeps flowing.
+let lessonsById = new Map();
+export function setLessons(map) {
+  lessonsById = map;
+}
+
+// A card's "note" is a note id in its own lesson, or "lesson-id/note-id" for a rule taught in another lesson.
+function findNote(ref, lesson) {
+  if (!ref) return null;
+  const [lessonId, noteId] = ref.includes('/') ? ref.split('/') : [lesson?.id, ref];
+  const owner = lessonId === lesson?.id ? lesson : lessonsById.get(lessonId);
+  const note = owner?.notes?.find((n) => n.id === noteId);
+  return note ? { note, owner } : null;
+}
+
 function ruleBlock(card, lesson) {
-  const note = card.note ? lesson?.notes?.find((n) => n.id === card.note) : null;
+  const found = findNote(card.note, lesson);
+  const note = found?.note;
   if (!card.rule && !note) return null;
   return h(
     'div',
@@ -99,7 +114,7 @@ function ruleBlock(card, lesson) {
                 )
               : null,
             furtherReading(note.links),
-            h('p', { class: 'note' }, h('a', { href: `#/lesson/${lesson.id}/${note.id}` }, 'Open this rule in the lesson'), ' (ends this round)'),
+            h('p', { class: 'note' }, h('a', { href: `#/lesson/${found.owner.id}/${note.id}` }, found.owner === lesson ? 'Open this rule in the lesson' : `Open this rule in “${found.owner.title}”`), ' (ends this round)'),
           ),
         )
       : null,

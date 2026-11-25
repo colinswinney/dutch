@@ -1,0 +1,122 @@
+{
+  "id": "split-verbs",
+  "group": "Grammar",
+  "title": "Split verbs: ophalen, meenemen, opstaan",
+  "titleNl": "Scheidbare werkwoorden",
+  "level": "A1 → A2",
+  "intro": "Many everyday verbs have two parts, like op + halen. Sometimes the front part jumps to the end of the sentence, and sometimes it stays. This lesson shows each case, with lines from a normal family day.",
+  "preferredMode": "build",
+  "notes": [
+    {
+      "id": "present",
+      "title": "1. In a simple sentence, the front part goes to the end",
+      "body": [
+        "A split verb has a small front part such as op, mee, aan, uit, af, in or terug. In a simple sentence the main part sits in second place and the front part goes to the very end.",
+        "The front part carries the stress: OPhalen, MEEnemen. That stress tells you a verb will split."
+      ],
+      "examples": [
+        { "nl": "Ik [haal] haar vandaag [op].", "en": "I'm picking her up today. (ophalen)" },
+        { "nl": "Ze [staat] om zeven uur [op].", "en": "She gets up at seven. (opstaan)" },
+        { "nl": "Ik [neem] mijn gitaar [mee].", "en": "I'm bringing my guitar. (meenemen)" }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 10: Separable verbs", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Grammatica_10-1_~_Separable_verbs" }
+      ]
+    },
+    {
+      "id": "together",
+      "title": "2. When the verb is at the end, the parts stay together",
+      "body": [
+        "After wil, moet, kan or ga, the main verb goes to the end. Then the two parts stay together as one word.",
+        "The same happens in a side sentence after dat, omdat, als or wanneer."
+      ],
+      "examples": [
+        { "nl": "Ik moet haar om drie uur [ophalen].", "en": "I have to pick her up at three." },
+        { "nl": "Ik wil graag [meedoen].", "en": "I'd like to join in." },
+        { "nl": "Ik denk dat de les om vier uur [afloopt].", "en": "I think the lesson ends at four." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 10: Subclauses", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Subclauses" }
+      ]
+    },
+    {
+      "id": "commands",
+      "title": "3. Telling someone what to do",
+      "body": [
+        "For a command, start with the main part of the verb. The front part still goes to the end."
+      ],
+      "examples": [
+        { "nl": "[Ruim] je kamer [op]!", "en": "Tidy your room!" },
+        { "nl": "[Doe] je schoenen [aan]!", "en": "Put your shoes on!" },
+        { "nl": "[Zet] de muziek [uit]!", "en": "Turn the music off!" }
+      ]
+    },
+    {
+      "id": "past",
+      "title": "4. In the past, ge- goes in the middle",
+      "body": [
+        "In the past form, ge- goes between the two parts. You write it as one word: opgehaald, aangedaan, meegenomen, uitgezet."
+      ],
+      "examples": [
+        { "nl": "Wie heeft haar [opgehaald]?", "en": "Who picked her up?" },
+        { "nl": "Ze heeft haar zwemspullen [meegenomen].", "en": "She brought her swimming things." },
+        { "nl": "Ik ben vroeg [opgestaan].", "en": "I got up early." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 10: Separable verbs", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Grammatica_10-1_~_Separable_verbs" }
+      ]
+    },
+    {
+      "id": "te",
+      "title": "5. With te, it splits into three words",
+      "body": [
+        "After om, vergeet niet, zin hebben or proberen, a verb gets te in front. With a split verb, te goes between the two parts, and you write three separate words: op te halen, mee te nemen."
+      ],
+      "examples": [
+        { "nl": "Vergeet niet om je handdoek [mee te nemen].", "en": "Don't forget to bring your towel." },
+        { "nl": "Ik heb geen zin om [op te staan].", "en": "I don't feel like getting up." }
+      ]
+    },
+    {
+      "id": "not-split",
+      "title": "6. Verbs that never split",
+      "body": [
+        "Verbs that start with be-, ver-, ont-, her- or ge- never split. They get no ge- in the past either: betalen, vertellen, beginnen, vertrekken.",
+        "You can hear it: the stress is not on the front part. beTAlen, verTELlen, beGINnen."
+      ],
+      "examples": [
+        { "nl": "Ik [betaal] met mijn telefoon.", "en": "I'm paying with my phone." },
+        { "nl": "Wanneer [vertrekt] de bus?", "en": "When does the bus leave?" },
+        { "nl": "Ze heeft me alles [verteld].", "en": "She told me everything." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 6: Verbs that never split", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_6#Inseperable_verbs" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "ophalen", "nl": "Ik haal haar vandaag op.", "en": "I'm picking her up today.", "alts": ["Vandaag haal ik haar op."], "rule": "ophalen: op goes to the end.", "note": "present" },
+    { "id": "opstaan", "nl": "Ze staat elke dag om zeven uur op.", "en": "She gets up at seven every day.", "alts": ["Elke dag staat ze om zeven uur op."], "rule": "opstaan: op goes to the end.", "note": "present" },
+    { "id": "gitaar-mee", "nl": "Ik neem mijn gitaar mee.", "en": "I'm bringing my guitar.", "rule": "meenemen: mee goes to the end.", "note": "present" },
+    { "id": "meedoen", "nl": "Doe je mee?", "en": "Are you joining in?", "reply": { "nl": "Ja, ik doe mee!", "en": "Yes, I'm in!" }, "rule": "meedoen: a question starts with doe, and mee goes to the end.", "note": "present" },
+    { "id": "aankomen", "nl": "De trein komt om vijf uur aan.", "en": "The train arrives at five.", "rule": "aankomen: aan goes to the end.", "note": "present" },
+    { "id": "terugbellen", "nl": "Ik bel je morgen terug.", "en": "I'll call you back tomorrow.", "alts": ["Morgen bel ik je terug."], "rule": "terugbellen: terug goes to the end.", "note": "present" },
+    { "id": "moet-ophalen", "nl": "Ik moet haar om drie uur ophalen.", "en": "I have to pick her up at three.", "alts": ["Om drie uur moet ik haar ophalen."], "rule": "After moet, ophalen stays in one piece at the end.", "note": "together" },
+    { "id": "jas-aan", "nl": "Kun je je jas aandoen?", "en": "Can you put your coat on?", "rule": "After kun, aandoen stays in one piece at the end.", "note": "together" },
+    { "id": "wil-meedoen", "nl": "Ik wil graag meedoen.", "en": "I'd like to join in.", "rule": "After wil, meedoen stays in one piece.", "note": "together" },
+    { "id": "afloopt", "nl": "Ik denk dat de les om vier uur afloopt.", "en": "I think the lesson ends at four.", "rule": "After dat, the verb goes to the end in one piece: afloopt.", "note": "together" },
+    { "id": "opruimen", "nl": "Ruim je kamer op!", "en": "Tidy your room!", "rule": "Command: ruim first, op last.", "note": "commands" },
+    { "id": "schoenen-aan", "nl": "Doe je schoenen aan!", "en": "Put your shoes on!", "rule": "Command: doe first, aan last.", "note": "commands" },
+    { "id": "muziek-uit", "nl": "Zet de muziek uit!", "en": "Turn the music off!", "rule": "Command: zet first, uit last.", "note": "commands" },
+    { "id": "jas-uit", "nl": "Trek je jas maar uit.", "en": "Go ahead and take your coat off.", "rule": "Command: trek first, uit last.", "note": "commands" },
+    { "id": "wie-opgehaald", "nl": "Wie heeft haar opgehaald?", "en": "Who picked her up?", "reply": { "nl": "Haar vader.", "en": "Her dad." }, "rule": "Past: ge- in the middle, opgehaald.", "note": "past" },
+    { "id": "zwemspullen", "nl": "Ze heeft haar zwemspullen meegenomen.", "en": "She brought her swimming things.", "rule": "Past: ge- in the middle, meegenomen.", "note": "past" },
+    { "id": "vroeg-op", "nl": "Ik ben vanochtend vroeg opgestaan.", "en": "I got up early this morning.", "alts": ["Vanochtend ben ik vroeg opgestaan."], "rule": "Past: opgestaan, with ben.", "note": "past" },
+    { "id": "tv-uit", "nl": "Heb je de tv uitgezet?", "en": "Did you turn the TV off?", "rule": "Past: ge- in the middle, uitgezet.", "note": "past" },
+    { "id": "handdoek", "nl": "Vergeet niet om je handdoek mee te nemen.", "en": "Don't forget to bring your towel.", "rule": "With te: mee te nemen, three words.", "note": "te" },
+    { "id": "geen-zin", "nl": "Ik heb geen zin om op te staan.", "en": "I don't feel like getting up.", "rule": "With te: op te staan, three words.", "note": "te" },
+    { "id": "betalen", "nl": "Ik betaal met mijn telefoon.", "en": "I'm paying with my phone.", "rule": "betalen starts with be-, so it never splits.", "note": "not-split" },
+    { "id": "vertrekt", "nl": "Wanneer vertrekt de bus?", "en": "When does the bus leave?", "reply": { "nl": "Over tien minuten.", "en": "In ten minutes." }, "rule": "vertrekken starts with ver-, so it never splits.", "note": "not-split" },
+    { "id": "verteld", "nl": "Ze heeft me alles verteld.", "en": "She told me everything.", "rule": "vertellen: no split, and no extra ge- in the past.", "note": "not-split" }
+  ]
+}

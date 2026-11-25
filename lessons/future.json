@@ -1,0 +1,109 @@
+{
+  "id": "future",
+  "group": "Grammar",
+  "title": "Plans and the future",
+  "titleNl": "Wat ga je doen?",
+  "level": "A1 → A2",
+  "intro": "Dutch often talks about the future with the normal present tense and a time word. For plans, add gaan. For promises, offers and guesses, use zullen.",
+  "preferredMode": "build",
+  "notes": [
+    {
+      "id": "present",
+      "title": "1. Present tense plus a time word",
+      "body": [
+        "The easiest way to talk about the future is the present tense. A word like morgen, straks, volgende week or zaterdag tells the listener it is the future.",
+        "Remember verb second. If you start with the time word, the subject comes after the verb."
+      ],
+      "examples": [
+        { "nl": "Morgen [heb] ik een concert.", "en": "I have a concert tomorrow." },
+        { "nl": "Ik [bel] je straks.", "en": "I'll call you later." },
+        { "nl": "Volgende week [begint] de spinningles weer.", "en": "Spin class starts again next week." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 9: Future", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_9#Future" }
+      ]
+    },
+    {
+      "id": "gaan",
+      "title": "2. Plans: gaan + a verb at the end",
+      "body": [
+        "For plans, put a form of gaan in second place and the main verb at the very end. It works like English “going to”.",
+        "Gaan on its own still means going somewhere: ik ga naar de sportschool."
+      ],
+      "examples": [
+        { "nl": "Ik [ga] zaterdag [hardlopen].", "en": "I'm going running on Saturday." },
+        { "nl": "We [gaan] vanavond pizza [eten].", "en": "We're having pizza tonight." },
+        { "nl": "Wat [ga] je dit weekend [doen]?", "en": "What are you going to do this weekend?" }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 11: Verbs in final position", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_11#Verbs_in_final_position" }
+      ]
+    },
+    {
+      "id": "zullen",
+      "title": "3. zullen: promises and guesses",
+      "body": [
+        "Zullen is the formal future: ik zal, jij zal or zult, hij zal, wij zullen. The main verb goes to the end.",
+        "When people talk, you hear it mostly in promises and guesses. Ik zal het doen means “I'll do it, I promise.” Dat zal wel lukken means “That will probably work out.”"
+      ],
+      "examples": [
+        { "nl": "Ik [zal] het morgen [meenemen].", "en": "I'll bring it tomorrow." },
+        { "nl": "Dat [zal] wel [lukken].", "en": "That will probably work out." },
+        { "nl": "Het [zal] wel druk [zijn].", "en": "It'll probably be busy." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 9: Future with zullen", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_9#Future" }
+      ]
+    },
+    {
+      "id": "zullen-we",
+      "title": "4. Offers and ideas: Zal ik…? Zullen we…?",
+      "body": [
+        "Zal ik…? offers to do something, like “Shall I…?”. Zullen we…? suggests doing something together, like “Shall we…?” or “Let's…”."
+      ],
+      "examples": [
+        { "nl": "[Zal] ik je [helpen]?", "en": "Shall I help you?" },
+        { "nl": "[Zullen] we samen [hardlopen]?", "en": "Shall we go running together?" },
+        { "nl": "[Zullen] we om zeven uur [afspreken]?", "en": "Shall we meet at seven?" }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 9: zullen and other helping verbs", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_9#Grammatica_9.1_~_Zullen,_kunnen,_mogen,_moeten,_hoeven_and_laten" }
+      ]
+    },
+    {
+      "id": "om-te",
+      "title": "5. Towards A2: van plan zijn om … te …",
+      "body": [
+        "To say what you intend to do, use van plan zijn om … te …, with te and the verb at the very end. Zin hebben om … te … works the same way and means “feel like”.",
+        "With a split verb, te goes between the two parts: mee te gaan, op te staan."
+      ],
+      "examples": [
+        { "nl": "Ik ben van plan om een halve marathon [te lopen].", "en": "I'm planning to run a half marathon." },
+        { "nl": "Heb je zin om [mee te gaan]?", "en": "Do you feel like coming along?" },
+        { "nl": "Ik ben van plan om vroeg [op te staan].", "en": "I'm planning to get up early." }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "concert", "nl": "Morgen heb ik een concert.", "en": "I have a concert tomorrow.", "alts": ["Ik heb morgen een concert."], "rule": "Present tense plus morgen. Start with morgen and the verb still comes second.", "note": "present" },
+    { "id": "bel-straks", "nl": "Ik bel je straks.", "en": "I'll call you later.", "rule": "Present tense plus straks.", "note": "present" },
+    { "id": "spinning-weer", "nl": "Volgende week begint de spinningles weer.", "en": "Spin class starts again next week.", "alts": ["De spinningles begint volgende week weer."], "rule": "Present tense plus volgende week.", "note": "present" },
+    { "id": "thuis", "nl": "Hoe laat ben je thuis?", "en": "What time will you be home?", "reply": { "nl": "Rond zes uur.", "en": "Around six." }, "rule": "Present tense: the context shows it is the future.", "note": "present" },
+    { "id": "hardlopen", "nl": "Ik ga zaterdag hardlopen.", "en": "I'm going running on Saturday.", "alts": ["Zaterdag ga ik hardlopen."], "rule": "ga second, hardlopen at the end in one piece.", "note": "gaan" },
+    { "id": "weekend", "nl": "Wat ga je dit weekend doen?", "en": "What are you going to do this weekend?", "reply": { "nl": "We gaan naar opa en oma.", "en": "We're going to Grandma and Grandpa's." }, "rule": "Question word, ga, then doen at the end.", "note": "gaan" },
+    { "id": "pizza", "nl": "We gaan vanavond pizza eten.", "en": "We're having pizza tonight.", "alts": ["Vanavond gaan we pizza eten."], "rule": "gaan second, eten at the end.", "note": "gaan" },
+    { "id": "snaar", "nl": "Ik ga nieuwe snaren kopen.", "en": "I'm going to buy new strings.", "rule": "gaan second, kopen at the end.", "note": "gaan" },
+    { "id": "meenemen", "nl": "Ik zal het morgen meenemen.", "en": "I'll bring it tomorrow.", "alts": ["Morgen zal ik het meenemen."], "rule": "A promise: zal second, meenemen at the end.", "note": "zullen" },
+    { "id": "lukken", "nl": "Dat zal wel lukken.", "en": "That will probably work out.", "rule": "A guess: zal … wel.", "note": "zullen" },
+    { "id": "druk", "nl": "Het zal wel druk zijn.", "en": "It'll probably be busy.", "rule": "A guess: zal … wel, with zijn at the end.", "note": "zullen" },
+    { "id": "bericht", "nl": "Ik zal je een bericht sturen.", "en": "I'll send you a message.", "rule": "A promise: zal second, sturen at the end.", "note": "zullen" },
+    { "id": "helpen", "nl": "Zal ik je helpen?", "en": "Shall I help you?", "reply": { "nl": "Ja, graag!", "en": "Yes, please!" }, "rule": "An offer: Zal ik…?", "note": "zullen-we" },
+    { "id": "samen-lopen", "nl": "Zullen we samen hardlopen?", "en": "Shall we go running together?", "reply": { "nl": "Leuk! Wanneer?", "en": "Nice! When?" }, "rule": "An idea for both of you: Zullen we…?", "note": "zullen-we" },
+    { "id": "afspreken", "nl": "Zullen we om zeven uur afspreken?", "en": "Shall we meet at seven?", "reply": { "nl": "Prima, tot dan!", "en": "Fine, see you then!" }, "rule": "Zullen we…? with afspreken at the end.", "note": "zullen-we" },
+    { "id": "kinderen", "nl": "Zal ik de kinderen ophalen?", "en": "Shall I pick up the kids?", "reply": { "nl": "Graag, dat is fijn.", "en": "Yes please, that would be great." }, "rule": "An offer: Zal ik…? with ophalen at the end in one piece.", "note": "zullen-we" },
+    { "id": "marathon", "nl": "Ik ben van plan om een halve marathon te lopen.", "en": "I'm planning to run a half marathon.", "rule": "van plan zijn om … te lopen.", "note": "om-te" },
+    { "id": "meegaan", "nl": "Heb je zin om mee te gaan?", "en": "Do you feel like coming along?", "reply": { "nl": "Ja, gezellig!", "en": "Yes, that'd be nice!" }, "rule": "zin om … te: meegaan becomes mee te gaan.", "note": "om-te" },
+    { "id": "vroeg-op", "nl": "Ik ben van plan om vroeg op te staan.", "en": "I'm planning to get up early.", "rule": "opstaan with te in the middle: op te staan.", "note": "om-te" },
+    { "id": "willen", "nl": "Ik wil volgend jaar een marathon lopen.", "en": "I want to run a marathon next year.", "alts": ["Volgend jaar wil ik een marathon lopen."], "rule": "wil second, lopen at the end.", "note": "sentence-structure/two-verbs" }
+  ]
+}

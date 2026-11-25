@@ -1,0 +1,94 @@
+{
+  "id": "running",
+  "group": "Hobbies and sport",
+  "title": "Running",
+  "titleNl": "Hardlopen",
+  "level": "A1 → A2",
+  "intro": "Lines for runs with friends, the running club, a race, and the chat afterwards. Hardlopen is a split verb, so this lesson gives you lots of practice with it.",
+  "notes": [
+    {
+      "id": "hardlopen",
+      "title": "Hardlopen splits: ik loop hard",
+      "body": [
+        "Hardlopen is running as a sport. In a simple sentence, hard goes to the end: ik loop elke zondag hard.",
+        "After ga, wil or moet, it stays in one piece: ik ga hardlopen. The past form is hardgelopen, with heb.",
+        "Runners also just say lopen: ik heb tien kilometer gelopen."
+      ],
+      "examples": [
+        { "nl": "Ik [loop] elke zondag [hard].", "en": "I go running every Sunday." },
+        { "nl": "Ik ga morgen [hardlopen].", "en": "I'm going running tomorrow." },
+        { "nl": "Ik heb vanochtend [hardgelopen].", "en": "I went running this morning." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 10: Separable verbs", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Grammatica_10-1_~_Separable_verbs" }
+      ]
+    },
+    {
+      "id": "distance",
+      "title": "Distances and times",
+      "body": [
+        "After a number, kilometer and uur stay singular: tien kilometer, twee uur. Minuut does change: vijf minuten.",
+        "Dutch writes a comma where English writes a decimal point. A half marathon is 21,1 kilometer: eenentwintig komma een."
+      ],
+      "examples": [
+        { "nl": "Ik loop meestal [acht kilometer].", "en": "I usually run eight kilometres." },
+        { "nl": "Mijn tijd was [vijfenvijftig minuten].", "en": "My time was fifty-five minutes." }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "drie-keer", "nl": "Ik loop drie keer per week hard.", "en": "I go running three times a week.", "rule": "hardlopen splits: hard goes to the end.", "note": "hardlopen" },
+    { "id": "loop-jij", "nl": "Loop je ook hard?", "en": "Do you run too?", "reply": { "nl": "Ja, maar niet zo vaak.", "en": "Yes, but not that often." }, "rule": "Question: loop first, hard last.", "note": "hardlopen" },
+    { "id": "morgen-weer", "nl": "Ik ga morgen weer hardlopen.", "en": "I'm going running again tomorrow.", "alts": ["Morgen ga ik weer hardlopen."], "rule": "After ga, hardlopen stays in one piece.", "note": "hardlopen" },
+    { "id": "samen", "nl": "Zullen we zaterdag samen hardlopen?", "en": "Shall we go for a run together on Saturday?", "reply": { "nl": "Goed idee! Hoe laat?", "en": "Good idea! What time?" }, "rule": "An idea for both of you: Zullen we…?", "note": "future/zullen-we" },
+    { "id": "hoe-ver", "nl": "Hoe ver loop je meestal?", "en": "How far do you usually run?", "reply": { "nl": "Meestal een kilometer of acht.", "en": "Usually about eight kilometres." }, "rule": "Question word first, verb second.", "note": "sentence-structure/questions" },
+    { "id": "tien-km", "nl": "Ik heb vanochtend tien kilometer gelopen.", "en": "I ran ten kilometres this morning.", "alts": ["Vanochtend heb ik tien kilometer gelopen."], "rule": "Only the activity, no place you went to, so use heb.", "note": "past/zijn" },
+    { "id": "halve-marathon", "nl": "Ik train voor een halve marathon.", "en": "I'm training for a half marathon." },
+    { "id": "ingeschreven", "nl": "Ik heb me ingeschreven voor de tien kilometer.", "en": "I've signed up for the ten kilometre race.", "rule": "inschrijven in the past: ge- in the middle, ingeschreven.", "note": "split-verbs/past" },
+    { "id": "start", "nl": "Hoe laat is de start?", "en": "What time is the start?", "reply": { "nl": "Om tien uur, bij het stadion.", "en": "At ten, by the stadium." } },
+    { "id": "opstaan", "nl": "Ik sta morgen om zes uur op.", "en": "I'm getting up at six tomorrow.", "alts": ["Morgen sta ik om zes uur op."], "rule": "opstaan: op goes to the end.", "note": "split-verbs/present" },
+    { "id": "rekken", "nl": "Ik moet eerst even rekken.", "en": "I need to stretch first.", "rule": "Two verbs: rekken goes to the end.", "note": "sentence-structure/two-verbs" },
+    { "id": "langzamer", "nl": "Kun je iets langzamer lopen?", "en": "Can you run a bit slower?", "reply": { "nl": "Natuurlijk, geen probleem.", "en": "Of course, no problem." }, "rule": "Question with two verbs: kun first, lopen at the end.", "note": "sentence-structure/two-verbs" },
+    { "id": "knie", "nl": "Mijn knie doet pijn.", "en": "My knee hurts." },
+    { "id": "record", "nl": "Ik heb een persoonlijk record gelopen!", "en": "I ran a personal best!", "reply": { "nl": "Wat goed! Gefeliciteerd!", "en": "Great! Congratulations!" }, "rule": "Past: heb second, gelopen at the end.", "note": "past/perfect" },
+    { "id": "tijd", "nl": "Mijn tijd was vijfenvijftig minuten.", "en": "My time was fifty-five minutes.", "rule": "Units before tens: vijf-en-vijftig.", "note": "distance" },
+    { "id": "regen", "nl": "Het regent, maar ik ga toch.", "en": "It's raining, but I'm going anyway." },
+    { "id": "kapot", "nl": "Ik ben helemaal kapot.", "en": "I'm completely worn out." },
+    { "id": "club", "nl": "Ik ben lid van een hardloopclub.", "en": "I'm a member of a running club." },
+    { "id": "naar-huis", "nl": "Ik ben naar huis gerend.", "en": "I ran home.", "rule": "You name the place you went to, so use ben.", "note": "past/zijn" }
+  ],
+  "readings": [
+    {
+      "id": "stadsloop",
+      "kind": "Email from the running club",
+      "title": "Zondag: de Stadsloop",
+      "text": [
+        "Beste lopers,",
+        "Zondag is er geen gewone training, want dan is de Stadsloop. Wie meedoet, verzamelt om half tien bij de ingang van het park.",
+        "Je startnummer haal je zaterdag op bij de sportwinkel. Vergeet niet om het op je shirt te spelden!",
+        "Na de finish drinken we samen koffie in de kantine. Veel succes allemaal!"
+      ],
+      "translation": [
+        "Dear runners,",
+        "There's no normal training on Sunday, because that's the day of the city run. If you're taking part, meet at half past nine at the park entrance.",
+        "Pick up your race number at the sports shop on Saturday. Don't forget to pin it on your shirt!",
+        "After the finish we'll have coffee together in the clubhouse. Good luck, everyone!"
+      ],
+      "glossary": [
+        { "nl": "de loper", "en": "the runner" },
+        { "nl": "meedoen", "en": "to take part" },
+        { "nl": "verzamelen", "en": "to gather, meet up" },
+        { "nl": "de ingang", "en": "the entrance" },
+        { "nl": "het startnummer", "en": "the race number" },
+        { "nl": "spelden", "en": "to pin" },
+        { "nl": "de kantine", "en": "the clubhouse café" }
+      ],
+      "questions": [
+        { "q": "Why is there no normal training on Sunday?", "options": ["It's a holiday", "There's a race", "The park is closed"], "answer": 1 },
+        { "q": "What time do the runners meet?", "options": ["9:30", "10:30", "9:00"], "answer": 0 },
+        { "q": "Where do you pick up your race number?", "options": ["At the start", "At the sports shop", "In the clubhouse"], "answer": 1 },
+        { "q": "What happens after the finish?", "options": ["Coffee together in the clubhouse", "A team photo", "A prize ceremony"], "answer": 0 }
+      ]
+    }
+  ]
+}

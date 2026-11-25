@@ -1,0 +1,135 @@
+{
+  "id": "past",
+  "group": "Grammar",
+  "title": "Talking about the past",
+  "titleNl": "Wat heb je gedaan?",
+  "level": "A1 → A2",
+  "intro": "When Dutch people talk about yesterday or last weekend, they mostly use heb or ben plus a past form at the end. This lesson shows how to make those past forms, when to use ben, and the short past forms like was and had that you hear all the time.",
+  "preferredMode": "build",
+  "notes": [
+    {
+      "id": "perfect",
+      "title": "1. The everyday past: heb + a ge- word at the end",
+      "body": [
+        "Dutch talks about the past mostly with hebben. Put heb, hebt, heeft or hebben in second place. The past form of the main verb goes to the very end.",
+        "English “I played” becomes “I have played”: ik heb gespeeld. You use this form even when English uses the simple past."
+      ],
+      "examples": [
+        { "nl": "Ik [heb] gitaar [gespeeld].", "en": "I played guitar." },
+        { "nl": "We [hebben] pannenkoeken [gegeten].", "en": "We ate pancakes." },
+        { "nl": "Wat [heb] je op school [gedaan]?", "en": "What did you do at school?" }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 6: Perfect tense", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_6#Perfect_tense" }
+      ]
+    },
+    {
+      "id": "d-or-t",
+      "title": "2. Regular verbs: ge + stem + d or t",
+      "body": [
+        "For a regular verb, take the stem. That is the ik form: spelen gives speel, werken gives werk. Put ge- in front and -d or -t at the end.",
+        "If the stem ends in t, k, f, s, ch or p, add -t. These are the consonants in the phrase [’t kofschip]. Everything else gets -d. If the stem already ends in t or d, add nothing.",
+        "You can't hear the difference, because a final d sounds like a t. It matters only when you write."
+      ],
+      "examples": [
+        { "nl": "Ik heb thuis [gewerkt].", "en": "I worked at home. (werk ends in k)" },
+        { "nl": "Ze heeft de hele middag [gedanst].", "en": "She danced all afternoon. (dans ends in s)" },
+        { "nl": "Ik heb hard [getraind].", "en": "I trained hard. (train ends in n)" },
+        { "nl": "Ik heb lang [gewacht].", "en": "I waited a long time. (wacht already ends in t)" }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 6: Past forms on -d and -t", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_6#The_past_participle_on_-d_and_-t" }
+      ]
+    },
+    {
+      "id": "irregular",
+      "title": "3. Common irregular verbs, and verbs without ge-",
+      "body": [
+        "Many everyday verbs have their own past form. Learn them as words: gegaan, gedaan, gezien, gegeten, gedronken, gekocht, gelopen, gezwommen.",
+        "Verbs that start with be-, ver-, ont-, her- or ge- get no extra ge-. Betalen becomes betaald, and vergeten stays vergeten."
+      ],
+      "examples": [
+        { "nl": "Ik heb een nieuwe gitaar [gekocht].", "en": "I bought a new guitar. (kopen)" },
+        { "nl": "Heb je al [betaald]?", "en": "Have you paid yet? (betalen)" },
+        { "nl": "Ik ben mijn sleutels [vergeten].", "en": "I forgot my keys. (vergeten)" }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 6: Strong verbs", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_6#Strong_verbs" },
+        { "label": "Wikibooks Dutch, lesson 6: Verbs without ge-", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_6#Inseperable_verbs" }
+      ]
+    },
+    {
+      "id": "zijn",
+      "title": "4. ben or heb? Going somewhere, or a change",
+      "body": [
+        "Use zijn (ben, bent, is, zijn) when someone goes to a place, or when something changes. Common ones are gaan, komen, blijven, worden and beginnen.",
+        "Lopen, fietsen and zwemmen can take either. If you name the place you went to, use ben. If you only talk about the activity, use heb."
+      ],
+      "examples": [
+        { "nl": "Ze [is] met de fiets naar school [gegaan].", "en": "She went to school by bike." },
+        { "nl": "Ik [ben] naar huis [gelopen].", "en": "I walked home." },
+        { "nl": "Ik [heb] een uur [gefietst].", "en": "I cycled for an hour." },
+        { "nl": "Ze [is] in maart zes [geworden].", "en": "She turned six in March." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 12: Verbs of motion with zijn or hebben", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_12#Verbs_of_motion" },
+        { "label": "Wikibooks Dutch, lesson 12: Verbs that take zijn", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_12#Ergative_verbs", "note": "advanced" }
+      ]
+    },
+    {
+      "id": "split-past",
+      "title": "5. Split verbs in the past: ge- goes in the middle",
+      "body": [
+        "With split verbs like ophalen and meenemen, ge- goes between the two parts, and you write it as one word: opgehaald, meegenomen, opgestaan."
+      ],
+      "examples": [
+        { "nl": "Ik heb haar om drie uur [opgehaald].", "en": "I picked her up at three." },
+        { "nl": "Heb je je gymspullen [meegenomen]?", "en": "Did you bring your PE things?" },
+        { "nl": "Hoe laat ben je [opgestaan]?", "en": "What time did you get up?" }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 10: Separable verbs", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_10#Grammatica_10-1_~_Separable_verbs" }
+      ]
+    },
+    {
+      "id": "was-had",
+      "title": "6. Towards A2: was, had and other one-word past forms",
+      "body": [
+        "For zijn and hebben, Dutch speakers use a one-word past all the time: was and waren, had and hadden.",
+        "Other verbs mostly use heb or ben when people talk. In stories and messages you also see one-word past forms. Regular verbs add -de or -te to the stem, with the same ’t kofschip rule: ik speelde, ik werkte. Irregular ones change: ging, kwam, zag."
+      ],
+      "examples": [
+        { "nl": "Het [was] heel gezellig.", "en": "It was really nice." },
+        { "nl": "We [hadden] geen tijd.", "en": "We didn't have time." },
+        { "nl": "Vroeger [speelde] ik in een band.", "en": "I used to play in a band." }
+      ],
+      "links": [
+        { "label": "Wikibooks Dutch, lesson 6: Past tense with -de and -te", "url": "https://en.wikibooks.org/wiki/Dutch/Lesson_6#Past_tense" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "gitaar-gespeeld", "nl": "Ik heb gisteren gitaar gespeeld.", "en": "I played guitar yesterday.", "alts": ["Gisteren heb ik gitaar gespeeld."], "rule": "heb second, gespeeld at the end.", "note": "perfect" },
+    { "id": "weekend", "nl": "Wat heb je dit weekend gedaan?", "en": "What did you do this weekend?", "reply": { "nl": "We zijn naar het strand gegaan.", "en": "We went to the beach." }, "rule": "Question word, heb, then gedaan at the end.", "note": "perfect" },
+    { "id": "pannenkoeken", "nl": "We hebben pannenkoeken gegeten.", "en": "We ate pancakes.", "rule": "eten becomes gegeten. Learn it as a word.", "note": "irregular" },
+    { "id": "school-gedaan", "nl": "Wat heb je op school gedaan?", "en": "What did you do at school?", "reply": { "nl": "We hebben geknutseld.", "en": "We did crafts." }, "rule": "doen becomes gedaan.", "note": "perfect" },
+    { "id": "thuis-gewerkt", "nl": "Ik heb vandaag thuis gewerkt.", "en": "I worked from home today.", "alts": ["Vandaag heb ik thuis gewerkt."], "rule": "werk ends in k, so add -t: gewerkt.", "note": "d-or-t" },
+    { "id": "gedanst", "nl": "Ze heeft de hele middag gedanst.", "en": "She danced all afternoon.", "rule": "dans ends in s, so add -t: gedanst.", "note": "d-or-t" },
+    { "id": "getraind", "nl": "Ik heb vanochtend hard getraind.", "en": "I trained hard this morning.", "alts": ["Vanochtend heb ik hard getraind."], "rule": "train ends in n, so add -d: getraind.", "note": "d-or-t" },
+    { "id": "gitaar-gekocht", "nl": "Ik heb een nieuwe gitaar gekocht.", "en": "I bought a new guitar.", "rule": "kopen becomes gekocht.", "note": "irregular" },
+    { "id": "betaald", "nl": "Heb je al betaald?", "en": "Have you paid yet?", "reply": { "nl": "Ja, met mijn pinpas.", "en": "Yes, with my debit card." }, "rule": "betalen starts with be-, so no extra ge-: betaald.", "note": "irregular" },
+    { "id": "sleutels-vergeten", "nl": "Ik ben mijn sleutels vergeten.", "en": "I forgot my keys.", "rule": "vergeten starts with ver-, so it stays vergeten.", "note": "irregular" },
+    { "id": "fiets-school", "nl": "Ze is met de fiets naar school gegaan.", "en": "She went to school by bike.", "rule": "Going to a place: is, not heeft.", "note": "zijn" },
+    { "id": "naar-huis", "nl": "Ik ben naar huis gelopen.", "en": "I walked home.", "rule": "You name the place you went to, so use ben.", "note": "zijn" },
+    { "id": "vijf-km", "nl": "Ik heb vandaag vijf kilometer gelopen.", "en": "I ran five kilometres today.", "alts": ["Vandaag heb ik vijf kilometer gelopen."], "rule": "Only the activity, no place you went to, so use heb.", "note": "zijn" },
+    { "id": "zes-geworden", "nl": "Ze is in maart zes geworden.", "en": "She turned six in March.", "rule": "A change, with worden: is.", "note": "zijn" },
+    { "id": "opgestaan", "nl": "Hoe laat ben je opgestaan?", "en": "What time did you get up?", "reply": { "nl": "Om half zeven.", "en": "At half past six." }, "rule": "opstaan becomes opgestaan, with ben.", "note": "split-past" },
+    { "id": "opgehaald", "nl": "Ik heb haar om drie uur opgehaald.", "en": "I picked her up at three.", "alts": ["Om drie uur heb ik haar opgehaald."], "rule": "ophalen becomes opgehaald: ge- in the middle.", "note": "split-past" },
+    { "id": "meegenomen", "nl": "Heb je je gymspullen meegenomen?", "en": "Did you bring your PE things?", "reply": { "nl": "Oeps, nee!", "en": "Oops, no!" }, "rule": "meenemen becomes meegenomen.", "note": "split-past" },
+    { "id": "gezellig", "nl": "Het was heel gezellig.", "en": "It was really nice.", "rule": "was: the one-word past of is.", "note": "was-had" },
+    { "id": "geen-tijd", "nl": "We hadden geen tijd.", "en": "We didn't have time.", "rule": "hadden: the one-word past of hebben.", "note": "was-had" },
+    { "id": "vakantie", "nl": "Waren jullie op vakantie?", "en": "Were you on holiday?", "reply": { "nl": "Ja, we waren in Frankrijk.", "en": "Yes, we were in France." }, "rule": "waren: the one-word past of zijn, for more than one person.", "note": "was-had" },
+    { "id": "dag", "nl": "Hoe was je dag?", "en": "How was your day?", "reply": { "nl": "Goed! We hebben buiten gespeeld.", "en": "Good! We played outside." }, "rule": "Question word, was, then the rest.", "note": "was-had" },
+    { "id": "band", "nl": "Vroeger speelde ik in een band.", "en": "I used to play in a band.", "alts": ["Ik speelde vroeger in een band."], "rule": "One-word past: speel + de.", "note": "was-had" }
+  ]
+}

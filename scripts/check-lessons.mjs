@@ -19,6 +19,8 @@ const bag = (text) =>
 
 const index = JSON.parse(await readFile(new URL('index.json', root), 'utf8'));
 const lessonIds = new Set();
+const notesByLesson = new Map();
+const noteRefs = [];
 
 for (const id of index.lessons) {
   const where = `lessons/${id}.json`;
@@ -32,6 +34,7 @@ for (const id of index.lessons) {
   if (lesson.id !== id) fail(where, `"id" is "${lesson.id}" but the file is listed as "${id}"`);
   if (lessonIds.has(id)) fail(where, 'listed twice in index.json');
   lessonIds.add(id);
+  if (lesson.group !== undefined && (typeof lesson.group !== 'string' || !lesson.group.trim())) fail(where, '"group" must be a heading, such as "Grammar"');
   for (const field of ['title', 'titleNl', 'level', 'intro']) {
     if (typeof lesson[field] !== 'string' || !lesson[field].trim()) fail(where, `missing "${field}"`);
   }
@@ -39,6 +42,7 @@ for (const id of index.lessons) {
   if (!Array.isArray(lesson.cards) || !lesson.cards.length) fail(where, 'needs at least one card');
 
   const noteIds = new Set();
+  notesByLesson.set(id, noteIds);
   for (const [i, note] of (lesson.notes ?? []).entries()) {
     const at = `${where} note ${i + 1} (${note.title})`;
     if (note.id) {
@@ -58,7 +62,7 @@ for (const id of index.lessons) {
       if (cardIds.has(card.id)) fail(at, `duplicate card id "${card.id}"`);
       cardIds.add(card.id);
     }
-    if (card.note && !noteIds.has(card.note)) fail(at, `"note" points to "${card.note}", but no note has that id`);
+    if (card.note) noteRefs.push({ at, lessonId: id, ref: card.note });
     if (card.reply && (!card.reply.nl || !card.reply.en)) fail(at, 'reply needs "nl" and "en"');
     for (const m of card.modes ?? []) if (!MODES.has(m)) fail(at, `unknown mode "${m}"`);
     for (const alt of card.alts ?? []) {
@@ -75,6 +79,12 @@ for (const id of index.lessons) {
       }
     }
   }
+}
+
+// Checked after every lesson is read, because a card can point to a note in another lesson: "past/zijn".
+for (const { at, lessonId, ref } of noteRefs) {
+  const [owner, noteId] = ref.includes('/') ? ref.split('/') : [lessonId, ref];
+  if (!notesByLesson.get(owner)?.has(noteId)) fail(at, `"note" points to "${ref}", but no note has that id`);
 }
 
 if (errors.length) {

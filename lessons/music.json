@@ -1,0 +1,103 @@
+{
+  "id": "music",
+  "group": "Hobbies and sport",
+  "title": "Music and the guitar",
+  "titleNl": "Muziek en gitaar",
+  "level": "A1 → A2",
+  "intro": "Talk about playing guitar, the music you like, band rehearsals and gigs, and buying strings at the music shop. Many lines use the past and the future, so you practise those too.",
+  "notes": [
+    {
+      "id": "spelen",
+      "title": "Playing an instrument: no de or het",
+      "body": [
+        "Dutch says ik speel gitaar, with no de or het in front of the instrument. The same goes for piano, drums and viool.",
+        "A song is een nummer or een liedje. A gig or show is een optreden. To rehearse is repeteren, and practising on your own is oefenen."
+      ],
+      "examples": [
+        { "nl": "Ik [speel] gitaar.", "en": "I play guitar." },
+        { "nl": "Dat is mijn favoriete [nummer].", "en": "That's my favourite song." },
+        { "nl": "We [repeteren] elke dinsdagavond.", "en": "We rehearse every Tuesday evening." }
+      ]
+    },
+    {
+      "id": "al",
+      "title": "How long: al + the present tense",
+      "body": [
+        "English says “I have been playing for twenty years”. Dutch uses the present tense with al: ik speel al twintig jaar gitaar.",
+        "To ask how long, say hoe lang … al?"
+      ],
+      "examples": [
+        { "nl": "Ik speel [al] twintig jaar gitaar.", "en": "I've been playing guitar for twenty years." },
+        { "nl": "Hoe lang speel je [al]?", "en": "How long have you been playing?" }
+      ]
+    },
+    {
+      "id": "gear",
+      "title": "Guitar words",
+      "body": [
+        "de snaar, de snaren: the string, the strings. het akkoord: the chord. het plectrum: the pick. de versterker: the amp. stemmen: to tune.",
+        "Stemmen also means to vote, but nobody gets confused at the music shop. A guitar that is out of tune is vals."
+      ],
+      "examples": [
+        { "nl": "Ik moet mijn gitaar even [stemmen].", "en": "I need to tune my guitar quickly." },
+        { "nl": "Er is een [snaar] gebroken.", "en": "A string broke." },
+        { "nl": "Ken je dit [akkoord]?", "en": "Do you know this chord?" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "speel-gitaar", "nl": "Ik speel gitaar.", "en": "I play guitar.", "rule": "No de or het before the instrument.", "note": "spelen" },
+    { "id": "instrument", "nl": "Speel je een instrument?", "en": "Do you play an instrument?", "reply": { "nl": "Ja, ik speel gitaar.", "en": "Yes, I play guitar." }, "rule": "Yes-or-no question: verb first, and the -t drops before je.", "note": "sentence-structure/questions" },
+    { "id": "twintig-jaar", "nl": "Ik speel al twintig jaar gitaar.", "en": "I've been playing guitar for twenty years.", "rule": "al + the present tense.", "note": "al" },
+    { "id": "hoe-lang", "nl": "Hoe lang speel je al?", "en": "How long have you been playing?", "reply": { "nl": "Al sinds mijn vijftiende.", "en": "Since I was fifteen." }, "rule": "hoe lang … al, with the present tense.", "note": "al" },
+    { "id": "welke-muziek", "nl": "Wat voor muziek vind je leuk?", "en": "What kind of music do you like?", "reply": { "nl": "Vooral rock en blues.", "en": "Mostly rock and blues." } },
+    { "id": "favoriet", "nl": "Dat is mijn favoriete nummer.", "en": "That's my favourite song.", "note": "spelen" },
+    { "id": "stemmen", "nl": "Ik moet mijn gitaar even stemmen.", "en": "I need to tune my guitar quickly.", "rule": "Two verbs: stemmen goes to the end.", "note": "sentence-structure/two-verbs" },
+    { "id": "snaar-gebroken", "nl": "Er is een snaar gebroken.", "en": "A string broke.", "rule": "Breaking is a change, so the past uses is.", "note": "past/zijn" },
+    { "id": "snaren-kopen", "nl": "Heeft u snaren voor een akoestische gitaar?", "en": "Do you have strings for an acoustic guitar?", "who": "You", "reply": { "nl": "Ja, die liggen hier.", "en": "Yes, they're over here." } },
+    { "id": "proberen", "nl": "Mag ik deze gitaar even proberen?", "en": "May I try this guitar for a moment?", "who": "You", "reply": { "nl": "Natuurlijk, ga je gang.", "en": "Of course, go ahead." } },
+    { "id": "aansluiten", "nl": "Ik sluit de versterker aan.", "en": "I'm plugging in the amp.", "rule": "aansluiten: aan goes to the end.", "note": "split-verbs/present" },
+    { "id": "nieuw-nummer", "nl": "Ik heb gisteren een nieuw nummer geleerd.", "en": "I learned a new song yesterday.", "alts": ["Gisteren heb ik een nieuw nummer geleerd."], "rule": "Past: heb second, geleerd at the end.", "note": "past/perfect" },
+    { "id": "bandje", "nl": "Ik speel in een bandje met vrienden.", "en": "I play in a little band with friends." },
+    { "id": "repeteren", "nl": "We repeteren elke dinsdagavond.", "en": "We rehearse every Tuesday evening.", "alts": ["Elke dinsdagavond repeteren we."], "rule": "Start with the time and the verb still comes second.", "note": "sentence-structure/verb-second" },
+    { "id": "optreden", "nl": "Zaterdag hebben we een optreden.", "en": "We have a gig on Saturday.", "alts": ["We hebben zaterdag een optreden."], "rule": "Future: present tense plus a time word.", "note": "future/present" },
+    { "id": "kom-je", "nl": "Kom je naar ons optreden?", "en": "Are you coming to our gig?", "reply": { "nl": "Ja, ik kom zeker!", "en": "Yes, I'll definitely come!" } },
+    { "id": "oefenen", "nl": "Ik ga vanavond een uurtje oefenen.", "en": "I'm going to practise for an hour tonight.", "alts": ["Vanavond ga ik een uurtje oefenen."], "rule": "A plan: ga second, oefenen at the end.", "note": "future/gaan" },
+    { "id": "concert", "nl": "We gaan vrijdag naar een concert.", "en": "We're going to a concert on Friday.", "alts": ["Vrijdag gaan we naar een concert."], "rule": "Start with vrijdag and gaan still comes second.", "note": "sentence-structure/verb-second" },
+    { "id": "zat-spelen", "nl": "Ik zat net gitaar te spelen.", "en": "I was just playing guitar.", "rule": "zat te + verb: busy doing something, in the past.", "note": "staan-zitten-liggen/doing" },
+    { "id": "zachter", "nl": "Mag de muziek wat zachter?", "en": "Could the music be a bit quieter?", "reply": { "nl": "Sorry, ik zet hem zachter.", "en": "Sorry, I'll turn it down." } },
+    { "id": "liedje", "nl": "Zullen we samen een liedje zingen?", "en": "Shall we sing a song together?", "reply": { "nl": "Ja! Het liedje van school!", "en": "Yes! The song from school!" }, "rule": "An idea for both of you: Zullen we…?", "note": "future/zullen-we" }
+  ],
+  "readings": [
+    {
+      "id": "repetitie",
+      "kind": "Message in the band group chat",
+      "title": "Repetitie en optreden",
+      "text": [
+        "Hoi allemaal! De repetitie van dinsdag gaat niet door, want de oefenruimte is bezet.",
+        "We spelen nu op donderdag om acht uur. Kan iedereen dan?",
+        "Zaterdag is het optreden in het café. We beginnen om negen uur, maar we moeten om zeven uur alles opbouwen.",
+        "Nemen jullie zelf je kabels mee? Ik neem de versterker mee. Tot donderdag!"
+      ],
+      "translation": [
+        "Hi everyone! Tuesday's rehearsal is off, because the rehearsal room is taken.",
+        "We're now playing on Thursday at eight. Can everyone make it?",
+        "The gig at the café is on Saturday. We start at nine, but we have to set everything up at seven.",
+        "Will you all bring your own cables? I'll bring the amp. See you Thursday!"
+      ],
+      "glossary": [
+        { "nl": "niet doorgaan", "en": "to be cancelled" },
+        { "nl": "de oefenruimte", "en": "the rehearsal room" },
+        { "nl": "bezet", "en": "taken, occupied" },
+        { "nl": "opbouwen", "en": "to set up" },
+        { "nl": "de kabel", "en": "the cable" }
+      ],
+      "questions": [
+        { "q": "Why is Tuesday's rehearsal off?", "options": ["Someone is sick", "The rehearsal room is taken", "The café is closed"], "answer": 1 },
+        { "q": "When is the new rehearsal?", "options": ["Thursday at 8:00", "Thursday at 7:00", "Saturday at 9:00"], "answer": 0 },
+        { "q": "What time do they need to be at the café on Saturday?", "options": ["7:00", "8:00", "9:00"], "answer": 0 },
+        { "q": "What should everyone bring?", "options": ["The amp", "Their own cables", "Drinks"], "answer": 1 }
+      ]
+    }
+  ]
+}
