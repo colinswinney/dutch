@@ -3,6 +3,7 @@ import { store } from './store.js';
 import { hasTts, hasRecordings, recordingVoiceName, loadRecordings, dutchVoices, voicesReady, onVoicesChanged, speak, stopSpeaking, lastSpeechReport } from './speech.js';
 import { buildSession, renderExercise, setLessons } from './exercises.js';
 import { DRILLS } from './drills.js';
+import { PROMPTS, checkDutch } from './journal.js';
 import { icon, playRow, miniPlay, dutchLine, withTransition, announce, furtherReading } from './ui.js';
 
 const main = document.getElementById('main');
@@ -225,7 +226,10 @@ function showHome() {
           ),
         ]
       : null,
-    lessonGroups().map(([group, list]) => [h('h2', {}, group), h('ul', { class: 'lesson-list' }, list.map(lessonTile))]),
+    lessonGroups().map(([group, list]) => [
+      h('h2', {}, group),
+      h('ul', { class: 'lesson-list' }, list.map(lessonTile), group === 'Reading and writing' ? diaryTile() : null),
+    ]),
     h('h2', {}, 'Listening drills'),
     h('p', { class: 'note' }, 'Numbers, prices and times come fast. These drills make up new ones every time.'),
     h(
@@ -611,6 +615,209 @@ function showReading(lessonId, readingId) {
   ]);
 }
 
+/* ---------- Diary ---------- */
+function diaryTile() {
+  const count = store.current ? store.entries().length : 0;
+  return h(
+    'li',
+    {},
+    h(
+      'a',
+      { class: 'lesson-link', href: '#/write' },
+      h('span', { class: 'eyebrow', style: 'margin:0' }, 'Writing'),
+      h('span', { class: 't-nl', lang: 'nl' }, 'Dagboek'),
+      h('span', { class: 't-en' }, 'Write a few sentences, then check them'),
+      count ? h('span', { class: 'meta' }, `${count} ${count === 1 ? 'entry' : 'entries'}`) : null,
+    ),
+  );
+}
+
+function markMatch(sentence, match) {
+  const at = sentence.toLowerCase().indexOf(match.toLowerCase());
+  if (at < 0) return sentence;
+  return [sentence.slice(0, at), h('mark', {}, sentence.slice(at, at + match.length)), sentence.slice(at + match.length)];
+}
+
+function findingsList(text) {
+  const findings = checkDutch(text);
+  if (!findings.length) {
+    return h(
+      'p',
+      {},
+      'No common mistakes found. The checker only looks for a few patterns, so a teacher may still spot things.',
+    );
+  }
+  return h(
+    'ol',
+    { class: 'findings' },
+    findings.map((f) =>
+      h(
+        'li',
+        {},
+        h('p', { class: 'finding-title' }, f.title),
+        h('p', { class: 'finding-text', lang: 'nl' }, markMatch(f.sentence, f.match)),
+        h('p', {}, f.explain),
+        f.link ? h('p', { class: 'note' }, h('a', { href: f.link }, 'Explain this rule')) : null,
+      ),
+    ),
+  );
+}
+
+const dutchDate = (time) => new Date(time).toLocaleDateString('nl-NL', { weekday: 'long', day: 'numeric', month: 'long' });
+
+function entryItem(entry, refresh) {
+  const results = h('div', { class: 'stack' });
+  const check = h('button', { type: 'button', class: 'btn btn-quiet' }, 'Check this entry');
+  check.addEventListener('click', () => {
+    results.replaceChildren(findingsList(entry.text));
+    announce(`${checkDutch(entry.text).length} things to check`);
+  });
+  const slot = h('div', { class: 'row' });
+  const remove = h('button', { type: 'button', class: 'btn btn-quiet' }, 'Delete');
+  remove.addEventListener('click', () => {
+    const yes = h('button', { type: 'button', class: 'btn btn-danger' }, 'Yes, delete it');
+    const no = h('button', { type: 'button', class: 'btn btn-quiet' }, 'Keep');
+    yes.addEventListener('click', () => {
+      store.removeEntry(entry.id);
+      announce('Entry deleted');
+      refresh();
+    });
+    no.addEventListener('click', () => {
+      slot.replaceChildren(remove);
+      remove.focus();
+    });
+    slot.replaceChildren(yes, no);
+    no.focus();
+  });
+  slot.append(remove);
+  return h(
+    'li',
+    {},
+    h(
+      'details',
+      { class: 'entry' },
+      h('summary', { lang: 'nl' }, dutchDate(entry.date)),
+      h('div', { class: 'stack' }, h('p', { class: 'note', lang: 'nl' }, entry.prompt), h('p', { class: 'entry-text', lang: 'nl' }, entry.text), h('div', { class: 'row' }, check, slot), results),
+    ),
+  );
+}
+
+function showWrite() {
+  if (!requireProfile()) return;
+  let promptIndex = localDayNumber() % PROMPTS.length;
+  const promptBox = h('div', { class: 'stack' });
+  const showPrompt = () => {
+    const p = PROMPTS[promptIndex];
+    promptBox.replaceChildren(
+      h('p', { class: 'prompt-nl', lang: 'nl' }, p.nl),
+      h('p', { class: 'note', style: 'margin-top:0.25rem' }, p.en),
+      h('p', {}, h('strong', {}, 'Tip: '), p.tip, ' ', h('a', { href: p.link }, 'See the lesson')),
+    );
+  };
+  showPrompt();
+  const another = h('button', { type: 'button', class: 'btn btn-quiet' }, 'Another prompt');
+  another.addEventListener('click', () => {
+    promptIndex = (promptIndex + 1) % PROMPTS.length;
+    showPrompt();
+    announce(`New prompt: ${PROMPTS[promptIndex].en}`);
+  });
+
+  const textarea = h('textarea', {
+    id: 'diary',
+    class: 'input diary-input',
+    rows: '8',
+    lang: 'nl',
+    spellcheck: 'true',
+    autocapitalize: 'sentences',
+    'aria-describedby': 'diary-hint',
+  });
+  textarea.value = store.draft;
+  textarea.addEventListener('input', () => store.setDraft(textarea.value));
+
+  const status = h('p', { class: 'note', 'aria-live': 'polite' });
+  const resultsHeading = h('h2', { tabindex: '-1', style: 'margin-top:0' }, 'Things to check');
+  const results = h('section', { class: 'card stack', 'aria-labelledby': 'results-heading', hidden: true });
+  resultsHeading.id = 'results-heading';
+
+  const check = h('button', { type: 'submit', class: 'btn btn-big' }, 'Check my Dutch');
+  const saveBtn = h('button', { type: 'button', class: 'btn btn-quiet btn-big' }, 'Save entry');
+  const form = h(
+    'form',
+    { class: 'stack' },
+    h('div', { class: 'field' }, h('label', { for: 'diary' }, 'Your text in Dutch'), h('p', { id: 'diary-hint', class: 'note', style: 'margin:0' }, 'Your draft is kept on this device while you write.'), textarea),
+    h('div', { class: 'row' }, check, saveBtn),
+    status,
+  );
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!textarea.value.trim()) {
+      status.textContent = 'Write something first.';
+      return;
+    }
+    results.replaceChildren(resultsHeading, findingsList(textarea.value));
+    results.hidden = false;
+    resultsHeading.focus();
+  });
+
+  const entriesSlot = h('div');
+  const showEntries = () => {
+    const entries = store.entries();
+    entriesSlot.replaceChildren(
+      h('h2', {}, entries.length ? `Your entries (${entries.length})` : 'Your entries'),
+      entries.length
+        ? h('ul', { class: 'entries' }, entries.map((e) => entryItem(e, showEntries)))
+        : h('p', { class: 'note' }, 'Saved entries appear here. They are saved on this device, and Settings → Copy progress takes them along.'),
+    );
+  };
+  showEntries();
+
+  saveBtn.addEventListener('click', () => {
+    if (!textarea.value.trim()) {
+      status.textContent = 'Write something first.';
+      return;
+    }
+    store.addEntry({ prompt: PROMPTS[promptIndex].nl, text: textarea.value.trim() });
+    textarea.value = '';
+    results.hidden = true;
+    showEntries();
+    status.textContent = 'Saved. Your entry is in the list below.';
+  });
+
+  const tools = [];
+  if (dutchVoices().length) {
+    const listen = h('button', { type: 'button', class: 'btn btn-quiet' }, icon('play'), 'Listen');
+    listen.addEventListener('click', () => textarea.value.trim() && speak(textarea.value));
+    tools.push(listen);
+  }
+  const copy = h('button', { type: 'button', class: 'btn btn-quiet' }, 'Copy text');
+  copy.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(textarea.value);
+      status.textContent = 'Copied. You can paste it into a message to your teacher.';
+    } catch {
+      status.textContent = 'Copying was blocked by the browser.';
+    }
+  });
+  tools.push(copy);
+
+  render('Dagboek', [
+    backLink('#/', 'Home'),
+    h('span', { class: 'eyebrow' }, 'Writing practice'),
+    pageTitle('Dagboek', true),
+    h(
+      'p',
+      { class: 'lede' },
+      'Write a few sentences a day. The checker looks for common mistakes, like the verb in second place and heb or heeft. It can’t catch everything, so show your entries to your teacher too.',
+    ),
+    h('section', { class: 'card stack', 'aria-labelledby': 'prompt-heading' }, h('h2', { id: 'prompt-heading', style: 'margin-top:0' }, 'Today’s prompt'), promptBox, another),
+    form,
+    h('div', { class: 'row' }, tools),
+    dutchVoices().length ? h('p', { class: 'note' }, 'Listen uses this device’s own Dutch voice, because your text has no recording.') : null,
+    results,
+    entriesSlot,
+  ]);
+}
+
 /* ---------- Settings ---------- */
 function voiceTest() {
   const result = h('p', { class: 'note', 'aria-live': 'polite' });
@@ -778,6 +985,8 @@ function route() {
       return showReading(a, b);
     case 'settings':
       return showSettings();
+    case 'write':
+      return showWrite();
     default:
       return showNotFound();
   }

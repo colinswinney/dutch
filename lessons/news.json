@@ -1,0 +1,212 @@
+{
+  "id": "news",
+  "group": "Reading and writing",
+  "title": "News in easy Dutch",
+  "titleNl": "Het nieuws",
+  "level": "A2",
+  "intro": "Words and phrases that come up in every news report, plus short practice texts in easy Dutch. The texts were written for this site in the style of easy-Dutch news. They are not real news reports.",
+  "notes": [
+    {
+      "id": "patterns",
+      "title": "Phrases you see in every report",
+      "body": [
+        "volgens means “according to”: volgens de politie, volgens de gemeente.",
+        "er is and er zijn mean “there is” and “there are”. News often starts this way: er is een storing, er zijn verkiezingen.",
+        "zich zorgen maken means to be worried: veel mensen maken zich zorgen."
+      ],
+      "examples": [
+        { "nl": "[Volgens] de politie was het een ongeluk.", "en": "According to the police, it was an accident." },
+        { "nl": "[Er zijn] volgende maand verkiezingen.", "en": "There are elections next month." },
+        { "nl": "Veel mensen [maken zich zorgen].", "en": "Many people are worried." }
+      ]
+    },
+    {
+      "id": "reading-tips",
+      "title": "How to read a news text",
+      "body": [
+        "Read the title and the first sentence twice. Together they usually answer who, what, where and when.",
+        "Don't look up every word. Read to the end first, then look up only the words you saw more than once.",
+        "For real news in simple Dutch, try the NOS Jeugdjournaal. It is made for children, so the sentences are short and hard words are explained."
+      ],
+      "links": [
+        { "label": "NOS Jeugdjournaal", "url": "https://jeugdjournaal.nl/", "note": "free news for children, in Dutch" }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "gezien", "nl": "Heb je het nieuws gezien?", "en": "Have you seen the news?", "reply": { "nl": "Nee, wat is er gebeurd?", "en": "No, what happened?" }, "rule": "Past: heb first in the question, gezien at the end.", "note": "past/perfect" },
+    { "id": "gebeurd", "nl": "Wat is er gebeurd?", "en": "What happened?", "rule": "gebeuren is a change, so it uses is.", "note": "past/zijn" },
+    { "id": "volgens", "nl": "Volgens de politie was het een ongeluk.", "en": "According to the police, it was an accident.", "rule": "volgens de politie is one part, so the verb comes straight after it.", "note": "patterns" },
+    { "id": "gewond", "nl": "Er zijn drie mensen gewond geraakt.", "en": "Three people were injured.", "note": "patterns" },
+    { "id": "verkiezingen", "nl": "Volgende maand zijn er verkiezingen.", "en": "There are elections next month.", "alts": ["Er zijn volgende maand verkiezingen."], "rule": "er zijn: there are.", "note": "patterns" },
+    { "id": "stemmen", "nl": "Ga jij ook stemmen?", "en": "Are you going to vote too?", "reply": { "nl": "Ja, ik ga zeker stemmen.", "en": "Yes, I'm definitely going to vote." }, "rule": "A plan: ga, with stemmen at the end.", "note": "future/gaan" },
+    { "id": "huizen", "nl": "De regering wil meer huizen bouwen.", "en": "The government wants to build more homes.", "rule": "wil second, bouwen at the end.", "note": "sentence-structure/two-verbs" },
+    { "id": "tekort", "nl": "Er is een groot tekort aan huizen.", "en": "There's a big shortage of homes.", "rule": "er is: there is.", "note": "patterns" },
+    { "id": "huren", "nl": "De huren zijn veel te hoog.", "en": "Rents are far too high." },
+    { "id": "plan", "nl": "De gemeente heeft een nieuw plan.", "en": "The council has a new plan.", "rule": "One thing that isn't you or me: heeft.", "note": "verb-forms/zijn-hebben" },
+    { "id": "minister", "nl": "De minister zegt dat het beter moet.", "en": "The minister says it has to get better.", "rule": "dat sends the verb to the end.", "note": "sentence-structure/side-sentences" },
+    { "id": "zorgen", "nl": "Veel mensen maken zich zorgen.", "en": "Many people are worried.", "note": "patterns" },
+    { "id": "prijzen", "nl": "De prijzen zijn flink gestegen.", "en": "Prices have gone up a lot.", "rule": "stijgen is a change, so the past uses zijn.", "note": "past/zijn" },
+    { "id": "storing", "nl": "Er rijden geen treinen door een storing.", "en": "No trains are running because of a breakdown." },
+    { "id": "warm", "nl": "Het wordt morgen heel warm.", "en": "It's going to be very hot tomorrow.", "alts": ["Morgen wordt het heel warm."], "rule": "Future: present tense plus morgen.", "note": "future/present" },
+    { "id": "makkelijke-taal", "nl": "Ik lees het nieuws in makkelijke taal.", "en": "I read the news in easy Dutch." }
+  ],
+  "readings": [
+    {
+      "id": "huisarts",
+      "kind": "News in easy Dutch",
+      "title": "Moeilijk om een huisarts te vinden",
+      "text": [
+        "In veel steden is het moeilijk om een huisarts te vinden. Nieuwe bewoners staan soms maanden op een wachtlijst.",
+        "Een huisarts vertelt dat ze elke week mensen moet weigeren. ‘Mijn praktijk zit helemaal vol,’ zegt ze.",
+        "Zonder huisarts kun je niet zomaar naar een specialist. Bij spoed ’s avonds of in het weekend bel je de huisartsenpost.",
+        "De tip van de gemeente: schrijf je meteen in bij een huisarts als je verhuist. Wacht niet tot je ziek bent."
+      ],
+      "translation": [
+        "In many cities it's hard to find a GP. New residents are sometimes on a waiting list for months.",
+        "One GP says she has to turn people away every week. ‘My practice is completely full,’ she says.",
+        "Without a GP you can't just go to a specialist. For an emergency in the evening or at the weekend, you call the out-of-hours GP service.",
+        "The council's tip: sign up with a GP straight away when you move. Don't wait until you're ill."
+      ],
+      "glossary": [
+        { "nl": "de huisarts", "en": "the GP, family doctor" },
+        { "nl": "de bewoner", "en": "the resident" },
+        { "nl": "weigeren", "en": "to refuse, turn away" },
+        { "nl": "de praktijk", "en": "the practice" },
+        { "nl": "de spoed", "en": "the emergency, urgency" },
+        { "nl": "de huisartsenpost", "en": "the out-of-hours GP service" },
+        { "nl": "zich inschrijven", "en": "to sign up, register" }
+      ],
+      "questions": [
+        { "q": "What is the problem for new residents?", "options": ["GPs are too expensive", "They wait months for a GP", "GPs only speak Dutch"], "answer": 1 },
+        { "q": "Why does the GP turn people away?", "options": ["Her practice is full", "She is moving", "She is ill"], "answer": 0 },
+        { "q": "When do you call the huisartsenpost?", "options": ["For a check-up", "For an emergency in the evening or weekend", "To sign up with a GP"], "answer": 1 },
+        { "q": "What does the council advise?", "options": ["Wait until you're ill", "Sign up straight away when you move", "Go to a specialist"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "hitte",
+      "kind": "News in easy Dutch",
+      "title": "Het wordt heel warm",
+      "text": [
+        "Deze week wordt het heel warm. Op donderdag kan het 34 graden worden.",
+        "Oudere mensen en kleine kinderen hebben het meeste last van de hitte. Drink genoeg water en blijf tussen twaalf en vier uur uit de zon.",
+        "Sommige scholen beginnen vroeger. Dan zijn de kinderen om één uur uit en hoeven ze niet in een warm lokaal te zitten.",
+        "De zwembaden in de stad blijven langer open. Op zaterdag kun je tot negen uur ’s avonds zwemmen."
+      ],
+      "translation": [
+        "It's going to be very hot this week. On Thursday it could reach 34 degrees.",
+        "Older people and small children suffer most from the heat. Drink enough water and stay out of the sun between twelve and four.",
+        "Some schools start earlier. Then the children finish at one o'clock and don't have to sit in a hot classroom.",
+        "The swimming pools in the city stay open longer. On Saturday you can swim until nine in the evening."
+      ],
+      "glossary": [
+        { "nl": "de graad, de graden", "en": "the degree, degrees" },
+        { "nl": "last hebben van", "en": "to suffer from, be bothered by" },
+        { "nl": "de hitte", "en": "the heat" },
+        { "nl": "uit zijn", "en": "to finish (school)" },
+        { "nl": "het lokaal", "en": "the classroom" }
+      ],
+      "questions": [
+        { "q": "How hot can it get on Thursday?", "options": ["24 degrees", "30 degrees", "34 degrees"], "answer": 2 },
+        { "q": "When should you stay out of the sun?", "options": ["Between 12 and 4", "Between 10 and 2", "Between 2 and 6"], "answer": 0 },
+        { "q": "What do some schools do?", "options": ["Close for the week", "Start earlier and finish at one", "Have lessons outside"], "answer": 1 },
+        { "q": "Until when can you swim on Saturday?", "options": ["7 p.m.", "9 p.m.", "10 p.m."], "answer": 1 }
+      ]
+    },
+    {
+      "id": "stemmen",
+      "kind": "News in easy Dutch",
+      "title": "Hoe werkt stemmen?",
+      "text": [
+        "Binnenkort zijn er verkiezingen voor de gemeenteraad. Dan kies je wie er beslist over jouw stad of dorp.",
+        "Niet alleen Nederlanders mogen stemmen. Mensen uit een ander EU-land mogen ook stemmen. Mensen van buiten de EU mogen stemmen als ze hier vijf jaar legaal wonen.",
+        "Je krijgt een stempas thuis. Neem die mee naar het stembureau, samen met je paspoort of ID-kaart.",
+        "In het stembureau krijg je een groot stembiljet. Je maakt één vakje rood met een rood potlood. De gemeente organiseert ook informatieavonden waar je kunt oefenen."
+      ],
+      "translation": [
+        "There will soon be elections for the municipal council. You choose who makes decisions about your town or village.",
+        "It's not only Dutch citizens who can vote. People from another EU country can vote too. People from outside the EU can vote if they have lived here legally for five years.",
+        "You get a voting pass at home. Take it to the polling station, together with your passport or ID card.",
+        "At the polling station you get a large ballot paper. You colour in one box with a red pencil. The council also holds information evenings where you can practise."
+      ],
+      "glossary": [
+        { "nl": "de verkiezingen", "en": "the elections" },
+        { "nl": "de gemeenteraad", "en": "the municipal council" },
+        { "nl": "beslissen", "en": "to decide" },
+        { "nl": "de stempas", "en": "the voting pass" },
+        { "nl": "het stembureau", "en": "the polling station" },
+        { "nl": "het stembiljet", "en": "the ballot paper" },
+        { "nl": "het vakje", "en": "the box (on a form)" }
+      ],
+      "questions": [
+        { "q": "Which people from outside the EU can vote in these elections?", "options": ["Nobody", "People who have lived here legally for five years", "Everyone with a job"], "answer": 1 },
+        { "q": "What do you take to the polling station?", "options": ["Your voting pass and your passport or ID card", "Only your passport", "A letter from the council"], "answer": 0 },
+        { "q": "How do you vote?", "options": ["Write a name", "Colour one box red", "Press a button"], "answer": 1 },
+        { "q": "What can you do at the information evenings?", "options": ["Vote early", "Practise voting", "Meet the mayor"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "strand",
+      "kind": "News in easy Dutch",
+      "title": "Vrijwilligers maken het strand schoon",
+      "text": [
+        "Zaterdag hebben vrijwilligers het strand schoongemaakt. Ze vonden vooral flesjes, doppen en stukjes visnet.",
+        "Plastic is gevaarlijk voor dieren. Zeehonden en vogels raken soms vast in oude visnetten.",
+        "Op kleine flesjes en blikjes betaal je statiegeld. Daardoor liggen er minder flesjes op straat, zegt een vrijwilliger.",
+        "Wil je ook helpen? Op de website van de gemeente staat wanneer de volgende schoonmaakdag is."
+      ],
+      "translation": [
+        "On Saturday, volunteers cleaned the beach. They mostly found small bottles, caps and pieces of fishing net.",
+        "Plastic is dangerous for animals. Seals and birds sometimes get stuck in old fishing nets.",
+        "You pay a deposit on small bottles and cans. Because of that, there are fewer bottles lying on the street, says one volunteer.",
+        "Want to help too? The council's website says when the next clean-up day is."
+      ],
+      "glossary": [
+        { "nl": "de vrijwilliger", "en": "the volunteer" },
+        { "nl": "de dop", "en": "the cap, lid" },
+        { "nl": "het visnet", "en": "the fishing net" },
+        { "nl": "de zeehond", "en": "the seal" },
+        { "nl": "vastraken", "en": "to get stuck" },
+        { "nl": "het statiegeld", "en": "the deposit (on bottles)" }
+      ],
+      "questions": [
+        { "q": "What did the volunteers find most?", "options": ["Shoes and toys", "Bottles, caps and pieces of net", "Glass"], "answer": 1 },
+        { "q": "Why is plastic dangerous for seals and birds?", "options": ["They get stuck in old nets", "It makes the water warm", "They can't see it"], "answer": 0 },
+        { "q": "What has the deposit on small bottles done?", "options": ["Made bottles more expensive", "Fewer bottles on the street", "Nothing"], "answer": 1 },
+        { "q": "Where can you find the next clean-up day?", "options": ["In the newspaper", "On the council's website", "At the supermarket"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "storing",
+      "kind": "News in easy Dutch",
+      "title": "Geen treinen door een storing",
+      "text": [
+        "Tussen twee grote stations rijden vanochtend geen treinen. Er is een storing aan het spoor.",
+        "Er rijden bussen in plaats van treinen. Reizigers zijn wel ongeveer een uur langer onderweg.",
+        "Kijk voordat je vertrekt in de reisplanner. Daar zie je welke treinen wel rijden.",
+        "De storing duurt waarschijnlijk tot het einde van de middag."
+      ],
+      "translation": [
+        "No trains are running between two big stations this morning. There's a fault on the track.",
+        "Buses are running instead of trains. Travellers will take about an hour longer, though.",
+        "Check the journey planner before you leave. It shows which trains are running.",
+        "The disruption will probably last until the end of the afternoon."
+      ],
+      "glossary": [
+        { "nl": "de storing", "en": "the breakdown, fault" },
+        { "nl": "het spoor", "en": "the track" },
+        { "nl": "in plaats van", "en": "instead of" },
+        { "nl": "de reiziger", "en": "the traveller" },
+        { "nl": "onderweg", "en": "on the way" },
+        { "nl": "waarschijnlijk", "en": "probably" }
+      ],
+      "questions": [
+        { "q": "Why are there no trains?", "options": ["A strike", "A fault on the track", "Bad weather"], "answer": 1 },
+        { "q": "What runs instead?", "options": ["Buses", "Taxis", "Nothing"], "answer": 0 },
+        { "q": "How much longer is the journey?", "options": ["Ten minutes", "About an hour", "Two hours"], "answer": 1 },
+        { "q": "When will it probably be fixed?", "options": ["By lunchtime", "By the end of the afternoon", "Tomorrow"], "answer": 1 }
+      ]
+    }
+  ]
+}

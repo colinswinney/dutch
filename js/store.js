@@ -8,6 +8,8 @@ const empty = () => ({
   profiles: [],
   current: null,
   progress: {},
+  journal: {},
+  drafts: {},
   settings: { voiceURI: null, rate: 0.95 },
 });
 
@@ -64,6 +66,8 @@ export const store = {
   removeProfile(name) {
     state.profiles = state.profiles.filter((p) => p !== name);
     delete state.progress[name];
+    delete state.journal[name];
+    delete state.drafts[name];
     if (state.current === name) state.current = state.profiles[0] ?? null;
     save();
   },
@@ -102,6 +106,30 @@ export const store = {
       }
     }
     return { fresh, due, learned, total: cards.length };
+  },
+  entries() {
+    return state.journal[state.current] ?? [];
+  },
+  addEntry({ prompt, text }) {
+    if (!state.current) return;
+    const list = (state.journal[state.current] ??= []);
+    list.unshift({ id: `${Date.now()}`, date: Date.now(), prompt, text });
+    delete state.drafts[state.current];
+    save();
+  },
+  removeEntry(id) {
+    const list = state.journal[state.current];
+    if (!list) return;
+    state.journal[state.current] = list.filter((e) => e.id !== id);
+    save();
+  },
+  get draft() {
+    return state.drafts[state.current] ?? '';
+  },
+  setDraft(text) {
+    if (!state.current) return;
+    state.drafts[state.current] = text;
+    save();
   },
   exportData() {
     return JSON.stringify(state);

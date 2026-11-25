@@ -14,6 +14,8 @@ A small static site for practising A1–A2 Dutch for family life in the Netherla
 - **Spaced repetition** for each person. Phrases you miss come back sooner. Phrases you know come back less often.
 - **Explain this rule:** after each grammar exercise, the rule behind it opens in place, with links to further reading.
 - **Reading practice** with messages like the ones from school and the class group chat.
+- **Het nieuws:** short practice texts in the style of easy-Dutch news, with questions. They are written for this site, not real reports.
+- **Dagboek:** a daily writing prompt and a checker for common learner mistakes, such as the verb in second place, heb or heeft, and liggen or leggen. Entries are saved per person, and Copy progress takes them along. The checker is in `js/journal.js`. It only flags patterns it is sure about, so it misses some mistakes.
 - **Listening drills** for numbers, prices and times, with new items every round.
 
 Audio is recorded in advance with Google's Achernar voice (Google Cloud Text-to-Speech, Chirp 3 HD), so it sounds the same on every phone and plays even in Silent mode. Any line without a recording falls back to the device's own Dutch voice. Progress is saved in the browser, per person. To move progress between devices, use Settings → Copy progress.
