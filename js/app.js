@@ -1,10 +1,10 @@
 import { h, marked, stripMarks, slug, localDayNumber } from './util.js';
 import { store } from './store.js';
-import { hasTts, hasRecordings, recordingVoiceName, loadRecordings, dutchVoices, voicesReady, onVoicesChanged, speak, stopSpeaking, lastSpeechReport } from './speech.js';
+import { hasTts, hasRecordings, recordingVoiceName, loadRecordings, dutchVoices, voicesReady, onVoicesChanged, speak, togglePlay, stopSpeaking, lastSpeechReport } from './speech.js';
 import { buildSession, renderExercise, setLessons } from './exercises.js';
 import { DRILLS } from './drills.js';
 import { PROMPTS, checkDutch } from './journal.js';
-import { icon, playRow, miniPlay, dutchLine, withTransition, announce, furtherReading } from './ui.js';
+import { icon, playRow, audioPlayer, miniPlay, dutchLine, withTransition, announce, furtherReading } from './ui.js';
 
 const main = document.getElementById('main');
 const lessons = [];
@@ -674,7 +674,7 @@ function showReading(lessonId, readingId) {
     h(
       'section',
       { class: 'card' },
-      hasTts() ? playRow(fullText, { autoLabel: 'Read it to me' }) : null,
+      hasTts() ? audioPlayer(fullText) : null,
       h(
         'div',
         { class: 'reading-text', lang: 'nl' },
@@ -878,7 +878,7 @@ function showWrite() {
   const tools = [];
   if (dutchVoices().length) {
     const listen = h('button', { type: 'button', class: 'btn btn-quiet' }, icon('play'), 'Listen');
-    listen.addEventListener('click', () => textarea.value.trim() && speak(textarea.value));
+    listen.addEventListener('click', () => textarea.value.trim() && togglePlay(textarea.value));
     tools.push(listen);
   }
   const copy = h('button', { type: 'button', class: 'btn btn-quiet' }, 'Copy text');

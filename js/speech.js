@@ -33,6 +33,7 @@ let recordings = {};
 let recordingVoice = '';
 const player = new Audio();
 player.preload = 'auto';
+for (const type of ['play', 'pause', 'ended', 'timeupdate', 'loadedmetadata', 'ratechange']) player.addEventListener(type, () => emit());
 
 export async function loadRecordings() {
   try {
@@ -47,11 +48,37 @@ export async function loadRecordings() {
 }
 
 export const hasRecordings = () => Object.keys(recordings).length > 0;
+export const hasRecording = (text) => Boolean(recordings[speechKey(text)]);
+
+/* ---------- Playback state, for play/pause buttons and the reading player ---------- */
+// What is playing now: a recording (seekable) or the device voice (stop only).
+let current = { key: null, voice: false, slow: false };
+const listeners = new Set();
+export function onPlayback(callback) {
+  listeners.add(callback);
+}
+export function playback() {
+  const recording = Boolean(current.key) && !current.voice;
+  return {
+    key: current.key,
+    playing: recording ? !player.paused && !player.ended : current.voice && Boolean(synth?.speaking),
+    time: recording ? player.currentTime : 0,
+    duration: recording && Number.isFinite(player.duration) ? player.duration : 0,
+    slow: current.slow,
+  };
+}
+function emit() {
+  const state = playback();
+  for (const callback of listeners) callback(state);
+}
 export const recordingVoiceName = () => recordingVoice;
 export const hasTts = () => hasRecordings() || dutchVoices().length > 0;
 
-function playRecording(file, slow) {
+const rateFor = (slow) => ((store.settings.rate ?? 0.95) / 0.95) * (slow ? 0.7 : 1);
+
+function playRecording(file, slow, key) {
   stopSpeaking();
+  current = { key, voice: false, slow };
   return new Promise((resolve) => {
     const done = () => {
       for (const type of ['ended', 'error', 'pause']) player.removeEventListener(type, done);
@@ -59,7 +86,7 @@ function playRecording(file, slow) {
     };
     player.src = `audio/${file}`;
     // The speed setting is relative to Normal (0.95), so recordings follow it too.
-    const rate = ((store.settings.rate ?? 0.95) / 0.95) * (slow ? 0.7 : 1);
+    const rate = rateFor(slow);
     player.defaultPlaybackRate = rate;
     player.playbackRate = rate;
     player.preservesPitch = true;
@@ -142,15 +169,54 @@ function voiceQueue() {
 
 export function stopSpeaking() {
   if (!player.paused) player.pause();
-  if (synth && (synth.speaking || synth.pending)) synth.cancel();
+  if (synth && (synth.speaking || synth.pending)) {
+    synth.cancel();
+    emit();
+  }
+}
+
+// Play, pause or carry on. A paused recording resumes where it stopped; the device voice can only stop.
+export function togglePlay(text, { slow = false } = {}) {
+  const key = speechKey(text);
+  if (current.key === key) {
+    if (current.voice && synth?.speaking) {
+      synth.cancel();
+      emit();
+      return Promise.resolve();
+    }
+    if (!current.voice && !player.paused) {
+      player.pause();
+      return Promise.resolve();
+    }
+    if (!current.voice && !player.ended && player.currentTime > 0) {
+      return player.play().catch(() => {});
+    }
+  }
+  return speak(text, { slow });
+}
+
+export function seekTo(seconds) {
+  if (!current.key || current.voice || !Number.isFinite(player.duration)) return;
+  player.currentTime = Math.min(Math.max(0, seconds), player.duration);
+}
+export const seekBy = (seconds) => seekTo(player.currentTime + seconds);
+
+export function setSlow(slow) {
+  current.slow = slow;
+  if (current.key && !current.voice) {
+    player.playbackRate = rateFor(slow);
+    player.defaultPlaybackRate = player.playbackRate;
+  }
+  emit();
 }
 
 // Plays the Google recording when there is one. Otherwise speaks with the device voice,
 // sentence by sentence: Chrome cuts off single utterances that run past about 15 seconds.
 // If a voice does not start, the next Dutch voice gets a turn. Network voices such as Google's get longer.
 export function speak(text, { slow = false } = {}) {
-  const file = recordings[speechKey(text)];
-  if (file) return playRecording(file, slow);
+  const key = speechKey(text);
+  const file = recordings[key];
+  if (file) return playRecording(file, slow, key);
   const queue = voiceQueue();
   if (!synth || !queue.length) {
     lastReport = 'No Dutch voice could play.';
@@ -159,6 +225,8 @@ export function speak(text, { slow = false } = {}) {
   // Safari can drop an utterance queued straight after cancel(), so only cancel when something is playing.
   if (synth.speaking || synth.pending) synth.cancel();
   synth.resume();
+  if (!player.paused) player.pause();
+  current = { key, voice: true, slow };
   const clean = stripMarks(text).replace(/\s*\n+\s*/g, ' ');
   const parts = clean.match(/[^.!?]+[.!?]*/g) ?? [clean];
   const rate = (store.settings.rate ?? 0.95) * (slow ? 0.65 : 1);
@@ -169,6 +237,7 @@ export function speak(text, { slow = false } = {}) {
       if (!settled) {
         settled = true;
         resolve();
+        emit();
       }
     };
     const attempt = (index) => {
@@ -187,6 +256,7 @@ export function speak(text, { slow = false } = {}) {
         u.onstart = () => {
           started = true;
           lastReport = `Playing with ${voice.name}.`;
+          emit();
         };
         if (i === parts.length - 1) {
           u.onend = finish;

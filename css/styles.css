@@ -305,6 +305,19 @@ input, select, textarea { font: inherit; font-size: max(16px, 1rem); }
 
 .row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
 .play-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-block: 1rem; }
+.player { display: grid; gap: 0.4rem; margin-block: 1rem; }
+.player-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+.player-controls .btn { padding-inline: 0.85rem; gap: 0.4rem; }
+.player-controls .btn-round { inline-size: 3rem; block-size: 3rem; padding: 0; border-radius: 50%; }
+.player-controls .btn-round .icon { inline-size: 1.4rem; block-size: 1.4rem; }
+.player-controls .skip { font-variant-numeric: tabular-nums; }
+/* A pressed toggle here is tinted, not filled, so it never looks like the Play/Pause button. */
+.player-controls .btn-quiet[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+.player-controls .btn:disabled { opacity: 0.5; cursor: default; }
+.player-seek { display: flex; align-items: center; gap: 0.75rem; }
+.player-seek input { flex: 1; min-inline-size: 0; min-block-size: var(--target); margin: 0; accent-color: var(--accent); }
+.player-seek input:disabled { opacity: 0.5; }
+.time { min-inline-size: 7.5ch; text-align: end; color: var(--muted); font-size: 0.9rem; font-variant-numeric: tabular-nums; }
 
 @media (hover: hover) and (pointer: fine) {
   .btn:hover { box-shadow: 0 6px 18px -6px color-mix(in oklab, var(--accent) 60%, transparent); }

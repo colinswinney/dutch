@@ -22,11 +22,13 @@ Audio is recorded in advance with Google's Achernar voice (Google Cloud Text-to-
 
 ## Run it locally
 
-Any static file server works:
+Run the small server in `scripts/`:
 
 ```sh
-python3 -m http.server 8000
+node scripts/serve.mjs
 ```
+
+Other static servers work too, but the audio skip buttons need a server that answers range requests. `python3 -m http.server` doesn't, so skipping jumps back to the start there.
 
 Then open http://localhost:8000. The microphone only works on `localhost` or on `https`.
 

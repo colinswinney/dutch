@@ -1,10 +1,11 @@
-import { h } from './util.js';
-import { hasTts, speak } from './speech.js';
+import { h, speechKey } from './util.js';
+import { hasTts, hasRecording, speak, togglePlay, onPlayback, playback, seekTo, seekBy, setSlow } from './speech.js';
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 const ICONS = {
   play: 'M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z',
+  pause: 'M7 5h3.5v14H7zM13.5 5H17v14h-3.5z',
   slow: 'M12 4a8 8 0 1 0 8 8h-2a6 6 0 1 1-6-6V4Zm-1 3v5.4l3.8 2.3 1-1.7-2.8-1.7V7h-2Z',
   check: 'M9.5 16.2 5.3 12l-1.4 1.4 5.6 5.6L20.1 8.4 18.7 7 9.5 16.2Z',
   cross: 'M18.3 7.1 16.9 5.7 12 10.6 7.1 5.7 5.7 7.1l4.9 4.9-4.9 4.9 1.4 1.4 4.9-4.9 4.9 4.9 1.4-1.4-4.9-4.9 4.9-4.9Z',
@@ -31,19 +32,94 @@ export function icon(name) {
   return svg;
 }
 
+// Every play button carries the line it plays in data-say. One listener swaps Play and Pause on all of them.
+function setPlaying(button, playing) {
+  if (button.dataset.playing === String(playing)) return;
+  button.dataset.playing = String(playing);
+  button.querySelector('.icon')?.replaceWith(icon(playing ? 'pause' : 'play'));
+  const label = button.querySelector('.label');
+  if (label) label.textContent = playing ? 'Pause' : button.dataset.label;
+  else button.setAttribute('aria-label', playing ? 'Pause' : button.dataset.label);
+}
+
+const clock = (seconds) => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
+
+onPlayback((state) => {
+  for (const button of document.querySelectorAll('[data-say]')) setPlaying(button, button.dataset.say === state.key && state.playing);
+  for (const box of document.querySelectorAll('[data-player]')) {
+    const mine = box.dataset.player === state.key;
+    const range = box.querySelector('input[type="range"]');
+    const time = box.querySelector('.time');
+    const duration = mine ? state.duration : 0;
+    const at = mine ? state.time : 0;
+    range.disabled = !duration;
+    range.max = String(Math.ceil(duration) || 1);
+    if (box.dataset.dragging !== 'true') range.value = String(Math.floor(at));
+    range.setAttribute('aria-valuetext', duration ? `${clock(at)} of ${clock(duration)}` : 'Not started');
+    time.textContent = duration ? `${clock(at)} / ${clock(duration)}` : '';
+    for (const skip of box.querySelectorAll('.skip')) skip.disabled = !duration;
+  }
+});
+
 export function playRow(text, { autoLabel = 'Play' } = {}) {
   if (!hasTts()) return h('p', { class: 'note' }, 'No audio here: this device has no Dutch voice installed. See the home page for how to add one.');
   return h(
     'div',
     { class: 'play-row' },
-    h('button', { type: 'button', class: 'btn btn-play', onClick: () => speak(text) }, icon('play'), autoLabel),
+    h(
+      'button',
+      { type: 'button', class: 'btn btn-play', 'data-say': speechKey(text), 'data-label': autoLabel, onClick: () => togglePlay(text) },
+      icon('play'),
+      h('span', { class: 'label' }, autoLabel),
+    ),
     h('button', { type: 'button', class: 'btn btn-quiet', onClick: () => speak(text, { slow: true }) }, icon('slow'), 'Slow'),
   );
 }
 
+// For long recordings such as reading texts: pause, skip 5 seconds, a slow toggle and a position slider.
+let playerCount = 0;
+export function audioPlayer(text, { label = 'Play' } = {}) {
+  if (!hasRecording(text)) return playRow(text, { autoLabel: label });
+  const key = speechKey(text);
+  const id = `seek-${++playerCount}`;
+  const range = h('input', { type: 'range', id, min: '0', max: '1', step: '1', value: '0', disabled: true, 'aria-valuetext': 'Not started' });
+  const box = h(
+    'div',
+    { class: 'player', 'data-player': key },
+    h(
+      'div',
+      { class: 'player-controls' },
+      h(
+        'button',
+        { type: 'button', class: 'btn btn-play btn-round', 'aria-label': label, 'data-say': key, 'data-label': label, onClick: () => togglePlay(text, { slow: slow.getAttribute('aria-pressed') === 'true' }) },
+        icon('play'),
+      ),
+      h('button', { type: 'button', class: 'btn btn-quiet skip', 'aria-label': 'Back 5 seconds', disabled: true, onClick: () => seekBy(-5) }, '−5s'),
+      h('button', { type: 'button', class: 'btn btn-quiet skip', 'aria-label': 'Forward 5 seconds', disabled: true, onClick: () => seekBy(5) }, '+5s'),
+    ),
+    h('div', { class: 'player-seek' }, h('label', { for: id, class: 'visually-hidden' }, 'Position in the recording'), range, h('span', { class: 'time', 'aria-hidden': 'true' })),
+  );
+  const slow = h('button', { type: 'button', class: 'btn btn-quiet', 'aria-pressed': 'false' }, icon('slow'), 'Slow');
+  slow.addEventListener('click', () => {
+    const on = slow.getAttribute('aria-pressed') !== 'true';
+    slow.setAttribute('aria-pressed', String(on));
+    if (playback().key === key) setSlow(on);
+  });
+  box.querySelector('.player-controls').append(slow);
+  range.addEventListener('input', () => {
+    box.dataset.dragging = 'true';
+    seekTo(Number(range.value));
+  });
+  range.addEventListener('change', () => {
+    box.dataset.dragging = 'false';
+  });
+  return box;
+}
+
 export function miniPlay(text) {
   if (!hasTts()) return null;
-  return h('button', { type: 'button', class: 'icon-btn', 'aria-label': `Play: ${text}`, onClick: () => speak(text) }, icon('play'));
+  const label = `Play: ${text}`;
+  return h('button', { type: 'button', class: 'icon-btn', 'aria-label': label, 'data-say': speechKey(text), 'data-label': label, onClick: () => togglePlay(text) }, icon('play'));
 }
 
 export function dutchLine(nl, en, who) {
